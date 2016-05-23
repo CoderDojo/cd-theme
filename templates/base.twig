@@ -6,7 +6,7 @@
 	</head>
 {% endblock %}
 
-	<body class="{{body_class}}" data-template="base.twig">
+	<body class="{{body_class}} container" data-template="base.twig">
 		<header class="header" >
 			{% block header %}
 				<div class="wrapper">
@@ -26,6 +26,13 @@
 				{% block content %}
 					Sorry, no content
 				{% endblock %}
+				<?php
+				var_dump(Timber::get_context());
+				?>
+				{% include "headed-paragraph.twig" %}
+				<h3>{{ paragraph.header }}</h3>
+				<p>{{ paragraph.body }}</p>
+
 			</div>
 			{% if sidebar %}
 				<aside class="layout-sidebar">
@@ -35,6 +42,7 @@
 		</section>
 
 		{% block footer %}
+		<script type = "text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"/>
 			<footer id="footer">
 				{% include 'footer.twig' %}
 			</footer>
