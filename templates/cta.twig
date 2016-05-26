@@ -1,0 +1,13 @@
+{% if align%}
+<div class="cta" style="text-align: {{ align }} ;">
+{% else %}
+<div class="cta" style="text-align: center;">
+{% endif %}
+{% if target %}
+<a href="{{target}}">
+{% endif %}
+<button type="submit" id="cta">{{ buttontext }}</button>
+{% if target %}
+</a>
+{% endif %}
+</div>
