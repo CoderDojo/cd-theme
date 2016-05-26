@@ -42,11 +42,11 @@
 		</section>
 
 		{% block footer %}
+		<footer id="footer">
+			{% include 'footer.twig' %}
+		</footer>
+		{{ function('wp_footer') }}
 		<script type = "text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"/>
-			<footer id="footer">
-				{% include 'footer.twig' %}
-			</footer>
-			{{ function('wp_footer') }}
 		{% endblock %}
 	</body>
 </html>
