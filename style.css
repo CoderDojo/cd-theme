@@ -178,12 +178,16 @@
     color: #fff;
 }
 
-#footer button {
+.cta button {
     background: #faa13a;
     border-radius: .2em;
     border: none;
     padding: .5em 1.5em;
     font-size: 1.4em;
+}
+
+.cta a {
+    color: #fff;
 }
 
 #footer h4 {
