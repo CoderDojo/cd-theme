@@ -1,0 +1,16 @@
+{# special-header.twig #}
+
+{% block content %}
+<div class="special-header">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="image-crop"><img src="{{special.logo}}" border="0"></div>
+        </div>
+        <div class="col-md-8">
+          <div id="title">{{special.title}}</div> 
+          <div id="link">{{special.link}}</div>
+        </div>
+      </div>
+</div>
+{{special.desc}}
+{% endblock %}
