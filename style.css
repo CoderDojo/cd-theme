@@ -110,6 +110,7 @@ body {
 .paragraph  {
   width: 80%;
   margin-left: 10%;
+  padding-bottom: 25px;
 }
 
 .paragraph .row {
