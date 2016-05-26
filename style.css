@@ -194,6 +194,16 @@ body {
   padding-left: 35px;
 }
 
+.cta .footer-button {
+  color: #fff;
+  margin-top: 10px;
+  xpadding: 0.5em 0.7em;
+  border-radius: 0.3em;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+}
+
 .cta .header-button {
   color: #fff;
   padding: 0.3em 1em;
