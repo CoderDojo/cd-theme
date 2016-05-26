@@ -11,7 +11,7 @@
 		{% block header %}
 		<div class="wrapper">
 			<nav class="navbar navbar-default">
-				<div class="container">
+				<div class="top-nav">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 							<span class="sr-only">Toggle navigation</span>
@@ -26,15 +26,13 @@
 					    <li>
 					      <a href="#">DONATE</a>
 					    </li>
-							<li>
-								<form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-
-          </form>
-
-							</li>
+						<li>
+							<form class="navbar-form navbar-left" role="search">
+					            <div class="form-group">
+					              <input type="text" class="form-control" placeholder="Search">
+					            </div>
+					         </form>
+						</li>
 					  </ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li>
@@ -46,7 +44,7 @@
 							</ul>
 					</div><!--/.nav-collapse -->
 				</div>
-				<div class="container">
+				<div class="menu">
 					{% include "menu.twig" with {'menu': menu.get_items} %}
 				</div>		</nav>
 		</div>

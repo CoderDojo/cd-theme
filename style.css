@@ -5,6 +5,34 @@
 */
 
 /*
+ * Styles specifically for the header
+ */
+.header .navbar-default {
+    border: none;
+    background: none;
+    margin: 0;
+}
+
+.header .top-nav {
+    background: #d5e2fd;
+}
+
+.header .menu .navbar-nav {
+    width: 100%;
+}
+
+.header .menu .navbar-nav li {
+    width: 14%;
+    width: calc(100% / 7);
+}
+
+.header .panel-body {
+    background: #bdbfbf;
+    height: 100px;
+}
+
+
+/*
  * Special header
  */
 .special-header {
