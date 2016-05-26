@@ -1,0 +1,44 @@
+<header class="header" >
+      {% block header %}
+      <div class="wrapper">
+              <nav class="navbar navbar-default">
+                      <div class="top-nav">
+                              <div class="navbar-header">
+                                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                              <span class="sr-only">Toggle navigation</span>
+                                              <span class="icon-bar"></span>
+                                              <span class="icon-bar"></span>
+                                              <span class="icon-bar"></span>
+                                      </button>
+                                      <a class="navbar-brand" href="#">CoderDojo</a>
+                              </div>
+                              <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                  <li class="donate-button">
+                                    {% include 'cta.twig' with {'buttontext': 'DONATE', 'align': 'left', 'class': 'header-button'} %}
+                                  </li>
+                                      <li>
+                                              <form class="navbar-form navbar-left" role="search">
+                                          <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Search">
+                                          </div>
+                                       </form>
+                                      </li>
+                                </ul>
+                                      <ul class="nav navbar-nav navbar-right">
+                                              <li>
+                                                      <a href="#">REGISTER</a>
+                                              </li>
+                                              <li>
+                                                      <a href="#">LOGIN</a>
+                                              </li>
+                                              </ul>
+                              </div><!--/.nav-collapse -->
+                      </div>
+                      <div class="menu">
+                              {% include "menu.twig" with {'menu': menu.get_items} %}
+                      </div>		</nav>
+      </div>
+      {% endblock %}
+      {% include "block.twig" %}
+</header>

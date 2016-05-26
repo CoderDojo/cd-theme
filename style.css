@@ -173,6 +173,23 @@
 .row .grid-item img {
   width: 100%;
 }
+/*
+ * Styles specifically for the Header
+ */
+
+.donate-button {
+  padding-top: 9px;
+  padding-left: 10px;
+}
+
+.cta .header-button {
+  color: #fff;
+  padding: 0.3em 1em;
+  border-radius: 0.3em;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: 'Lato', sans-serif;
+}
 
 /*
  * Styles specifically for the footer

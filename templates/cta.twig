@@ -3,10 +3,17 @@
 {% else %}
 <div class="cta" style="text-align: center;">
 {% endif %}
+
 {% if target %}
 <a href="{{target}}">
 {% endif %}
+
+{% if class%}
+<button type="submit" id="cta" class="{{class}}">{{ buttontext }}</button>
+{% else %}
 <button type="submit" id="cta">{{ buttontext }}</button>
+{% endif %}
+
 {% if target %}
 </a>
 {% endif %}
