@@ -7,6 +7,11 @@
 /*
  * Styles specifically for the header
  */
+
+.header .navbar-wrapper {
+  padding-top: 13px;
+}
+
 .header .navbar-default {
     border: none;
     background: none;
@@ -15,6 +20,7 @@
 
 .header .top-nav {
     background: #d5e2fd;
+    height: 75px;
 }
 
 .header .menu .navbar-nav {
