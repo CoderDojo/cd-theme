@@ -71,3 +71,32 @@
     background: none;
 }
 
+#footer .panel-footer a {
+    color: #fff;
+    padding: .2em .9em;
+    text-decoration: none;
+    border-radius: .1em;
+}
+
+#footer .panel-footer a:hover {
+    color: #000;
+    background: #fff;
+}
+
+#footer .panel-footer a.pull-right h5 {
+    margin: 0;
+    font-weight: normal;
+}
+
+#footer .panel-footer a.pull-right {
+    padding: 0;
+
+    border-radius: 0;
+}
+
+#footer .panel-footer a.pull-right:hover {
+    color: #fff;
+    background: none;
+    text-decoration: underline;
+}
+
