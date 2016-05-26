@@ -62,7 +62,7 @@ class StarterSite extends TimberSite {
 		                      'link'=>'http://coderdojo.org', 'target'=>'_self']
 		                  ];
 		$context['gridtitle'] = "Categories & topics";
-                $context['special'] = ['title'=>'Web Summit', 'logo'=>'bla', 'link'=>'https://websummit.net', 'desc'=>'bgs gsd gds gdsg ds sdfejktkgSDdsgds ds sdg dsgs dg sgs fshjgdfgj'];
+                $context['special'] = ['title'=>'Web Summit', 'logo'=>'http://www.beentouch.com/it/images/reviews_logos/websummit.png', 'link'=>'https://websummit.net', 'desc'=>'bgs gsd gds gdsg ds sdfejktkgSDdsgds ds sdg dsgs dg sgs fshjgdfgj'];
 		return $context;
 	}
 

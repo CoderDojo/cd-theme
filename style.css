@@ -4,7 +4,39 @@
  * Author: Upstatement and YOU!
 */
 
+/*
+ * Special header
+ */
+.special-header {
+  width: 100%;
+  background-color: #EEE;
+  margin-top: -20px;
+}
 
+.special-header #title {
+  padding-top: 10px;
+  font-size: 30px;
+}
+
+.special-header #link {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.special-header .image-crop {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.special-header img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
 
 /*
  * Styles for the GRID layout
