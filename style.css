@@ -136,6 +136,11 @@
   font-weight: bold;
 }
 
+.people-bio {
+  margin-top: 20px;
+  margin-bottom: 35px;
+  margin-left: 40px;
+}
 
 /*
  * Styles for the GRID layout
