@@ -25,8 +25,35 @@ $context = Timber::get_context();
 $context['posts'] = Timber::get_posts();
 $context['foo'] = 'bar';
 $context['paragraph'] = ['header'=>$tempPod->field('header'), 'body'=>$tempPod->field('body')];
-$templates = array( 'index.twig');
-if ( is_home() ) {
-	array_unshift( $templates, 'home.twig' );
-}
+$context['grid'] = [ ['src'=>'https://s-media-cache-ak0.pinimg.com/favicons/c2622a798383b40c9da02ae8150f265606ad2f5c4f5010f8386347c8.ico?0d1058bc7ba7596c8e0205854861b8d8', 'alt'=>'Alt desc',
+                      'link'=>'http://coderdojo.org','target'=>'_blank'],
+                     ['src'=>'https://s-media-cache-ak0.pinimg.com/favicons/c2622a798383b40c9da02ae8150f265606ad2f5c4f5010f8386347c8.ico?0d1058bc7ba7596c8e0205854861b8d8', 'alt'=>'Alt desc 2',
+                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
+                     ['src'=>'https://s-media-cache-ak0.pinimg.com/favicons/c2622a798383b40c9da02ae8150f265606ad2f5c4f5010f8386347c8.ico?0d1058bc7ba7596c8e0205854861b8d8', 'alt'=>'Alt desc 2',
+                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
+                     ['src'=>'https://s-media-cache-ak0.pinimg.com/favicons/c2622a798383b40c9da02ae8150f265606ad2f5c4f5010f8386347c8.ico?0d1058bc7ba7596c8e0205854861b8d8', 'alt'=>'Alt desc 2',
+                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
+                     ['src'=>'https://s-media-cache-ak0.pinimg.com/favicons/c2622a798383b40c9da02ae8150f265606ad2f5c4f5010f8386347c8.ico?0d1058bc7ba7596c8e0205854861b8d8', 'alt'=>'Alt desc 2',
+                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
+                     ['src'=>'https://s-media-cache-ak0.pinimg.com/favicons/c2622a798383b40c9da02ae8150f265606ad2f5c4f5010f8386347c8.ico?0d1058bc7ba7596c8e0205854861b8d8', 'alt'=>'Alt desc 2',
+                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
+                     ['src'=>'https://s-media-cache-ak0.pinimg.com/favicons/c2622a798383b40c9da02ae8150f265606ad2f5c4f5010f8386347c8.ico?0d1058bc7ba7596c8e0205854861b8d8', 'alt'=>'Alt desc 2',
+                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
+                     ['src'=>'https://s-media-cache-ak0.pinimg.com/favicons/c2622a798383b40c9da02ae8150f265606ad2f5c4f5010f8386347c8.ico?0d1058bc7ba7596c8e0205854861b8d8', 'alt'=>'Alt desc 2',
+                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
+                     ['src'=>'https://s-media-cache-ak0.pinimg.com/favicons/c2622a798383b40c9da02ae8150f265606ad2f5c4f5010f8386347c8.ico?0d1058bc7ba7596c8e0205854861b8d8', 'alt'=>'Alt desc 2',
+                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
+                     ['src'=>'https://s-media-cache-ak0.pinimg.com/favicons/c2622a798383b40c9da02ae8150f265606ad2f5c4f5010f8386347c8.ico?0d1058bc7ba7596c8e0205854861b8d8', 'alt'=>'Alt desc 2',
+                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
+                     ['src'=>'https://s-media-cache-ak0.pinimg.com/favicons/c2622a798383b40c9da02ae8150f265606ad2f5c4f5010f8386347c8.ico?0d1058bc7ba7596c8e0205854861b8d8', 'alt'=>'Alt desc 2',
+                      'link'=>'http://coderdojo.org', 'target'=>'_self'], 
+                  ];
+$context['gridtitle'] = "Categories & topics";
+
+
+//$templates = array( 'index.twig');
+$templates = array( 'grid.twig');
+//if ( is_home() ) {
+//	array_unshift( $templates, 'home.twig' );
+//}
 Timber::render( $templates, $context );
