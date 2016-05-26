@@ -1,52 +1,63 @@
 {% block html_head_container %}
 
 {% include 'html-header.twig' %}
-	{% block head %}
-	{% endblock %}
-	</head>
+{% block head %}
+{% endblock %}
+</head>
 {% endblock %}
 
-	<body class="{{body_class}} container" data-template="base.twig">
-		<header class="header" >
-			{% block header %}
-				<div class="wrapper">
-					<h1 class="hdr-logo" role="banner">
-						<a class="hdr-logo-link" href="{{site.siteurl}}" rel="home">{{site.name}}</a>
-					</h1>
-					<nav id="nav-main" class="nav-main" role="navigation">
-						{% include "menu.twig" with {'menu': menu.get_items} %}
-					</nav><!-- #nav -->
+<body class="{{body_class}} container" data-template="base.twig">
+	<header class="header" >
+		{% block header %}
+		<div class="wrapper">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">Project name</a>
+					</div>
+					
 				</div>
-			{% endblock %}
-		</header>
-
-		<section id="content" role="main" class="content-wrapper">
-			{% if title %}<h1>{{title}}</h1>{% endif %}
-			<div class="wrapper {{sidebar_class}}">
-				{% block content %}
-					Sorry, no content
-				{% endblock %}
-				<?php
-				var_dump(Timber::get_context());
-				?>
-				{% include "headed-paragraph.twig" %}
-				<h3>{{ paragraph.header }}</h3>
-				<p>{{ paragraph.body }}</p>
-
-			</div>
-			{% if sidebar %}
-				<aside class="layout-sidebar">
-					{{sidebar}}
-				</aside>
-			{% endif %}
-		</section>
-
-		{% block footer %}
-		<footer id="footer">
-			{% include 'footer.twig' %}
-		</footer>
-		{{ function('wp_footer') }}
-		<script type = "text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"/>
+			</nav>
+			<nav id="nav-main" class="nav-main" role="navigation">
+				{% include "menu.twig" with {'menu': menu.get_items} %}
+			</nav><!-- #nav -->
+		</div>
 		{% endblock %}
-	</body>
+	</header>
+
+	<section id="content" role="main" class="content-wrapper">
+		{% if title %}<h1>{{title}}</h1>{% endif %}
+		<div class="wrapper {{sidebar_class}}">
+			{% block content %}
+			Sorry, no content
+			{% endblock %}
+			<?php
+			var_dump(Timber::get_context());
+			?>
+			{% include "headed-paragraph.twig" %}
+			<h3>{{ paragraph.header }}</h3>
+			<p>{{ paragraph.body }}</p>
+
+		</div>
+		{% if sidebar %}
+		<aside class="layout-sidebar">
+			{{sidebar}}
+		</aside>
+		{% endif %}
+	</section>
+
+	{% block footer %}
+	<footer id="footer">
+		{% include 'footer.twig' %}
+	</footer>
+	{{ function('wp_footer') }}
+	<script type = "text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"/>
+	{% endblock %}
+</body>
 </html>
