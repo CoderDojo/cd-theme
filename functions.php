@@ -61,7 +61,7 @@ class StarterSite extends TimberSite {
 		                     ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc 2',
 		                      'link'=>'http://coderdojo.org', 'target'=>'_self']
 		                  ];
-		$context['gridtitle'] = "Categories & topics";
+		$context['gridtitle'] = "Categories & Topics";
 		return $context;
 	}
 
