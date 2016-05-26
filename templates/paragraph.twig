@@ -1,14 +1,14 @@
 {# Paragraph with image - left/right #}
 
-{% if left %}
+{% if align == 'left' %}
 <div class="paragraph">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-xs-4 col-md-4">
           <div class="image-container">
             <div class="image-crop"><img src="{{img}}" border="0"></div>
           </div>
         </div>
-        <div class="col-md-9 left">
+        <div class="col-xs-8 col-sm-6 col-md-8 left">
           <div id="title">{{title}}</div>
           <div id="desc">{{desc}}</div>
         </div>
@@ -17,11 +17,11 @@
 {% else %}
 <div class="paragraph">
       <div class="row">
-        <div class="col-md-9 right">
+        <div class="col-xs-8 col-sm-6 col-md-8 right">
           <div id="title">{{title}}</div>
           <div id="desc">{{desc}}</div>
         </div>
-        <div class="col-md-3">
+        <div class="col-xs-4 col-md-4">
           <div class="image-container">
             <div class="image-crop"><img src="{{img}}" border="0"></div>
           </div>

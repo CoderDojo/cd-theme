@@ -6,26 +6,10 @@
 		{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
 	{% endfor %}
 
-	{% include 'paragraph.twig' with {'left':  'true', 'title':'Start a dojo', 'img':'http://placehold.it/150x150', 
-                                          'desc':  'Yr chillwave farm-to-table, PBR&amp;B migas hella
-dreamcatcher. ArAsan mumblecore deep v polaroid, kombucha
-fanny pack everyday carry venmo selvage messenger bag
-kitsch ausAn. '} %}
-	{% include 'paragraph.twig' with {'right': 'true', 'title':'Funding', 'img':'http://placehold.it/150x150',
-                                           'desc': 'Yr chillwave farm-to-table, PBR&amp;B migas hella
-dreamcatcher. ArAsan mumblecore deep v polaroid, kombucha
-fanny pack everyday carry venmo selvage messenger bag
-kitsch ausAn. ' } %}
-	{% include 'paragraph.twig' with {'left':  'true', 'title':'Resources', 'img':'http://placehold.it/150x150', 
-                                          'desc':  'Yr chillwave farm-to-table, PBR&amp;B migas hella
-dreamcatcher. ArAsan mumblecore deep v polaroid, kombucha
-fanny pack everyday carry venmo selvage messenger bag
-kitsch ausAn. '} %}
-	{% include 'paragraph.twig' with {'right': 'true', 'title':'Kata', 'img':'http://placehold.it/150x150',
-                                           'desc': 'Yr chillwave farm-to-table, PBR&amp;B migas hella
-dreamcatcher. ArAsan mumblecore deep v polaroid, kombucha
-fanny pack everyday carry venmo selvage messenger bag
-kitsch ausAn. ' } %}
+	{% include 'paragraph.twig' with {'align':  'left', 'title':'Start a dojo', 'img':'http://placehold.it/150x150', 'desc':  'Yr chillwave farm-to-table, PBR&amp;B migas hella dreamcatcher. ArAsan mumblecore deep v polaroid, kombucha fanny pack everyday carry venmo selvage messenger bag kitsch ausAn. '} %}
+	{% include 'paragraph.twig' with {'align': 'right', 'title':'Funding', 'img':'http://placehold.it/150x150', 'desc': 'Yr chillwave farm-to-table, PBR&amp;B migas hella dreamcatcher. ArAsan mumblecore deep v polaroid, kombucha fanny pack everyday carry venmo selvage messenger bag kitsch ausAn. ' } %}
+	{% include 'paragraph.twig' with {'align':  'left', 'title':'Resources', 'img':'http://placehold.it/150x150', 'desc':  'Yr chillwave farm-to-table, PBR&amp;B migas hella dreamcatcher. ArAsan mumblecore deep v polaroid, kombucha fanny pack everyday carry venmo selvage messenger bag kitsch ausAn. '} %}
+	{% include 'paragraph.twig' with {'align': 'right', 'title':'Kata', 'img':'http://placehold.it/150x150', 'desc': 'Yr chillwave farm-to-table, PBR&amp;B migas hella dreamcatcher. ArAsan mumblecore deep v polaroid, kombucha fanny pack everyday carry venmo selvage messenger bag kitsch ausAn. ' } %}
 
 	{% include 'grid.twig' %}
 {% endblock %}

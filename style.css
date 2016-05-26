@@ -113,7 +113,8 @@ body {
 }
 
 .paragraph .row {
-  height: 120px;
+  height: 100%;
+  padding-bottom: 20px;
 }
 
 .paragraph #title {
