@@ -4,13 +4,32 @@
  * Author: Upstatement and YOU!
 */
 
-#grid h3 {
+
+
+/*
+ * Styles for the GRID layout
+ */
+.wrapper-grid {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 80px;
+}
+
+.grid {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.grid h3 {
   text-align: center;
 }
 
-#grid .row {
+.grid .row {
   background-color: #EEE;
+  padding: 4px;
 }
+
 
 .row .grid-item {
   padding: 5px;
@@ -18,5 +37,5 @@
 }
 
 .row .grid-item img {
-  width: 100%; 
+  width: 100%;
 }
