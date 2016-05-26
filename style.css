@@ -19,6 +19,7 @@
 
 .header .menu .navbar-nav {
     width: 100%;
+    text-transform: uppercase;
 }
 
 .header .menu .navbar-nav li {
