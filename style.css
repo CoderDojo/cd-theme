@@ -8,6 +8,11 @@
  * Styles specifically for the header
  */
 
+body {
+  font-family: 'Lato', sans-serif;
+
+}
+
 .header .navbar-wrapper {
   padding-top: 13px;
 }
