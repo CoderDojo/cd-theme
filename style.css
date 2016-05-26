@@ -40,6 +40,10 @@
   width: 100%;
 }
 
+/*
+ * Styles specifically for the footer
+ */
+
 #footer .panel {
     background: #303030;
     color: #fff;

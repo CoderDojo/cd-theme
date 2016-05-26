@@ -3,13 +3,15 @@
 
 {% block content %}
   {# margin-top is a HACK until we fix the navigation bar offset #}
-  <div id="grid" style="margin-top: 100px;">
-    <h3>{{gridtitle}}</h3>
-    <div class="content-wrapper">
-      <div class="row">
-        {% for item in grid %}
-          <div class="col-xs-6 col-md-4 grid-item"><a href="{{item.link}}" target="{{item.target}}"><img src="{{item.src}}" alt="{{item.body}}" border="0"></a></div>
-        {% endfor %}
+  <div class="wrapper-grid">
+    <div class="grid">
+      <h3>{{gridtitle}}</h3>
+      <div class="content-wrapper">
+        <div class="row">
+          {% for item in grid %}
+            <div class="col-xs-6 col-md-4 grid-item"><a href="{{item.link}}" target="{{item.target}}"><img src="{{item.src}}" alt="{{item.body}}" border="0"></a></div>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>
