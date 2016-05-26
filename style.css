@@ -188,9 +188,17 @@
   padding: 0.3em 1em;
   border-radius: 0.3em;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 400;
   font-family: 'Lato', sans-serif;
 }
+
+.navbar-right {
+  color: #000;
+  font-weight: 200;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+}
+
 
 /*
  * Styles specifically for the footer
