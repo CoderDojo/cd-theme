@@ -11,9 +11,7 @@
  */
 .wrapper-grid {
   width: 100%;
-  text-align: center;
-  margin-bottom: 20px;
-  margin-top: 80px;
+  margin-bottom: 30px;
 }
 
 .grid {
@@ -23,13 +21,13 @@
 
 .grid h3 {
   text-align: center;
+  padding: 5px;
 }
 
 .grid .row {
   background-color: #EEE;
   padding: 4px;
 }
-
 
 .row .grid-item {
   padding: 5px;
