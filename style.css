@@ -36,6 +36,14 @@ body {
 .header .menu .navbar-nav li {
     width: 14%;
     width: calc(100% / 7);
+    text-align: center;
+}
+
+@media (min-width: 1200px) {
+    .header .menu .navbar-nav li {
+        padding: 0 1.8em;
+        width: auto;
+    }
 }
 
 .header .panel-body {
