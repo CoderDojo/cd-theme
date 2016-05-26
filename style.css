@@ -10,11 +10,15 @@
 .special-header {
   width: 100%;
   background-color: #EEE;
-  margin-top: -20px;
+}
+
+.special-header-body {
+  padding-bottom: 50px;
+  padding-top: 20px;
 }
 
 .special-header #title {
-  padding-top: 10px;
+  padding-top: 20px;
   font-size: 30px;
 }
 
@@ -23,12 +27,19 @@
   padding-bottom: 20px;
 }
 
+.special-header .image-container {
+  position:absolute;
+  left: 40px;
+  top: 45px;
+}
+
 .special-header .image-crop {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
+    border: solid rgba(128, 128, 128, 0.1) 1px;
 }
 
 .special-header img {
