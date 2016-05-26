@@ -1,0 +1,32 @@
+{# Paragraph with image - left/right #}
+
+{% if left %}
+<div class="paragraph">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="image-container">
+            <div class="image-crop"><img src="{{img}}" border="0"></div>
+          </div>
+        </div>
+        <div class="col-md-9 left">
+          <div id="title">{{title}}</div>
+          <div id="desc">{{desc}}</div>
+        </div>
+      </div>
+</div>
+{% else %}
+<div class="paragraph">
+      <div class="row">
+        <div class="col-md-9 right">
+          <div id="title">{{title}}</div>
+          <div id="desc">{{desc}}</div>
+        </div>
+        <div class="col-md-3">
+          <div class="image-container">
+            <div class="image-crop"><img src="{{img}}" border="0"></div>
+          </div>
+        </div>
+      </div>
+</div>
+{% endif %}
+

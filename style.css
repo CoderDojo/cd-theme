@@ -99,6 +99,61 @@
 }
 
 /*
+ * Paragraph
+ */
+
+.paragraph  {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.paragraph .row {
+  height: 120px;
+}
+
+.paragraph #title {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.paragraph .left {
+  text-align: left;
+}
+
+.paragraph .left #desc {
+  margin-right: 22%;
+}
+
+.paragraph .right #desc {
+  margin-left: 22%;
+}
+
+.paragraph .right {
+  text-align: right;
+}
+
+.paragraph .image-container {
+  position:absolute;
+  left: 60px;
+}
+
+.paragraph .image-crop {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: solid rgba(128, 128, 128, 0.1) 1px;
+}
+
+.paragraph img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+/*
  * People styles
  */
 
