@@ -36,3 +36,20 @@ Configure Facebook OG
 * https://www.dropbox.com/s/tv1vp46m148ipgr/Screenshot%202016-05-26%2022.00.49.png?dl=0
 * https://www.dropbox.com/s/y4wu1fx3v25s3x1/Screenshot%202016-05-26%2022.01.05.png?dl=0
 * https://www.dropbox.com/s/t4l2ettjm3fs0ff/Screenshot%202016-05-26%2022.01.22.png?dl=0
+
+Using the CTA twig template
+---------------------------
+
+```
+{% include 'cta.twig' with {'buttontext': 'Call to Action', 'target': 'http://www.google.com', 'class': 'foo' } %}
+```
+
+Using the Company Header twig template
+--------------------------------------
+
+Create a post and fill in the Company related custom fields created in pods.
+
+Using the People twig template
+------------------------------
+
+Create a post and fill in the People related custom fields created in pods.
