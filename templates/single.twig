@@ -6,6 +6,8 @@
 			<section class="article-content">
 				{% if post.company_name %}
 					{% include "company-header.twig" with { 'post':post } %}
+                                {% elseif post.people_name %}
+					{% include "people.twig" with { 'post':post } %}
 				{% endif %}
 				<div class="article-body">
 					{{post.content}}
