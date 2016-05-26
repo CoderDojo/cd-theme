@@ -2,8 +2,6 @@
 
 {% block content %}
 
-	{% include 'company-header.twig' %}
-
 	{% for post in posts %}
 		{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
 	{% endfor %}
