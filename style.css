@@ -186,7 +186,7 @@
 
 .donate-button {
   padding-top: 9px;
-  padding-left: 10px;
+  padding-left: 35px;
 }
 
 .cta .header-button {
@@ -204,7 +204,6 @@
   font-size: 18px;
   font-family: 'Lato', sans-serif;
 }
-
 
 /*
  * Styles specifically for the footer
