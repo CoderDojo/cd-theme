@@ -25,35 +25,10 @@ $context = Timber::get_context();
 $context['posts'] = Timber::get_posts();
 $context['foo'] = 'bar';
 $context['paragraph'] = ['header'=>$tempPod->field('header'), 'body'=>$tempPod->field('body')];
-$context['grid'] = [ ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc',
-                      'link'=>'http://coderdojo.org','target'=>'_blank'],
-                     ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc 2',
-                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
-                     ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc 2',
-                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
-                     ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc 2',
-                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
-                     ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc 2',
-                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
-                     ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc 2',
-                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
-                     ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc 2',
-                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
-                     ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc 2',
-                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
-                     ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc 2',
-                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
-                     ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc 2',
-                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
-                     ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc 2',
-                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
-                  ];
-$context['gridtitle'] = "Categories & topics";
 
 
-//$templates = array( 'index.twig');
-$templates = array( 'grid.twig');
-//if ( is_home() ) {
-//	array_unshift( $templates, 'home.twig' );
-//}
+$templates = array( 'index.twig' );
+if ( is_home() ) {
+	array_unshift( $templates, 'home.twig' );
+}
 Timber::render( $templates, $context );

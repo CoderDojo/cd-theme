@@ -36,6 +36,30 @@ class StarterSite extends TimberSite {
 		$context['notes'] = 'These values are available everytime you call Timber::get_context();';
 		$context['menu'] = new TimberMenu('main');
 		$context['site'] = $this;
+		$context['grid'] = [ ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc',
+		                      'link'=>'http://coderdojo.org','target'=>'_blank'],
+		                     ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc 2',
+		                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
+		                     ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc 2',
+		                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
+		                     ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc 2',
+		                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
+		                     ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc 2',
+		                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
+		                     ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc 2',
+		                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
+		                     ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc 2',
+		                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
+		                     ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc 2',
+		                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
+		                     ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc 2',
+		                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
+		                     ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc 2',
+		                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
+		                     ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc 2',
+		                      'link'=>'http://coderdojo.org', 'target'=>'_self'],
+		                  ];
+		$context['gridtitle'] = "Categories & topics";
 		return $context;
 	}
 
