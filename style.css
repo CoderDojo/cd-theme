@@ -285,12 +285,59 @@ body {
 }
 
 /*
+ * Styles specifically for find dojo
+ */
+#find-dojo {
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+}
+
+#find-dojo .find-dojo {
+    width: 120%;
+    height: 120%;
+    margin: 0;
+    position: absolute;
+    top: -20px;
+}
+
+#find-dojo-label {
+    font-size: 1.2em;
+    color: #999;
+}
+
+#find-dojo input {
+    border-radius: .2em;
+}
+
+#find-dojo .find-dojo-column {
+    margin-top: 30px;
+}
+
+#find-dojo button {
+    background: #faa13a;
+    border-radius: .2em;
+    border: none;
+    color: #fff;
+}
+
+#find-dojo .panel-body {
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    position: relative;
+}
+
+
+/*
  * Styles specifically for the footer
  */
 
 #footer .panel {
     background: #303030;
     color: #fff;
+    border: none;
+    border-radius: initial;
 }
 
 .cta button {
