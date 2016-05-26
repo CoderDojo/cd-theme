@@ -1,16 +1,15 @@
 {# special-header.twig #}
-
 {% block content %}
 <div class="special-header">
       <div class="row">
         <div class="col-md-2">
           <div class="image-container">
-            <div class="image-crop"><img src="{{special.logo}}" border="0"></div>
+            <div class="image-crop"><img src="{{post.company_logo}}" border="0"></div>
           </div>
         </div>
         <div class="col-md-8">
-          <div id="title">{{special.title}}</div> 
-          <div id="link">{{special.link}}</div>
+          <div id="title">{{post.company_name}}</div>
+          <div id="link">{{post.company_url}}</div>
         </div>
       </div>
 </div>
@@ -18,7 +17,7 @@
   <div class="row">
     <div class="col-md-2"> </div>
     <div class="col-md-8">
-      {{special.desc}}
+      {{post.company_bio}}
     </div>
   </div>
 </div>
