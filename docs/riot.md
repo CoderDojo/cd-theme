@@ -53,3 +53,9 @@ Using the People twig template
 ------------------------------
 
 Create a post and fill in the People related custom fields created in pods.
+
+Managing the menus
+------------------
+
+The main navigation menu is completely handled via the wordpress menu system.
+Just create a menu called `main` and start adding links.
