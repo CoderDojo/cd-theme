@@ -211,11 +211,16 @@
     background: none;
 }
 
-#footer .panel-footer a {
+#footer  a {
     color: #fff;
-    padding: .2em .9em;
+    margin: 0 .6em;
     text-decoration: none;
     border-radius: .1em;
+}
+
+#footer .panel-footer a {
+    padding: .2em .9em;
+    margin: 0;
 }
 
 #footer .panel-footer a:hover {
@@ -230,7 +235,6 @@
 
 #footer .panel-footer a.pull-right {
     padding: 0;
-
     border-radius: 0;
 }
 
@@ -238,6 +242,14 @@
     color: #fff;
     background: none;
     text-decoration: underline;
+}
+
+#footer .social a {
+    text-decoration: none;
+    padding: 0;
+    margin: .5em .5em 0;
+    background: none;
+
 }
 
 .nav .fa {
