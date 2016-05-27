@@ -214,12 +214,12 @@ body {
 }
 
 .article-mid {
-  background-color: #f8f8f8; 
+  background-color: #f8f8f8;
   padding-bottom: 20px;
 }
 
 .article-mid h1 {
-  text-align: center; 
+  text-align: center;
   padding: 40px;
 }
 
@@ -502,7 +502,7 @@ h3.gridPlusText
 
 #find-dojo input {
     border-radius: .2em;
-    border: none;
+    border: 1px solid black;
     width: 315px;
     height: 40px;
     padding: 0 7px;
