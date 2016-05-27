@@ -25,7 +25,7 @@
 
 
 				{% if post.meta('video') and post.meta('video-poster') %}
-<video style="position:relative; width:120%; left:-10%;" controls poster="{{post.meta('video-poster').guid}}">
+<video style="position:relative; width:125%; left:-12.5%;" controls poster="{{post.meta('video-poster').guid}}">
   <source src="{{post.meta('video').guid|replace({'.mp4':'.ogg'})}}" type="video/ogg">
   <source src="{{post.meta('video').guid|replace({'.ogg':'.mp4'})}}" type="video/mp4">
   Your browser does not support HTML5 video.
