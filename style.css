@@ -212,6 +212,16 @@ body {
     padding-bottom: 20px;
 }
 
+.article-mid {
+  background-color: #f8f8f8; 
+  padding-bottom: 20px;
+}
+
+.article-mid h1 {
+  text-align: center; 
+  padding: 40px;
+}
+
 .content-wrapper {
   margin: 0 auto;
   overflow: hidden;
