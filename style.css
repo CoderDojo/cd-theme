@@ -10,7 +10,32 @@
 
 body {
   font-family: 'Lato', sans-serif;
+}
 
+.navbar-form input#navbar-search {
+  width: 400px;
+  display: none;
+}
+
+.navbar-form input#navbar-search.show {
+  display: initial;
+}
+
+.search-placeholder:before {
+  content: " ";
+  background-image: url('https://placehold.it/24x24');
+  display:inline-block;
+  width:24px;
+  height:24px;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+.search-placeholder:not(:lang(el)),
+.search-placeholder:not(:lang(tr)) {
+  text-transform: uppercase;
+  line-height: 34px;
+  display:inline;
 }
 
 .header .navbar-wrapper {
@@ -316,6 +341,7 @@ body {
 }
 #find-dojo input:focus,
 #find-dojo input:hover {
+  border: 1px solid #aaa;
 }
 
 

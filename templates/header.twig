@@ -25,7 +25,8 @@
                                       <li>
                                               <form class="navbar-form navbar-left" role="search">
                                           <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Search" name="s">
+                                            <span class="search-placeholder" onclick="document.querySelector('input#navbar-search').classList.add('show');this.style.display='none';">Search</span>
+                                            <input id="navbar-search" type="text" class="form-control" placeholder="Search" name="s">
                                           </div>
                                        </form>
                                       </li>
