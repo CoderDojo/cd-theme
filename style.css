@@ -8,9 +8,15 @@
  * Styles specifically for the header
  */
 
+html {
+    background: #d5e2fd;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+  background: #fff;
+  padding: 0;
 }
 
 .navbar-form input#navbar-search {
@@ -54,6 +60,7 @@ body {
     border: none;
     background: none;
     margin: 0;
+    width: 100%;
 }
 
 .header .top-nav {
@@ -64,6 +71,7 @@ body {
 .header .menu .navbar-nav {
     width: 100%;
     text-transform: uppercase;
+    background: #f8f8f8;
 }
 
 .header .menu .navbar-nav li {
@@ -73,10 +81,24 @@ body {
     font-weight: 400;
 }
 
+.container {
+    width: 100%;
+    padding: 0;
+}
+
 @media (min-width: 1200px) {
     .header .menu .navbar-nav li {
-        padding: 0 1.8em;
+        padding: 0 48px;
         width: auto;
+    }
+
+    .header .navbar-default {
+        width: 1440px;
+        margin: 0 auto;
+    }
+
+    .container {
+        width: 1440px;
     }
 }
 
