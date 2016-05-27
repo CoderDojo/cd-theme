@@ -120,6 +120,23 @@ body {
     height: 100px;
 }
 
+@media (min-width: 0) and (max-width: 768px) {
+    .top-nav .navbar-collapse {
+        width: 100%;
+        overflow: hidden;
+        background: #EFF3FD;
+        text-align: center;
+    }
+
+    .top-nav .navbar-form {
+        border: none;
+    }
+
+    .top-nav .navbar-collapse li {
+        display: inline-block;
+    }
+}
+
 
 /*
  * Special Header - Company
@@ -468,20 +485,25 @@ h3.gridPlusText
 }
 
 #find-dojo-label {
-    font-size: 1.2em;
+    font-size: 2em;
     color: #666;
 }
 
 #find-dojo input {
     border-radius: .2em;
-    border: 1px solid #ccc;
-    width: 18em;
-    margin-right: 11px;
+    border: none;
+    width: 315px;
+    height: 40px;
+    padding: 0 7px;
+    color: #666;
+    font-size: 1.8em;
+    font-weight: 400;
+    margin-right: 10px;
     outline: none;
 }
 #find-dojo input:focus,
 #find-dojo input:hover {
-  border: 1px solid #aaa;
+  border: none;
 }
 
 
@@ -491,10 +513,10 @@ h3.gridPlusText
 
 #find-dojo button {
     background: #faa13a;
-    border-radius: .2em;
+    border-radius: .3em;
     border: none;
     color: #fff;
-    padding: 2px 12px;
+    padding: 10px 28px;
     font-weight: 400;
 }
 
