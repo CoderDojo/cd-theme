@@ -25,21 +25,6 @@
 				{% include "article-signature.twig" with {'post':post} %}
 
 			</section>
-		{#
-		{% if post.comment_status != 'closed' %}
-			<section class="comments">
-				<div class="respond">
-					<h3 class="h2">Responses</h3>
-					{{ fn('comment_form') }}
-				</div>
-				<div class="responses">
-					{% for cmt in post.get_comments() %}
-						{% include "comment.twig" with {comment:cmt} %}
-					{% endfor %}
-				</div>
-			</section>
-		{% endif %}
-		#}
 		</article>
 	</div><!-- /content-wrapper -->
 {% endblock %}
