@@ -101,8 +101,10 @@ body {
 
 @media (min-width: 1280px) {
     .header .menu .navbar-nav li {
+  /*
         padding: 0 2.3em;
         width: auto;
+   */
     }
 
     .header .navbar-default {
@@ -194,12 +196,11 @@ body {
  */
 .article-wrapper {
   margin-top: 20px !important;
-  width: 80%;
   margin: 0 auto;
 }
 
 .article-medium {
-  width: 60%;
+  width: 80%;
 }
 
 .article-wrapper .article-h1 {
@@ -211,6 +212,17 @@ body {
     color: #000;
     line-height: 2.0;
     padding-bottom: 20px;
+}
+
+.article-body {
+  width: 80%;
+  padding-left: 20%; 
+  padding-bottom: 20px;
+}
+
+.article-body h1 {
+  text-align: center;
+  padding: 15px;
 }
 
 .article-mid {
