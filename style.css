@@ -201,6 +201,7 @@ body {
 
 .author-container {
   margin: 5px 15px;
+  height: 130px;
 }
 .author-header {
   font-size: 2em;
