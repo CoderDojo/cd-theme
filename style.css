@@ -315,8 +315,19 @@ body {
 .navbar-right {
   color: #000;
   font-weight: 200;
-  font-size: 18px;
+  font-size: 17px;
   font-family: 'Lato', sans-serif;
+}
+
+#nav-left-item:after {
+  position: absolute;
+  top: 6px;
+  left: 100px;
+  content:url('/wp-content/themes/cd-theme/static/img/splitter.png'); 
+} 
+
+.navbar-nav li a {
+  color: #000 !important;
 }
 
 /*
