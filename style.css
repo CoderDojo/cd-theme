@@ -120,6 +120,23 @@ body {
     height: 100px;
 }
 
+@media (min-width: 0) and (max-width: 768px) {
+    .top-nav .navbar-collapse {
+        width: 100%;
+        overflow: hidden;
+        background: #EFF3FD;
+        text-align: center;
+    }
+
+    .top-nav .navbar-form {
+        border: none;
+    }
+
+    .top-nav .navbar-collapse li {
+        display: inline-block;
+    }
+}
+
 
 /*
  * Special Header - Company
