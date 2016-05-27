@@ -282,7 +282,7 @@ body {
  */
 
 .donate-button {
-  padding-top: 9px;
+  padding-top: 4px;
   padding-left: 35px;
 }
 
@@ -298,7 +298,7 @@ body {
 
 .cta .header-button {
   color: #fff;
-  padding: 0.3em 1em;
+  padding: 0.6em 1em;
   border-radius: 0.3em;
   font-size: 16px;
   font-weight: 400;
