@@ -22,14 +22,21 @@ body {
   display: initial;
 }
 
+.navbar-form .form-group {
+  padding-left: 20px;
+  font-size: 17px;
+  font-weight: 400;
+}
+
 .search-placeholder:before {
   content: " ";
-  background-image: url('https://placehold.it/24x24');
+  background-image: url('/wp-content/themes/cd-theme/static/img/search-glass.png');
   display:inline-block;
   width:24px;
   height:24px;
   vertical-align: middle;
-  margin-right: 2px;
+  margin-right: 4px;
+  margin-top: -4px;
 }
 
 .search-placeholder:not(:lang(el)),
