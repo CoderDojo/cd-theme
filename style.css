@@ -4,6 +4,7 @@
  * Author: Upstatement and YOU!
 */
 
+
 /*
  * Styles specifically for the header
  */
@@ -17,6 +18,10 @@ body {
   font-weight: 300;
   background: #fff;
   padding: 0;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 .navbar-form input#navbar-search {
@@ -30,7 +35,7 @@ body {
 
 .navbar-form .form-group {
   padding-left: 20px;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -88,7 +93,7 @@ body {
 
 @media (min-width: 1200px) {
     .header .menu .navbar-nav li {
-        padding: 0 48px;
+        padding: 0 3.1em;
         width: auto;
     }
 
@@ -157,6 +162,57 @@ body {
 
 .special-header .empty-container {
   padding: 45px;
+}
+
+/*
+ * Article Page
+ */
+
+.content-wrapper {
+/*  width: 80%; */
+  margin: 0 auto;
+}
+.article-header {
+  font-size: 2em;
+}
+.article-subhead {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.article-tags {
+  float: right;
+}
+.article-tags .tag{
+  padding: 4px 8px;
+  border-radius: .2em;
+  background-color: #ddd;
+  margin-left: 7px;
+}
+.author-desc {
+  margin-top: 35px;
+  font-size: .9em;
+}
+
+.author-container {
+  margin: 5px 15px;
+}
+.author-header {
+  font-size: 2em;
+}
+.author-image {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+
+/* Share widget */
+.share-widget {
+  display: inline-block;
+  float: right;
+}
+.share-widget span {
+  margin-left: 7px;
 }
 
 /*
@@ -337,18 +393,18 @@ body {
 .navbar-right {
   color: #000;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 16px;
   font-family: 'Lato', sans-serif;
 }
 
 #nav-left-item:after {
   position: absolute;
-  top: 6px;
-  left: 100px;
-  content:url('/wp-content/themes/cd-theme/static/img/splitter.png'); 
-} 
+  top: 7px;
+  left: 104px;
+  content:url('/wp-content/themes/cd-theme/static/img/splitter.png');
+}
 
-.navbar-nav li a {
+.navbar-default .navbar-nav li a {
   color: #000 !important;
 }
 
@@ -416,6 +472,7 @@ body {
     color: #fff;
     border: none;
     border-radius: initial;
+    margin: 0;
 }
 
 .cta button {
