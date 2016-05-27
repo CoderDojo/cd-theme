@@ -11,6 +11,10 @@
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 .navbar-form input#navbar-search {
@@ -24,7 +28,7 @@ body {
 
 .navbar-form .form-group {
   padding-left: 20px;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -315,14 +319,14 @@ body {
 .navbar-right {
   color: #000;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 16px;
   font-family: 'Lato', sans-serif;
 }
 
 #nav-left-item:after {
   position: absolute;
-  top: 6px;
-  left: 100px;
+  top: 7px;
+  left: 104px;
   content:url('/wp-content/themes/cd-theme/static/img/splitter.png'); 
 } 
 
