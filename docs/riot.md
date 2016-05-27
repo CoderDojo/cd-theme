@@ -65,9 +65,9 @@ Just create a menu called `main` and start adding links.
 Getting specific pages
 ----------------------
 
-There are specific pages created that have their own view, which (can) include other twig files.
+There are specific pages that need to be added (in wordpress) that have their own twig view (/views), these (can) include other twig files.
 
-To be able to see the following pages, create through the Wordpress Admin the follow pages:
+To be able to see these pages, create the following pages within the Wordpress Admin:
 
 ```
 Page                slug name
