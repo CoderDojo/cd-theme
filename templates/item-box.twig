@@ -1,0 +1,18 @@
+{# item-box.twig #}
+{% block content %}
+  <div class="content-wrapper">
+    <div class="content-item-box">
+      <h1>{{title}}</h1>
+          <div class="row">
+            {% if rows == '2' %}
+            <div class="col-md-6 box-item"><a href="" target=""><img src="http://placehold.it/150x75" alt="" border="0"></a></div>
+            <div class="col-md-6 box-item"><a href="" target=""><img src="http://placehold.it/150x75" alt="" border="0"></a></div>
+            {% else %}
+            <div class="col-md-4 box-item"><a href="" target=""><img src="http://placehold.it/150x75" alt="" border="0"></a></div>
+            <div class="col-md-4 box-item"><a href="" target=""><img src="http://placehold.it/150x75" alt="" border="0"></a></div>
+            <div class="col-md-4 box-item"><a href="" target=""><img src="http://placehold.it/150x75" alt="" border="0"></a></div>
+          {% endif %}
+          </div>
+    </div>
+  </div>
+{% endblock %}

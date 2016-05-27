@@ -6,16 +6,26 @@
 			<section class="article-content">
 				<div class="article-body">
                                         <h1>{{post.title}}</h1>
-					{{post.content}}
+                                        {{broken_content[0]}}
                                         <br />
                                         {% include 'cta.twig' with {'buttontext': 'Call to Action', 'target': 'http://www.google.com' } %}
                                         <br /><br />
                                 </div>
 
 <div class="article-mid">
-<h1>What is Coder Dojo?</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra interdum tempor. Maecenas lacinia, quam lacinia euismod placerat, lacus turpis tincidunt turpis, sit amet rhoncus urna massa vel orci. Morbi facilisis, dui id fermentum malesuada, ligula nibh aliquam lacus, eget tempor purus mauris id ipsum. Curabitur ullamcorper sagittis ipsum, eu cursus nibh.</p>
+{{broken_content[1]}}
 </div>
+
+{% include "item-box.twig" with {'title': 'The Arcade & Cool Tools' } %}
+{% include "item-box.twig" with {'title': 'Competitions', 'rows': 2 } %}
+
+<div class="article-body">
+{{broken_content[2]}}
+<br />
+{% include 'cta.twig' with {'buttontext': 'Call to Action', 'target': 'http://www.google.com' } %}
+</div>
+
+{% include "item-box.twig" with {'title': 'Nearby Dojos & Events' } %}
 
 {% include "bio-heads-3.twig" %}
 {% include "find-dojo.twig" %}
