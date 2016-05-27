@@ -173,8 +173,9 @@ body {
  */
 
 .content-wrapper {
-/*  width: 80%; */
+  width: 80%;
   margin: 0 auto;
+
 }
 .article-header {
   font-size: 2em;
