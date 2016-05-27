@@ -74,9 +74,8 @@ Page                slug name
 ----                ---------
 Start a Dojo        start-a-dojo
 Badges              badges
-About               about
 Volunteer           volunteer
-What we do          what-we-do
+What we do (About)  what-we-do (about)
 ```
 
 
