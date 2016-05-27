@@ -72,13 +72,15 @@ To be able to see these pages, create the following pages within the Wordpress A
 ```
 Page                slug name
 ----                ---------
-Start a Dojo        start-a-dojo
-Badges              badges
 About               about
+Attend a Dojo       attend-a-dojo
+Badges              badges
+Start a Dojo        start-a-dojo
 Volunteer           volunteer
 What we do          what-we-do
 ```
 
+> The menu does not support more than 7 pages.
 
 
 Adding media within articles
