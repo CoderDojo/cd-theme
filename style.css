@@ -193,6 +193,7 @@ body {
  * Article Page
  */
 .article-wrapper {
+  margin-top: 20px !important;
   width: 80%;
   margin: 0 auto;
 }
