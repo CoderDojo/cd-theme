@@ -6,7 +6,8 @@ The "_s" for Timber: a dead-simple theme that you can build from. The primary pu
 
 [![Build Status](https://travis-ci.org/timber/starter-theme.svg)](https://travis-ci.org/timber/starter-theme)
 
-## See docs/riot.md for specific instructions around customisations in this Theme
+## Changes made to this Theme
+See docs/riot.md for specific instructions around customisations in this Theme
 
 ## Installing the Theme
 
