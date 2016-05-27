@@ -1,25 +1,27 @@
-<div class="panel panel-default find-dojo" style="
-    border: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    x-background: url('/wp-includes/static/img/finddojo.png') no-repeat center center fixed;
-    background: url('https://maps.googleapis.com/maps/api/staticmap?center=Dublin&zoom=8&size=640x640&scale=2&maptype=roadmap&key=AIzaSyCH6dBNdNonxMt8gLs1kslCrReKjFDC9dg') no-repeat left center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-">
-</div>
-<div class="panel-body">
-    <div class="col-md-offset-4 col-sm-6 find-dojo-column">
-      <form method="post">
-        <label id="find-dojo-label" value="test" style="display: block;">
-        Find a Dojo
-        </label>
-        <input type="text" name="find-dojo" id="find-dojo-text"/>
-        <button type="submit">SEARCH</button>
+<div id="find-dojo">
+    <div class="panel panel-default find-dojo" style="
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        x-background: url('/wp-includes/static/img/finddojo.png') no-repeat center center fixed;
+        background: url('https://maps.googleapis.com/maps/api/staticmap?center=Dublin&zoom=8&size=640x640&scale=2&maptype=roadmap&key=AIzaSyCH6dBNdNonxMt8gLs1kslCrReKjFDC9dg') no-repeat left center;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    ">
+    </div>
+    <div class="panel-body">
+        <div class="col-md-offset-4 col-sm-6 find-dojo-column">
+          <form method="post">
+            <label id="find-dojo-label" value="test" style="display: block;">
+            Find a Dojo
+            </label>
+            <input type="text" name="find-dojo" id="find-dojo-text"/>
+            <button type="submit">SEARCH</button>
+            </div>
+          </form>
         </div>
-      </form>
     </div>
 </div>

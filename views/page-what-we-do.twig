@@ -2,22 +2,28 @@
 
 {% block content %}
 	<div class="content-wrapper">
+        <img src="http://placehold.it/1280x320" />
 		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
 			<section class="article-content">
-        <img src="http://placehold.it/1440x320" />
-				<h1 class="article-h1">{{post.title}}</h1>
-				<div class="article-body">
-					{{broken_content[0]}}
-				</div>
+                <div class="article-wrapper">
+    				<h1 class="article-h1 center">{{post.title}}</h1>
+    				<div class="article-body">
+    					{{broken_content[0]}}
+    				</div>
+                </div>
         {% include 'find-dojo.twig' %}
+        <div class="article-wrapper">
         <div class="article-body">
 					{{broken_content[1]}}
 				</div>
         {% include 'cta.twig' with {'buttontext': 'Call to Action'} %}
-        <img src="http://placehold.it/1440x320" />
+        </div>
+        <img src="http://placehold.it/1280x320" />
         {% include 'featured.twig' %}
-        <h3>Get the latest Coder Dojo stories delivered to your inbox daily.</h3>
+        <div class="article-wrapper">
+        <h4 class="center">Get the latest Coder Dojo stories delivered to your inbox daily.</h4>
         {% include 'cta.twig' with {'buttontext': 'Subscribe'} %}
+        </div>
         </section>
 		</article>
 	</div><!-- /content-wrapper -->
