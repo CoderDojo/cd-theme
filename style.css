@@ -312,12 +312,20 @@ body {
 }
 
 .paragraph #title {
-  font-size: 22px;
+  font-size: 28px;
   padding-bottom: 10px;
+  font-weight: 400;
 }
 
 .paragraph .left {
   text-align: left;
+}
+
+.paragraph #desc{ 
+    font-size: 16px;
+    color: #000;
+    line-height: 2.0;
+    padding-bottom: 20px;
 }
 
 .paragraph .left #desc {
