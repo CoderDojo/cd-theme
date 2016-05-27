@@ -73,6 +73,7 @@ To be able to see the following pages, create through the Wordpress Admin the fo
 Page                slug name
 ----                ---------
 Start a Dojo        start-a-dojo
+Badges              badges
 ```
 
 
