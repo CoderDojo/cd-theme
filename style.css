@@ -488,6 +488,10 @@ h3.gridPlusText
  * Styles specifically for the footer
  */
 
+#footer {
+  padding-top: 20px;
+}
+
 #footer .panel {
     background: #303030;
     color: #fff;
