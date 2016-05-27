@@ -24,4 +24,5 @@
 $context = Timber::get_context();
 $post = new TimberPost();
 $context['post'] = $post;
+$context['broken_content'] = explode("<!--more-->", $post->content);
 Timber::render( array( 'page-' . $post->post_name . '.twig', 'page.twig' ), $context );
