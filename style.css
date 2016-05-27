@@ -304,12 +304,20 @@ body {
 
 #find-dojo-label {
     font-size: 1.2em;
-    color: #999;
+    color: #666;
 }
 
 #find-dojo input {
     border-radius: .2em;
+    border: 1px solid #ccc;
+    width: 18em;
+    margin-right: 11px;
+    outline: none;
 }
+#find-dojo input:focus,
+#find-dojo input:hover {
+}
+
 
 #find-dojo .find-dojo-column {
     margin-top: 30px;
@@ -320,12 +328,13 @@ body {
     border-radius: .2em;
     border: none;
     color: #fff;
+    padding: 2px 12px;
 }
 
 #find-dojo .panel-body {
     height: 100%;
     width: 100%;
-    background: rgba(0,0,0,0.6);
+    background: rgba(255,255,255,0.6);
     position: relative;
 }
 
