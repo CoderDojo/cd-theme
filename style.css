@@ -142,6 +142,57 @@ body {
 }
 
 /*
+ * Article Page
+ */
+
+.content-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.article-header {
+  font-size: 2em;
+}
+.article-subhead {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.article-tags {
+  float: right;
+}
+.article-tags .tag{
+  padding: 4px 8px;
+  border-radius: .2em;
+  background-color: #ddd;
+  margin-left: 7px;
+}
+.author-desc {
+  margin-top: 35px;
+  font-size: .9em;
+}
+
+.author-container {
+  margin: 5px 15px;
+}
+.author-header {
+  font-size: 2em;
+}
+.author-image {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+
+/* Share widget */
+.share-widget {
+  display: inline-block;
+  float: right;
+}
+.share-widget span {
+  margin-left: 7px;
+}
+
+/*
  * Paragraph
  */
 
