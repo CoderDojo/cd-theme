@@ -57,6 +57,10 @@ body {
   display:inline;
 }
 
+.header {
+    margin-top: 93px;
+}
+
 .header .navbar-wrapper {
   padding-top: 13px;
 }
