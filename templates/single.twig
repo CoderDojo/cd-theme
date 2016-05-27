@@ -1,7 +1,7 @@
 {% extends "base.twig" %}
 
 {% block content %}
-	<div class="content-wrapper">
+	<div class="article-wrapper">
 		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
 			<section class="article-content">
 				{% if post.company_name %}
@@ -24,8 +24,8 @@
 				</div>
 
 
-				{% if post.meta('video') %}
-<video style="position:relative; width:120%; left: -10%; margin: 0 auto;" controls poster="http://placehold.it/1920x1080">
+				{% if post.meta('video') and post.meta('video-poster') %}
+<video style="position:relative; width:120%; left: -10%; margin: 0 auto;" controls poster="post.meta('video-poster').guid">
   <source src="{{post.meta('video').guid|replace({'.mp4':'.ogg'})}}" type="video/ogg">
   <source src="{{post.meta('video').guid|replace({'.ogg':'.mp4'})}}" type="video/mp4">
   Your browser does not support HTML5 video.
