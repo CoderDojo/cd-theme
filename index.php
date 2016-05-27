@@ -18,14 +18,9 @@ if ( ! class_exists( 'Timber' ) ) {
 	return;
 }
 
-$tempPod = pods('headed-paragraph','first-edit-paragraph');
-//var_dump(['header'=>$tempPod->field('header'), 'body'=>$tempPod->field('body')]);
-
 $context = Timber::get_context();
 $context['posts'] = Timber::get_posts();
 $context['foo'] = 'bar';
-$context['paragraph'] = ['header'=>$tempPod->field('header'), 'body'=>$tempPod->field('body')];
-
 
 $templates = array( 'index.twig' );
 if ( is_home() ) {
