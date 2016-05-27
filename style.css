@@ -95,19 +95,19 @@ body {
     padding: 0;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
     .header .menu .navbar-nav li {
-        padding: 0 3.1em;
+        padding: 0 2.3em;
         width: auto;
     }
 
     .header .navbar-default {
-        width: 1440px;
+        width: 1280px;
         margin: 0 auto;
     }
 
     .container {
-        width: 1440px;
+        width: 1280px;
     }
 }
 
