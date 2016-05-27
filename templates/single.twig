@@ -25,11 +25,11 @@
 
 
 				{% if post.meta('video') and post.meta('video-poster') %}
-<video style="position:relative; width:125%; left:-12.5%;" controls poster="{{post.meta('video-poster').guid}}">
-  <source src="{{post.meta('video').guid|replace({'.mp4':'.ogg'})}}" type="video/ogg">
-  <source src="{{post.meta('video').guid|replace({'.ogg':'.mp4'})}}" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
+				<video style="position:relative; width:100%;" controls poster="{{post.meta('video-poster').guid}}">
+				  <source src="{{post.meta('video').guid|replace({'.mp4':'.ogg'})}}" type="video/ogg">
+				  <source src="{{post.meta('video').guid|replace({'.ogg':'.mp4'})}}" type="video/mp4">
+				  Your browser does not support HTML5 video.
+				</video>
 				{% else %}
 					<hr />
 				{% endif %}
