@@ -312,6 +312,12 @@ body {
     border: solid rgba(128, 128, 128, 0.1) 1px;
 }
 
+.people-about-grid .image-crop {
+    border-radius: 50%;
+    border: solid rgba(128, 128, 128, 0.1) 1px;
+    margin-top: 30px;
+}
+
 .people-grid img {
     display: inline;
     margin: 0 auto;
@@ -355,6 +361,12 @@ body {
 .grid h3 {
   text-align: center;
   padding: 5px;
+}
+
+h3.gridPlusText
+{
+  text-align: center;
+  margin-top: 100px;
 }
 
 .grid .row {

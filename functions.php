@@ -61,7 +61,44 @@ class StarterSite extends TimberSite {
 		                     ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc 2',
 		                      'link'=>'http://coderdojo.org', 'target'=>'_self']
 		                  ];
-		$context['gridtitle'] = "Categories & Topics";
+
+$context['teamimages'] = [ ['src'=>'http://placehold.it/125x125', 'alt'=>'Alt desc',
+														 'link'=>'http://coderdojo.org','target'=>'_blank','name'=>'Name', 'role'=>'Role'],
+														['src'=>'http://placehold.it/125x125', 'alt'=>'Alt desc 2',
+														 'link'=>'http://coderdojo.org', 'target'=>'_self','name'=>'Name', 'role'=>'Role'],
+													  ['src'=>'http://placehold.it/125x125', 'alt'=>'Alt desc 2',
+														 'link'=>'http://coderdojo.org', 'target'=>'_self','name'=>'Name', 'role'=>'Role'],
+														['src'=>'http://placehold.it/125x125', 'alt'=>'Alt desc 2',
+												     'link'=>'http://coderdojo.org', 'target'=>'_self','name'=>'Name', 'role'=>'Role'],
+														['src'=>'http://placehold.it/125x125', 'alt'=>'Alt desc 2',
+												  	 'link'=>'http://coderdojo.org', 'target'=>'_self','name'=>'Name','role'=>'Role'],
+														['src'=>'http://placehold.it/125x125', 'alt'=>'Alt desc 2',
+														 'link'=>'http://coderdojo.org', 'target'=>'_self','name'=>'Name','role'=>'Role'],
+														['src'=>'http://placehold.it/125x125', 'alt'=>'Alt desc 2',
+														 'link'=>'http://coderdojo.org', 'target'=>'_self','name'=>'Name','role'=>'Role'],
+														['src'=>'http://placehold.it/125x125', 'alt'=>'Alt desc 2',
+														 'link'=>'http://coderdojo.org', 'target'=>'_self','name'=>'Name','role'=>'Role'],
+														['src'=>'http://placehold.it/125x125', 'alt'=>'Alt desc 2',
+														 'link'=>'http://coderdojo.org', 'target'=>'_self','name'=>'Name','role'=>'Role']
+													];
+$context['boardimages'] = [ ['src'=>'http://placehold.it/125x125', 'alt'=>'Alt desc',
+													 	'link'=>'http://coderdojo.org','target'=>'_blank','name'=>'Name', 'role'=>'Role'],
+													 ['src'=>'http://placehold.it/125x125', 'alt'=>'Alt desc 2',
+													 	'link'=>'http://coderdojo.org', 'target'=>'_self','name'=>'Name', 'role'=>'Role'],
+													 ['src'=>'http://placehold.it/125x125', 'alt'=>'Alt desc 2',
+													 	'link'=>'http://coderdojo.org', 'target'=>'_self','name'=>'Name', 'role'=>'Role'],
+													 ['src'=>'http://placehold.it/125x125', 'alt'=>'Alt desc 2',
+													  'link'=>'http://coderdojo.org', 'target'=>'_self','name'=>'Name', 'role'=>'Role'],
+													 ['src'=>'http://placehold.it/125x125', 'alt'=>'Alt desc 2',
+														'link'=>'http://coderdojo.org', 'target'=>'_self','name'=>'Name','role'=>'Role'],
+													 ['src'=>'http://placehold.it/125x125', 'alt'=>'Alt desc 2',
+														'link'=>'http://coderdojo.org', 'target'=>'_self','name'=>'Name','role'=>'Role']
+																										];
+
+		$context['gridtitle'] = "Categories & topics";
+		$context['team'] = "Meet the Team";
+		$context['board'] = "Meet the Board";
+
 		return $context;
 	}
 
