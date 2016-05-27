@@ -193,7 +193,6 @@ body {
  * Article Page
  */
 .article-wrapper {
-  margin-top: 20px !important;
   width: 80%;
   margin: 0 auto;
 }
@@ -502,7 +501,7 @@ h3.gridPlusText
 
 #find-dojo input {
     border-radius: .2em;
-    border: 1px solid black;
+    border: 1px solid #ccc;
     width: 315px;
     height: 40px;
     padding: 0 7px;
@@ -514,7 +513,7 @@ h3.gridPlusText
 }
 #find-dojo input:focus,
 #find-dojo input:hover {
-  border: none;
+    border: 1px solid #aaa;
 }
 
 
