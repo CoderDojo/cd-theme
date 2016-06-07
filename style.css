@@ -703,3 +703,13 @@ h3.gridPlusText
 .foundation-bottom {
   padding-bottom: 50px;
 }
+
+.resources-item-box{
+  margin-bottom: 500px;
+}
+
+.grid h1 {
+  text-align:center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

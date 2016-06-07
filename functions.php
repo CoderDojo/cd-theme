@@ -95,7 +95,7 @@ $context['boardimages'] = [ ['src'=>'http://placehold.it/125x125', 'alt'=>'Alt d
 														'link'=>'http://coderdojo.org', 'target'=>'_self','name'=>'Name','role'=>'Role']
 													];
 
-		$context['gridtitle'] = "Categories & topics";
+		$context['gridtitle'] = "Categories";
 		$context['team'] = "Meet the Team";
 		$context['board'] = "Meet the Board";
 
