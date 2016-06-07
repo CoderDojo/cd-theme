@@ -2,21 +2,18 @@
 
 {% block content %}
 <div class="content-wrapper">
-<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
-<section class="article-content">
-<div class="article-body" style="width: 80%; padding-left: 20%; padding-bottom: 20px;">
-  {{post.content}}
-                                <br />
-                                <br /><br />
-                                <h2 style="text-align: center;">CoderDojo Foundation</h2>
-                                <br />
+  <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+    <section class="article-content">
+      <div class="article-wrapper">
+        <h1 class="article-h1 center">{{post.title}}</h1>
+        <div class="article-body">
+          {{broken_content[0]}}
+        </div>
+      </div>
+      {% include "image-row-text.twig" with {'rows': 2 , 'paragraphOne': 'Some text.', 'paragraphTwo': 'Another paragraph',
+      'paragraphThree': 'Another paragraph', 'paragraphFour': 'Another paragraph', 'titleOne': 'Movement'} %}
 
-                  {% include 'grid-plus-text.twig' %}
-
-
-                </div>
-              </section>
-              </article>
-                  </div>
-
+    </section>
+  </article>
+</div>
 {% endblock %}

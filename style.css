@@ -223,7 +223,7 @@ body {
 
 .article-body {
   width: 80%;
-  padding-left: 20%; 
+  padding-left: 20%;
   padding-bottom: 20px;
 }
 
@@ -239,7 +239,7 @@ body {
 
 .article-mid p {
   width: 80%;
-  padding-left: 20%; 
+  padding-left: 20%;
   padding-bottom: 20px;
 }
 
@@ -321,7 +321,7 @@ body {
   text-align: left;
 }
 
-.paragraph #desc{ 
+.paragraph #desc{
     font-size: 16px;
     color: #000;
     line-height: 2.0;
@@ -682,4 +682,12 @@ h3.gridPlusText
 
 .nav .fa {
     color: #fff;
+}
+
+.photo-text {
+  padding-top: 25px;
+}
+
+.box-item p{
+  padding-bottom: 50px;
 }
