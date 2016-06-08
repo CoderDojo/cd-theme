@@ -709,3 +709,42 @@ h3.gridPlusText
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+/*
+ * Styling for registration / login
+*/
+
+.social button {
+  margin-bottom:15px;
+  width: 275px;
+}
+
+.register img {
+  width: 30%;
+}
+
+.alt{
+  width: 137.5px;
+}
+
+.register h3 {
+  padding-bottom: 20px;
+}
+
+.register .email {
+  background-color: #73449b;
+}
+
+.register .submit {
+  color: #faa31a;
+  border-color: #faa31a;
+}
+
+.register .cancel {
+  color: #979797;
+  border-color: #979797;
+}
+
+.social span {
+  padding-top: 4px;
+}

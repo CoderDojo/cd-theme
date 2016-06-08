@@ -1,0 +1,27 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<div class="content-wrapper">
+    <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+    	<section class="article-content">
+      	<div class="article-wrapper">
+					<div class="article-body register">
+            <div class="text-center">
+              <img src="{{ site.theme.link }}/static/img/coderdojo-logo-light-bg.png" alt="">
+              <h3>Sign in OR register</h3> <!--replace with broken_content-->
+              <div class="social">
+                {% include 'social-media-buttons.twig' with {'buttontext': 'Sign in with Twitter', 'target': 'http://www.google.com' ,'class': 'twitter' } %}
+                {% include 'social-media-buttons.twig' with {'buttontext': 'Sign in with Facebook', 'target': 'http://www.google.com', 'class': 'facebook' } %}
+                {% include 'social-media-buttons.twig' with {'buttontext': 'Sign in with Google', 'target': 'http://www.google.com', 'class': 'google' } %}
+                {% include 'social-media-buttons.twig' with {'buttontext': 'Sign in with Email', 'target': 'http://www.google.com', 'class': 'email'} %}
+              </div>
+              <h3>Don't have an Account?</h3>
+              <button class="btn btn-default alt submit" type="submit">Register</button>
+              <button class="btn btn-default alt cancel" type="submit">Cancel</button>
+            </div>
+  				</div>
+        </div>
+    	</section>
+  	</article>
+	</div><!-- /content-wrapper -->
+{% endblock %}
