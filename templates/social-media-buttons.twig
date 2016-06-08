@@ -1,0 +1,30 @@
+{% if align%}
+<div class="cta" style="text-align: {{ align }} ;">
+{% else %}
+<div class="cta" style="text-align: center;">
+{% endif %}
+
+{% if target %}
+<a href="{{target}}">
+{% endif %}
+
+{% if class == 'facebook' %}
+  <button type="submit" id="cta" class="facebook"><span class="fa fa-facebook pull-left"></span>{{ buttontext }}</button>
+{% endif %}
+
+{% if class == 'twitter' %}
+  <button type="submit" id="cta" class="twitter"><span class="fa fa-twitter pull-left"></span>{{ buttontext }}</button>
+{% endif %}
+
+{% if class == 'google' %}
+  <button type="submit" id="cta" class="google"><span class="fa fa-google pull-left"></span>{{ buttontext }}</button>
+{% endif %}
+
+{% if class == 'email' %}
+  <button type="submit" id="cta" class="email"><span class="fa fa-envelope pull-left"></span>{{ buttontext }}</button>
+{% endif %}
+
+{% if target %}
+</a>
+{% endif %}
+</div>
