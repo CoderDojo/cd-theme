@@ -727,7 +727,7 @@ h3.gridPlusText
   width: 137.5px;
 }
 
-.register h3 {
+.option {
   padding-bottom: 20px;
 }
 
@@ -747,4 +747,18 @@ h3.gridPlusText
 
 .social span {
   padding-top: 4px;
+}
+
+.userdetails {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.userdetails input {
+  border: none;
+}
+
+.register h5 {
+  color: #faa31a;
+  padding: 20px;
 }
