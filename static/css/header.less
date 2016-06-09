@@ -1,0 +1,181 @@
+
+
+/*
+ * Styles specifically for the header
+ */
+
+html {
+    background: #d5e2fd;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  background: #fff;
+  padding: 0;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.navbar-form input#navbar-search {
+  width: 400px;
+  display: none;
+}
+
+.navbar-form input#navbar-search.show {
+  display: initial;
+}
+
+.navbar-form .form-group {
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.search-placeholder:before {
+  content: " ";
+  background-image: url('/wp-content/themes/cd-theme/static/img/search-glass.png');
+  display:inline-block;
+  width:24px;
+  height:24px;
+  vertical-align: middle;
+  margin-right: 4px;
+  margin-top: -4px;
+}
+
+.search-placeholder:not(:lang(el)),
+.search-placeholder:not(:lang(tr)) {
+  text-transform: uppercase;
+  line-height: 34px;
+  display:inline;
+}
+
+.header {
+    margin-top: 125px;
+}
+
+.header .navbar-wrapper {
+  padding-top: 13px;
+}
+
+.header .navbar-default {
+    border: none;
+    background: none;
+    margin: 0;
+    width: 100%;
+}
+
+.header .top-nav {
+    background: #d5e2fd;
+    height: 75px;
+}
+
+.header .menu .navbar-nav {
+    width: 100%;
+    text-transform: uppercase;
+    background: #f8f8f8;
+}
+
+.header .menu .navbar-nav li {
+    width: 14%;
+    width: calc(100% / 7);
+    text-align: center;
+    font-weight: 400;
+}
+
+.center {
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    padding: 0;
+}
+
+@media (min-width: 1280px) {
+    .header .menu .navbar-nav li {
+  /*
+        padding: 0 2.3em;
+        width: auto;
+   */
+    }
+
+    .header .navbar-default {
+        width: 1280px;
+        margin: 0 auto;
+    }
+
+    .container {
+        width: 1280px;
+    }
+}
+
+.header .panel-body {
+    background: #bdbfbf;
+    height: 100px;
+}
+
+@media (min-width: 0) and (max-width: 768px) {
+    .top-nav .navbar-collapse {
+        width: 100%;
+        overflow: hidden;
+        background: #EFF3FD;
+        text-align: center;
+    }
+
+    .top-nav .navbar-form {
+        border: none;
+    }
+
+    .top-nav .navbar-collapse li {
+        display: inline-block;
+    }
+}
+
+/*
+ * Styles specifically for the Header
+ */
+
+.donate-button {
+  padding-top: 4px;
+  padding-left: 35px;
+}
+
+.cta .footer-button {
+  color: #fff;
+  margin-top: 15px;
+  xpadding: 0.5em 0.7em;
+  border-radius: 0.3em;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+}
+
+.cta .header-button {
+  color: #fff;
+  padding: 0.6em 1em;
+  border-radius: 0.3em;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+}
+
+.navbar-right {
+  color: #000;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+#nav-left-item:after {
+  position: absolute;
+  top: 7px;
+  left: 104px;
+  content:url('/wp-content/themes/cd-theme/static/img/splitter.png');
+}
+
+.navbar-default .navbar-nav li a {
+  color: #000 !important;
+}
