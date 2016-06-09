@@ -393,7 +393,7 @@ body {
     border: solid rgba(128, 128, 128, 0.1) 1px;
 }
 
-.people-about-grid .image-crop {
+.image-crop {
     border-radius: 50%;
     border: solid rgba(128, 128, 128, 0.1) 1px;
     margin-top: 30px;
