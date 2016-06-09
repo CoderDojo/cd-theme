@@ -802,3 +802,8 @@ h3.gridPlusText
         float: left;
     }
 }
+
+.amount input {
+  width: 50%;
+  margin: 0 auto;
+}

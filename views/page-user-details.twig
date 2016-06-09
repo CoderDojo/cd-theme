@@ -9,7 +9,7 @@
             <div class="text-center register">
               <img src="{{ site.theme.link }}/static/img/coderdojo-logo-light-bg.png" alt="">
 							{{broken_content[0]}}
-							{% include 'form.twig' %}
+							{% include 'form.twig' with {'purpose': 'registration'} %}
 						</div>
 					</div>
         </div>

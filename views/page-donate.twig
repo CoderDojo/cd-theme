@@ -1,0 +1,35 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<div class="content-wrapper">
+    <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+    	<section class="article-content">
+      	<div class="article-wrapper">
+					<div class="article-body people-about-grid">
+						{{broken_content[0]}}
+						<div class='col-md-3'>
+							<img class="image-crop" src="https://placehold.it/100x100"/>
+						</div>
+						<div class='col-md-3'>
+							<img class="image-crop" src="https://placehold.it/100x100"/>
+						</div>
+						<div class='col-md-3'>
+							<img class="image-crop" src="https://placehold.it/100x100"/>
+						</div>
+						<div class='col-md-3'>
+							<img class="image-crop" src="https://placehold.it/100x100"/>
+						</div>
+						{% include 'input-field.twig' with {'id': 'donate', 'placeholder': 'Pick your own amount', type: 'text', 'labelfor': 'donate', 'formclass': 'amount' } %}
+						{% include 'cta.twig' with {'buttontext': 'Submit', 'target': 'http://www.google.com', 'class': 'foo' } %}
+						{{broken_content[1]}}
+						{% include 'cta.twig' with {'buttontext': 'Call to Action', 'target': 'http://www.google.com', 'class': 'foo' } %}
+						{{broken_content[2]}}
+						{% include 'cta.twig' with {'buttontext': 'Call to Action', 'target': 'http://www.google.com', 'class': 'foo' } %}
+						{{broken_content[3]}}
+						{% include 'form.twig' with {'purpose': 'contact' } %}
+  				</div>
+        </div>
+    	</section>
+  	</article>
+	</div><!-- /content-wrapper -->
+{% endblock %}
