@@ -20,7 +20,7 @@
                               <div id="navbar" class="navbar-collapse collapse">
                                 <ul class="nav navbar-nav">
                                   <li class="donate-button">
-                                    {% include 'cta.twig' with {'buttontext': 'DONATE', 'align': 'left', 'class': 'header-button'} %}
+                                    {% include 'cta.twig' with {'buttontext': 'DONATE', 'align': 'left', 'class': 'header-button', 'target':'donate'} %}
                                   </li>
                                       <li>
                                         <form class="navbar-form navbar-left" role="search">
@@ -33,10 +33,10 @@
                                 </ul>
                                       <ul class="nav navbar-nav navbar-right">
                                               <li>
-                                                      <a href="#" id="nav-left-item">REGISTER</a>
+                                                      <a href="register" id="nav-left-item">REGISTER</a>
                                               </li>
                                               <li>
-                                                      <a href="#">LOGIN</a>
+                                                      <a href="register">LOGIN</a>
                                               </li>
                                               </ul>
                               </div><!--/.nav-collapse -->
