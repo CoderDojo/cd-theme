@@ -1,0 +1,35 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<div class="content-wrapper">
+		<img src="http://placehold.it/1280x320" />
+    <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+    	<section class="article-content">
+      	<div class="article-wrapper">
+					<div class="article-body">
+						{{broken_content[0]}}
+  				</div>
+        </div>
+				<div class="article-wrapper">
+					<div class="article-body">
+					  {% include 'five-image-column.twig' with {'funderOne': 'http://placehold.it/100x100', 'funderTwo': 'http://placehold.it/100x100',
+					  'funderThree': 'http://placehold.it/100x100', 'funderFour': 'http://placehold.it/100x100',
+					  'funderFive': 'http://placehold.it/100x100', 'funderSix': 'http://placehold.it/100x100',
+					  'funderSeven': 'http://placehold.it/100x100', 'funderEight': 'http://placehold.it/100x100',
+					  'funderNine': 'http://placehold.it/100x100', 'funderTen': 'http://placehold.it/100x100',
+					  'partnerOne': 'http://placehold.it/100x100', 'partnerTwo': 'http://placehold.it/100x100',
+					  'partnerThree': 'http://placehold.it/100x100', 'partnerFour': 'http://placehold.it/100x100',
+					  'partnerFive': 'http://placehold.it/100x100', 'partnerSix': 'http://placehold.it/100x100',
+					  'partnerSeven': 'http://placehold.it/100x100', 'partnerEight': 'http://placehold.it/100x100',
+					  'partnerNine': 'http://placehold.it/100x100', 'partnerTen': 'http://placehold.it/100x100' } %}
+					</div>
+				</div>
+        <div class="article-wrapper">
+        	<div class="article-body">
+          	{{broken_content[1]}}
+          </div>
+				</div>
+    	</section>
+  	</article>
+	</div><!-- /content-wrapper -->
+{% endblock %}
