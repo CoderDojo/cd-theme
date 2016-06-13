@@ -70,14 +70,22 @@ There are specific pages that need to be added (in wordpress) that have their ow
 To be able to see these pages, create the following pages within the Wordpress Admin:
 
 ```
-Page                slug name
-----                ---------
-About               about
-Attend a Dojo       attend-a-dojo
-Badges              badges
-Start a Dojo        start-a-dojo
-Volunteer           volunteer
-What we do          what-we-do
+Page                  slug name
+----                  ---------
+About                 about
+Attend a Dojo         attend-a-dojo
+Badges                badges
+Start a Dojo          start-a-dojo
+Volunteer             volunteer
+What we do            what-we-do
+Donate                donate
+User Details          user-details
+Register              register
+Resources             resources
+Foundation            foundation
+Supporters            supporters
+Community Committee   community-committee
+Movement              movement
 ```
 
 > The menu does not support more than 7 pages.
@@ -95,6 +103,4 @@ Using POD Admin you need to extend posts and add two new fields, with the follow
 
 With the *Video-poster* item you should accept images and this will host the Video's poster (image shown before the video plays).
 
-If neither of this fields are field in a horizontal rule is shown instead to show. 
- 
-
+If neither of this fields are field in a horizontal rule is shown instead to show.
