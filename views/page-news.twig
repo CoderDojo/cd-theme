@@ -1,0 +1,37 @@
+{% extends "base.twig" %}
+
+{% block content %}
+<div class="content-wrapper">
+  {% include "carousel.twig" with
+  {'imageOne': 'https://placehold.it/1280x500', 'imageTwo': 'https://placehold.it/1280x500', 'imageTwo': 'https://placehold.it/1280x500',
+    'captionOne': 'Awesome', 'captionTwo': 'Awesome', 'captionThree': 'Awesome',
+    'hrefOne': '', 'hrefTwo': '', 'hrefThree': '' } %}
+  <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+    <section class="article-content">
+      <div class="article-wrapper">
+        {% include "item-box.twig" with {'title': 'Featured Stories', 'rows': 3 } %}
+      </div>
+      <div class="article-wrapper">
+        <div class="article-body">
+          {{broken_content[1]}}
+          <h1>Older news</h1>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="https://placehold.it/175X150">
+            </div>
+            <div class="col-md-3">
+              <img src="https://placehold.it/175X150">
+            </div>
+            <div class="col-md-3">
+              <img src="https://placehold.it/175X150">
+            </div>
+            <div class="col-md-3">
+              <img src="https://placehold.it/175X150">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+</div><!-- /content-wrapper -->
+{% endblock %}
