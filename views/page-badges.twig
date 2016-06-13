@@ -4,16 +4,16 @@
 
 	<div class="content-wrapper">
 		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+			<img src="http://placehold.it/1280x320">
 			<section class="article-wrapper">
-				<h1 class="article-h1">{{post.title}}</h1>
 				<div class="article-body">
-					{{post.content}}
+					{{broken_content[0]}}
 				</div>
 			</section>
 		</article>
 	</div><!-- /content-wrapper -->
 	{% include 'grid5.twig' with {
-        'gridtitle': 'Beginner',
+        'gridtitle': 'Level 1',
         'grid': [
             {
                 'body': 'The name',
@@ -48,7 +48,7 @@
         ]
     } %}
 	{% include 'grid5.twig' with {
-        'gridtitle': 'Intermediate',
+        'gridtitle': 'Level 2',
         'grid': [
             {
                 'body': 'The name',
@@ -79,37 +79,12 @@
                 'src': site.theme.link ~ '/static/img/badge.png',
                 'link': 'http://test.com',
                 'target': '_blank',
-            },
-            {
-                'body': 'The name',
-                'src': site.theme.link ~ '/static/img/badge.png',
-                'link': 'http://test.com',
-                'target': '_blank',
-            },
-            {
-                'body': 'The name',
-                'src': site.theme.link ~ '/static/img/badge.png',
-                'link': 'http://test.com',
-                'target': '_blank',
-            },
-            {
-                'body': 'The name',
-                'src': site.theme.link ~ '/static/img/badge.png',
-                'link': 'http://test.com',
-                'target': '_blank',
-            },
-            {
-                'body': 'The name',
-                'src': site.theme.link ~ '/static/img/badge.png',
-                'link': 'http://test.com',
-                'target': '_blank',
-            },
-            {
-                'body': 'The name',
-                'src': site.theme.link ~ '/static/img/badge.png',
-                'link': 'http://test.com',
-                'target': '_blank',
-            },
+            }
         ]
     } %}
+
+		<div class="article-body">
+			{{broken_content[1]}}
+			{% include 'cta.twig' with {'buttontext': 'Call to Action', 'target': 'http://www.google.com' } %}
+		</div>
 {% endblock %}
