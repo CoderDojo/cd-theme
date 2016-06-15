@@ -33,6 +33,22 @@ class StarterSite extends TimberSite {
 	function add_to_context( $context ) {
 		$context['menu'] = new TimberMenu('main');
 		$context['site'] = $this;
+
+		global $paged;
+    if (!isset($paged) || !$paged){
+        $paged = 1;
+    }
+
+    $args = array(
+        'author' => 'adhorrig',
+        'posts_per_page' => 5,
+        'paged' => $paged
+    );
+
+    query_posts($args);
+    $context['posts'] = Timber::get_posts();
+    $context['pagination'] = Timber::get_pagination();
+
 		$context['grid'] = [ ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc',
 		                      'link'=>'http://coderdojo.org','target'=>'_blank'],
 		                     ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc 2',
@@ -59,7 +75,7 @@ class StarterSite extends TimberSite {
 		                      'link'=>'http://coderdojo.org', 'target'=>'_self']
 		                  ];
 
-$context['teamimages'] = [ ['src'=>'http://placehold.it/125x125', 'alt'=>'Alt desc',
+		$context['teamimages'] = [ ['src'=>'http://placehold.it/125x125', 'alt'=>'Alt desc',
 														 'link'=>'http://coderdojo.org','target'=>'_blank','name'=>'Name', 'role'=>'Role'],
 														['src'=>'http://placehold.it/125x125', 'alt'=>'Alt desc 2',
 														 'link'=>'http://coderdojo.org', 'target'=>'_self','name'=>'Name', 'role'=>'Role'],
@@ -78,7 +94,7 @@ $context['teamimages'] = [ ['src'=>'http://placehold.it/125x125', 'alt'=>'Alt de
 														['src'=>'http://placehold.it/125x125', 'alt'=>'Alt desc 2',
 														 'link'=>'http://coderdojo.org', 'target'=>'_self','name'=>'Name','role'=>'Role']
 													];
-$context['boardimages'] = [ ['src'=>'http://placehold.it/125x125', 'alt'=>'Alt desc',
+		$context['boardimages'] = [ ['src'=>'http://placehold.it/125x125', 'alt'=>'Alt desc',
 													 	'link'=>'http://coderdojo.org','target'=>'_blank','name'=>'Name', 'role'=>'Role'],
 													 ['src'=>'http://placehold.it/125x125', 'alt'=>'Alt desc 2',
 													 	'link'=>'http://coderdojo.org', 'target'=>'_self','name'=>'Name', 'role'=>'Role'],
