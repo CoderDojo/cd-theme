@@ -39,13 +39,14 @@
             {% endif %}
             <ul class="pages">
                 {% for post in posts %}
-                    <li>
+                    <li class="article-pagination">
                         {% if post.link %}
-                            <a href="{{page.link}}" class="{{page.class}}">{{post.title}}</a>
+                            <a href="{{post.link}}" class="{{post.class}}">{{post.title}}</a>
+                            <img src="{{post.thumbnail.src}}"/>
                             <hr>
                         {% else %}
                             <span class="{{post.class}}">{{post.title}}</span>
-                            <p>Hello</p>
+                            <img src="{{post.thumbnail.src}}"/>
                         {% endif %}
                     </li>
                 {% endfor %}
