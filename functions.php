@@ -40,7 +40,6 @@ class StarterSite extends TimberSite {
     }
 
     $args = array(
-        'author' => 'adhorrig',
         'posts_per_page' => 5,
         'paged' => $paged
     );
