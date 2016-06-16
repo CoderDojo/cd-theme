@@ -86,6 +86,7 @@ Foundation            foundation
 Supporters            supporters
 Community Committee   community-committee
 Movement              movement
+News                  news
 ```
 
 > The menu does not support more than 7 pages.
@@ -97,6 +98,7 @@ Adding media within articles
 Using POD Admin you need to extend posts and add two new fields, with the following labels and filetypes:
 * video (File / video / image)
 * video-poster (File / video / image)
+* article_desc (Text)
 
 *Video* should accept video file types and be used to host the video directly.
  > Upload both an mp4, and a ogg file.
@@ -104,3 +106,5 @@ Using POD Admin you need to extend posts and add two new fields, with the follow
 With the *Video-poster* item you should accept images and this will host the Video's poster (image shown before the video plays).
 
 If neither of this fields are field in a horizontal rule is shown instead to show.
+
+*article_desc* should be a required field and set to maximum thirty characters. It is used on the news page alongside the thumbnail of articles.
