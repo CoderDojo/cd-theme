@@ -1,63 +1,63 @@
 {% extends "base.twig" %}
 
 {% block content %}
-<div class="content-wrapper">
-  {% include "carousel.twig" with
-  {'imageOne': 'https://placehold.it/1280x500', 'imageTwo': 'https://placehold.it/1280x500', 'imageTwo': 'https://placehold.it/1280x500' } %}
-  <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
-    <section class="article-content">
-      <div class="article-wrapper">
-        <div class="article-body">
-          {{broken_content[1]}}
-          <h1>Other news</h1>
-          <div class="row older-news">
-            <div class="col-md-3">
-              <img src="{{posts[3].thumbnail.src}}">
-              <p>{{posts[3].article_desc}}</p> <a href="{{posts[3].link}}">Read.</a>
-            </div>
-            <div class="col-md-3">
-              <img src="{{posts[4].thumbnail.src}}">
-              <p>{{posts[4].article_desc}}</p> <a href="{{posts[4].link}}">Read.</a>
-            </div>
-            <div class="col-md-3">
-              <img src="{{posts[5].thumbnail.src}}">
-              <p>{{posts[5].article_desc}}</p> <a href="{{posts[5].link}}">Read.</a>
-            </div>
-            <div class="col-md-3">
-              <img src="{{posts[6].thumbnail.src}}">
-              <p>{{posts[6].article_desc}}</p> <a href="{{posts[6].link}}">Read.</a>
+  <div class="content-wrapper">
+    {% include "carousel.twig" with
+    {'imageOne': 'https://placehold.it/1280x500', 'imageTwo': 'https://placehold.it/1280x500', 'imageTwo': 'https://placehold.it/1280x500' } %}
+    <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+      <section class="article-content">
+        <div class="article-wrapper">
+          <div class="article-body">
+            {{broken_content[1]}}
+            <h1>Other news</h1>
+            <div class="row older-news">
+              <div class="col-md-3">
+                <img src="{{posts[3].thumbnail.src}}">
+                <p>{{posts[3].article_desc}}</p> <a href="{{posts[3].link}}">Read.</a>
+              </div>
+              <div class="col-md-3">
+                <img src="{{posts[4].thumbnail.src}}">
+                <p>{{posts[4].article_desc}}</p> <a href="{{posts[4].link}}">Read.</a>
+              </div>
+              <div class="col-md-3">
+                <img src="{{posts[5].thumbnail.src}}">
+                <p>{{posts[5].article_desc}}</p> <a href="{{posts[5].link}}">Read.</a>
+              </div>
+              <div class="col-md-3">
+                <img src="{{posts[6].thumbnail.src}}">
+                <p>{{posts[6].article_desc}}</p> <a href="{{posts[6].link}}">Read.</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="article-wrapper">
-        <div class="article-body">
-          <div class="tool-pagination">
-            <ul class="pages">
-              <h1>All news</h1>
+        <div class="article-wrapper">
+          <div class="article-body">
+            <div class="tool-pagination">
+              <ul class="pages">
+                <h1>All news</h1>
                 {% for post in posts %}
-                    <li class="article-pagination">
-                        {% if post.link %}
-                            <img src="{{post.thumbnail.src}}"/>
-                            <a href="{{post.link}}" class="{{post.class}}">{{post.title}}</a>
-                            <hr>
-                        {% else %}
-                            <img src="{{post.thumbnail.src}}"/>
-                            <span class="{{post.class}}">{{post.title}}</span>
-                        {% endif %}
-                    </li>
+                <li class="article-pagination">
+                  {% if post.link %}
+                  <img src="{{post.thumbnail.src}}"/>
+                  <a href="{{post.link}}" class="{{post.class}}">{{post.title}}</a>
+                  <hr>
+                  {% else %}
+                  <img src="{{post.thumbnail.src}}"/>
+                  <span class="{{post.class}}">{{post.title}}</span>
+                  {% endif %}
+                </li>
                 {% endfor %}
-            </ul>
-            {% if pagination.prev %}
-                <a href="{{pagination.prev.link}}" class="prev {{pagination.prev.link|length ? '' : 'invisible'}}"><button class="btn btn-default">Previous</button></a>
-            {% endif %}
-            {% if pagination.next %}
-                <a href="{{pagination.next.link}}" class="next {{pagination.next.link|length ? '' : 'invisible'}}"><button class="btn btn-default">Next</button></a>
-             {% endif %}
+              </ul>
+              {% if pagination.prev %}
+              <a href="{{pagination.prev.link}}" class="prev {{pagination.prev.link|length ? '' : 'invisible'}}"><button class="btn btn-default">Previous</button></a>
+              {% endif %}
+              {% if pagination.next %}
+              <a href="{{pagination.next.link}}" class="next {{pagination.next.link|length ? '' : 'invisible'}}"><button class="btn btn-default">Next</button></a>
+              {% endif %}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  </article>
-</div><!-- /content-wrapper -->
+      </section>
+    </article>
+  </div><!-- /content-wrapper -->
 {% endblock %}

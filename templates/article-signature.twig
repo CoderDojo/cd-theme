@@ -1,25 +1,24 @@
-
 <div class="author-container">
-    <div class="row">
-        <div class="col-sm-2">
-            <header class="author-header">Author</header>
-            <img src="{{post.author.avatar}}" class="author-image image-crop" />
-        </div>
-        <div class="author-desc col-sm-5">
-            {{post.author.description}}
-        </div>
-        <div class="col-sm-5">
-            {% if post.tags %}
-            <span class="article-tags">
-            {% for tag in post.tags %}
-                <span class="tag">{{ tag }}</span>
-            {% endfor %}
-            </span>
-            {% endif %}
-            <br />
-            <div class="article-stats">
-                <!-- Workin progress -->
-            </div>
-        </div>
+  <div class="row">
+    <div class="col-sm-2">
+      <header class="author-header">Author</header>
+      <img src="{{post.author.avatar}}" class="author-image image-crop" />
     </div>
+    <div class="author-desc col-sm-5">
+      {{post.author.description}}
+    </div>
+    <div class="col-sm-5">
+      {% if post.tags %}
+      <span class="article-tags">
+        {% for tag in post.tags %}
+        <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </span>
+      {% endif %}
+      <br />
+      <div class="article-stats">
+        <!-- Workin progress -->
+      </div>
+    </div>
+  </div>
 </div>

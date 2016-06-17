@@ -1,48 +1,48 @@
 {% if purpose == 'registration' %}
-<form role="form" type="post" class="userdetails text-center" action="">
-  <div class="form-group">
-    <label for="fullname" class="pull-left">Full name</label>
-    <input type="text" class="form-control" id="fullname" placeholder="Your name">
-  </div>
-  <div class="form-group">
-    <label for="username" class="pull-left">Username</label>
-    <input type="text" class="form-control" id="username" placeholder="Your username">
-  </div>
-  <div class="form-group">
-    <label for="pwd" class="pull-left">Password:</label>
-    <input type="password" class="form-control" id="password" placeholder="12 character alpha numeric">
-  </div>
-  <div class="form-group">
-    <p>By creating an account. I accept CoderDojos <u>Terms of Services</u> and <u>Privacy Policy</u></p>
-    <button type="submit" class="btn btn-default submit">Create account</button>
-  </div>
-</form>
-{% endif %}
-
-{% if purpose == 'contact' %}
-<form role="form" type="post" class="getinvolved" action="">
-  <div class="col-md-6">
+  <form role="form" type="post" class="userdetails text-center" action="">
     <div class="form-group">
       <label for="fullname" class="pull-left">Full name</label>
       <input type="text" class="form-control" id="fullname" placeholder="Your name">
     </div>
     <div class="form-group">
-      <label for="email" class="pull-left">Email</label>
-      <input type="text" class="form-control" id="email" placeholder="Your email">
+      <label for="username" class="pull-left">Username</label>
+      <input type="text" class="form-control" id="username" placeholder="Your username">
     </div>
     <div class="form-group">
-      <label for="subject" class="pull-left">Subject</label>
-      <input type="text" class="form-control" id="subject" placeholder="subject">
-    </div>
-  </div>
-  <div class="col-md-6">
-    <div class="form-group">
-      <label for="message" class="pull-left">Message</label>
-      <textarea class="form-control" rows="5" id="message" placeholder="Enter your message here"></textarea>
+      <label for="pwd" class="pull-left">Password:</label>
+      <input type="password" class="form-control" id="password" placeholder="12 character alpha numeric">
     </div>
     <div class="form-group">
-      <button class="btn btn-default" type="submit">Send</button>
+      <p>By creating an account. I accept CoderDojos <u>Terms of Services</u> and <u>Privacy Policy</u></p>
+      <button type="submit" class="btn btn-default submit">Create account</button>
     </div>
-  </div>
-</form>
+  </form>
+{% endif %}
+
+{% if purpose == 'contact' %}
+  <form role="form" type="post" class="getinvolved" action="">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="fullname" class="pull-left">Full name</label>
+        <input type="text" class="form-control" id="fullname" placeholder="Your name">
+      </div>
+      <div class="form-group">
+        <label for="email" class="pull-left">Email</label>
+        <input type="text" class="form-control" id="email" placeholder="Your email">
+      </div>
+      <div class="form-group">
+        <label for="subject" class="pull-left">Subject</label>
+        <input type="text" class="form-control" id="subject" placeholder="subject">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="message" class="pull-left">Message</label>
+        <textarea class="form-control" rows="5" id="message" placeholder="Enter your message here"></textarea>
+      </div>
+      <div class="form-group">
+        <button class="btn btn-default" type="submit">Send</button>
+      </div>
+    </div>
+  </form>
 {% endif %}

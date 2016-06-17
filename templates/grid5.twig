@@ -4,18 +4,16 @@
     <div class="grid">
       <h3>{{gridtitle}}</h3>
       <div class="content-wrapper">
-          {% for item in grid %}
-                {% if loop.index % 4 == (1) %}
-                    <div class="row">
-            <div class="col-md-2"></div>
-                {% endif %}
-            <div class="col-xs-3 col-md-2 grid-item"><a href="{{item.link}}" target="{{item.target}}"><img src="{{item.src}}" alt="{{item.body}}" border="0"></a></div>
-                {% if loop.index % 4 == (0) %}
-                    </div>
-                {% endif %}
-          {% endfor %}
-          </div>
+        {% for item in grid %}
+        {% if loop.index % 4 == (1) %}
+        <div class="row">
+          <div class="col-md-2"></div>
+          {% endif %}
+          <div class="col-xs-3 col-md-2 grid-item"><a href="{{item.link}}" target="{{item.target}}"><img src="{{item.src}}" alt="{{item.body}}" border="0"></a></div>
+          {% if loop.index % 4 == (0) %}
         </div>
+        {% endif %}
+        {% endfor %}
       </div>
     </div>
   </div>

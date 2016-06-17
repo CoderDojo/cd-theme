@@ -1,12 +1,12 @@
 {# people.twig #}
 <div class="share-widget clearfix">
-    <span class="hotlink" title="Article permalink">
-        <i class="fa fa-share-alt" aria-hidden="true"></i>
-    </span>
-    <script>
-        var hotlinkEl = document.querySelector('.share-widget .hotlink');
-        hotlinkEl.addEventListener('click', function () {
-            window.prompt("Copy and paste for the following for a hotlink to the article", "{{post.link}}");
-        });
-    </script>
+  <span class="hotlink" title="Article permalink">
+    <i class="fa fa-share-alt" aria-hidden="true"></i>
+  </span>
+  <script>
+  var hotlinkEl = document.querySelector('.share-widget .hotlink');
+  hotlinkEl.addEventListener('click', function () {
+    window.prompt("Copy and paste for the following for a hotlink to the article", "{{post.link}}");
+  });
+  </script>
 </div>

@@ -1,50 +1,51 @@
 <header class="header" >
-      {% block header %}
-      <div class="wrapper">
-              <nav class="navbar navbar-default navbar-fixed-top">
-                      <div class="top-nav">
-                          <div class="navbar-wrapper">
-                              <div class="navbar-header">
-                                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                                              <span class="sr-only">Toggle navigation</span>
-                                              <span class="icon-bar"></span>
-                                              <span class="icon-bar"></span>
-                                              <span class="icon-bar"></span>
-                                      </button>
-                                      <a href="/" style="padding-left: 5px;">
-                                        <svg width="120" height="44">
-                                         <image xlink:href="{{ site.theme.link }}/static/img/coderdojo-logo-light-bg.svg" src="{{ site.theme.link }}/static/img/coderdojo-logo-light-bg.png" width="120" height="44" />
-                                       </svg>
-                                      </a>
-                              </div>
-                              <div id="navbar" class="navbar-collapse collapse">
-                                <ul class="nav navbar-nav">
-                                  <li class="donate-button">
-                                    {% include 'cta.twig' with {'buttontext': 'DONATE', 'align': 'left', 'class': 'header-button', 'target':'donate'} %}
-                                  </li>
-                                      <li>
-                                        <form class="navbar-form navbar-left" role="search">
-                                          <div class="form-group">
-                                            <span class="search-placeholder" onclick="document.querySelector('input#navbar-search').classList.add('show');this.style.display='none'; document.getElementById('navbar-search').focus();">Search</span>
-                                            <input id="navbar-search" type="text" class="form-control" placeholder="Search" name="s">
-                                          </div>
-                                       </form>
-                                      </li>
-                                </ul>
-                                      <ul class="nav navbar-nav navbar-right">
-                                              <li>
-                                                      <a href="register" id="nav-left-item">REGISTER</a>
-                                              </li>
-                                              <li>
-                                                      <a href="register">LOGIN</a>
-                                              </li>
-                                              </ul>
-                              </div><!--/.nav-collapse -->
-                          </div>
-                      </div>
-                      <div class="menu">
-                              {% include "menu.twig" with {'menu': menu.get_items} %}
-                      </div>		</nav>
+  {% block header %}
+  <div class="wrapper">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="top-nav">
+        <div class="navbar-wrapper">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="/" style="padding-left: 5px;">
+              <svg width="120" height="44">
+                <image xlink:href="{{ site.theme.link }}/static/img/coderdojo-logo-light-bg.svg" src="{{ site.theme.link }}/static/img/coderdojo-logo-light-bg.png" width="120" height="44" />
+              </svg>
+            </a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="donate-button">
+                {% include 'cta.twig' with {'buttontext': 'DONATE', 'align': 'left', 'class': 'header-button', 'target':'donate'} %}
+              </li>
+              <li>
+                <form class="navbar-form navbar-left" role="search">
+                  <div class="form-group">
+                    <span class="search-placeholder" onclick="document.querySelector('input#navbar-search').classList.add('show');this.style.display='none'; document.getElementById('navbar-search').focus();">Search</span>
+                    <input id="navbar-search" type="text" class="form-control" placeholder="Search" name="s">
+                  </div>
+                </form>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="register" id="nav-left-item">REGISTER</a>
+              </li>
+              <li>
+                <a href="register">LOGIN</a>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
       </div>
-      {% endblock %}
+      <div class="menu">
+        {% include "menu.twig" with {'menu': menu.get_items} %}
+      </div>
+    </nav>
+  </div>
+  {% endblock %}
 </header>

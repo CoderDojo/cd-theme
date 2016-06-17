@@ -1,23 +1,23 @@
 {# people.twig #}
 
 {% block content %}
-<div class="people-header">
-            <div class="empty-container">&nbsp;</div>
-</div>
-<div class="people-grid">
-     <div class="row">
-        <div class="col-md-2">
-          <div class="image-container">
-            <div class="image-crop">
-                 <object data="http://placehold.it/120x120" type="image/png"><img src="{{post.people_image}}" border="0" /></object>
-            </div>
+  <div class="people-header">
+    <div class="empty-container">&nbsp;</div>
+  </div>
+  <div class="people-grid">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="image-container">
+          <div class="image-crop">
+            <object data="http://placehold.it/120x120" type="image/png"><img src="{{post.people_image}}" border="0" /></object>
           </div>
-       </div>
-       <div class="col-md-10 people-body">
-            <div id="title">{{post.people_name}}</div> 
-            <div id="link">{{post.people_tag}}</div>
-       </div>
+        </div>
+      </div>
+      <div class="col-md-10 people-body">
+        <div id="title">{{post.people_name}}</div>
+        <div id="link">{{post.people_tag}}</div>
+      </div>
     </div>
     <div class="people-bio"> {{post.people_bio}} </div>
-</div>
+  </div>
 {% endblock %}

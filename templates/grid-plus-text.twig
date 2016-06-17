@@ -5,14 +5,14 @@
       <div class="content-wrapper">
         <div style="text-align:center;">
           {% for item in teamimages %}
-            <div class="col-md-4"><a href="{{item.link}}" target="{{item.target}}"><img src="{{item.src}}" class="image-crop" alt="{{item.body}}" border="0"></a>
-              <div class="row">
-                <span class="bottom-align-text">{{ item.name }} </span>
-              </div>
-              <div class="row>"
-                <span class="bottom-align-text">{{ item.role }} </span>
-              </div>
+          <div class="col-md-4"><a href="{{item.link}}" target="{{item.target}}"><img src="{{item.src}}" class="image-crop" alt="{{item.body}}" border="0"></a>
+            <div class="row">
+              <span class="bottom-align-text">{{ item.name }} </span>
             </div>
+            <div class="row>"
+              <span class="bottom-align-text">{{ item.role }} </span>
+            </div>
+          </div>
           {% endfor %}
         </div>
       </div>
@@ -21,17 +21,17 @@
     <div class="boardimages" align="center">
       <h3><br/><br/>{{board}}</h3>
       <div class="content-wrapper">
-          {% for item in boardimages %}
-            <div class="col-md-4"><a href="{{item.link}}" target="{{item.target}}"><img src="{{item.src}}" class="image-crop" alt="{{item.body}}" border="0"></a>
-              <div class="row">
-                <span class="bottom-align-text">{{ item.name }} </span>
-              </div>
-              <div class="row>"
-                <span class="bottom-align-text">{{ item.role }} </span>
-              </div>
-            </div>
-          {% endfor %}
+        {% for item in boardimages %}
+        <div class="col-md-4"><a href="{{item.link}}" target="{{item.target}}"><img src="{{item.src}}" class="image-crop" alt="{{item.body}}" border="0"></a>
+          <div class="row">
+            <span class="bottom-align-text">{{ item.name }} </span>
+          </div>
+          <div class="row">
+            <span class="bottom-align-text">{{ item.role }} </span>
+          </div>
         </div>
+        {% endfor %}
       </div>
     </div>
+  </div>
 {% endblock %}

@@ -1,35 +1,28 @@
 {% extends "base.twig" %}
 
 {% block content %}
-        <div class="content-wrapper">
-          <img src="http://placehold.it/1280x320" />
-
-		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
-			<section class="article-content">
-				<div class="article-body">
-                                        <h1>{{post.title}}</h1>
-					{{post.content}}
-                                        <br />
-                                        {% include 'cta.twig' with {'buttontext': 'Call to Action', 'target': 'http://www.google.com' } %}
-                                        <br /><br />
-                                </div>
-
-<div class="article-mid">
-<h1>What's involved</h1>
-{% include 'paragraph.twig' with {'align': 'left', 'title':'Start a Dojo', 'img':'http://placehold.it/150x150', 'desc': 'Yr chillwave farm-to-table, PBR&amp;B migas hella dreamcatcher. ArAsan mumblecore deep v polaroid, kombucha fanny pack everyday carry venmo selvage messenger bag kitsch ausAn. '} %}
-{% include 'paragraph.twig' with {'align': 'right', 'title':'Funding', 'img':'http://placehold.it/150x150', 'desc': 'Yr chillwave farm-to-table, PBR&amp;B migas hella dreamcatcher. ArAsan mumblecore deep v polaroid, kombucha fanny pack everyday carry venmo selvage messenger bag kitsch ausAn. '} %}
-{% include 'paragraph.twig' with {'align': 'left', 'title':'Resources', 'img':'http://placehold.it/150x150', 'desc': 'Yr chillwave farm-to-table, PBR&amp;B migas hella dreamcatcher. ArAsan mumblecore deep v polaroid, kombucha fanny pack everyday carry venmo selvage messenger bag kitsch ausAn. '} %}
-{% include 'paragraph.twig' with {'align': 'right', 'title':'Kata', 'img':'http://placehold.it/150x150', 'desc': 'Yr chillwave farm-to-table, PBR&amp;B migas hella dreamcatcher. ArAsan mumblecore deep v polaroid, kombucha fanny pack everyday carry venmo selvage messenger bag kitsch ausAn. '} %}
-{% include 'cta.twig' with {'buttontext': 'Call to Action', 'target': 'http://www.google.com' } %}
-</div>
-
-{% include "bio-heads-3.twig" %}
-{% include "find-dojo.twig" %}
-
-
-				</div>
-			</section>
-		</article>
-          </div>
+  <div class="content-wrapper">
+    <img src="http://placehold.it/1280x320" />
+    <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+      <section class="article-content">
+        <div class="article-body">
+          <h1>{{post.title}}</h1>
+          {{post.content}}
+          <br />
+          {% include 'cta.twig' with {'buttontext': 'Call to Action', 'target': 'http://www.google.com' } %}
+          <br /><br />
         </div>
+        <div class="article-mid">
+          <h1>What's involved</h1>
+          {% include 'paragraph.twig' with {'align': 'left', 'title':'Start a Dojo', 'img':'http://placehold.it/150x150', 'desc': 'Yr chillwave farm-to-table, PBR&amp;B migas hella dreamcatcher. ArAsan mumblecore deep v polaroid, kombucha fanny pack everyday carry venmo selvage messenger bag kitsch ausAn. '} %}
+          {% include 'paragraph.twig' with {'align': 'right', 'title':'Funding', 'img':'http://placehold.it/150x150', 'desc': 'Yr chillwave farm-to-table, PBR&amp;B migas hella dreamcatcher. ArAsan mumblecore deep v polaroid, kombucha fanny pack everyday carry venmo selvage messenger bag kitsch ausAn. '} %}
+          {% include 'paragraph.twig' with {'align': 'left', 'title':'Resources', 'img':'http://placehold.it/150x150', 'desc': 'Yr chillwave farm-to-table, PBR&amp;B migas hella dreamcatcher. ArAsan mumblecore deep v polaroid, kombucha fanny pack everyday carry venmo selvage messenger bag kitsch ausAn. '} %}
+          {% include 'paragraph.twig' with {'align': 'right', 'title':'Kata', 'img':'http://placehold.it/150x150', 'desc': 'Yr chillwave farm-to-table, PBR&amp;B migas hella dreamcatcher. ArAsan mumblecore deep v polaroid, kombucha fanny pack everyday carry venmo selvage messenger bag kitsch ausAn. '} %}
+          {% include 'cta.twig' with {'buttontext': 'Call to Action', 'target': 'http://www.google.com' } %}
+        </div>
+        {% include "bio-heads-3.twig" %}
+        {% include "find-dojo.twig" %}11
+      </section>
+    </article>
+  </div>
 {% endblock %}

@@ -1,11 +1,11 @@
 {% if align%}
-<div class="cta" style="text-align: {{ align }} ;">
+  <div class="cta" style="text-align: {{ align }} ;">
 {% else %}
-<div class="cta" style="text-align: center;">
+  <div class="cta" style="text-align: center;">
 {% endif %}
 
 {% if target %}
-<a href="{{target}}">
+  <a href="{{target}}">
 {% endif %}
 
 {% if class == 'facebook' %}
@@ -25,6 +25,6 @@
 {% endif %}
 
 {% if target %}
-</a>
+  </a>
 {% endif %}
 </div>
