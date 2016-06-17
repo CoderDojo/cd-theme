@@ -16,20 +16,7 @@
         <div class="article-body">
           {{broken_content[1]}}
           {% include 'cta.twig' with {'buttontext': 'Call to Action', 'class': 'margin-bottom'} %}
-          <h1>Growing Foundation Links to Reports</h1>
-          <div class="row">
-            <div class="col-md-3">
-              <img class="image-crop" src="https://placehold.it/100x100">
-            </div>
-            <div class="col-md-3">
-              <img class="image-crop" src="https://placehold.it/100x100">
-            </div>
-            <div class="col-md-3">
-              <img class="image-crop" src="https://placehold.it/100x100">
-            </div>
-            <div class="col-md-3">
-              <img class="image-crop" src="https://placehold.it/100x100">
-            </div>
+          {% include 'growing-foundation.twig' with {"ninjas": "120k Ninjas", "mentors": "60k Mentors", "champions": "60K Champions", "countries": "100 Countries" } %}
           </div>
         </div>
       </div>
