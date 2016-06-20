@@ -10,24 +10,22 @@
           {{broken_content[0]}}
         </div>
       </div>
-      <div class="about-blocks">
-        <div class="row top">
-          {% include "item-box.twig" with {'title': '', 'hrefOne':'movement', 'hrefTwo':'foundation', 'rows': 2 } %}
-          <div class="col-md-6">
-            <p class="pull-right">{{broken_content[1]}}</p>
-          </div>
-          <div class="col-md-6">
-            <p class="pull-left">{{broken_content[2]}}</p>
-          </div>
+      <div class="row top">
+        {% include "item-box.twig" with {'title': '', 'hrefOne':'movement', 'hrefTwo':'foundation', 'rows': 2 } %}
+        <div class="col-md-6">
+          <p class="pull-right">Some text</p>
         </div>
-        <div class="row bottom">
-          {% include "item-box.twig" with {'title': '', 'hrefOne':'supporters', 'hrefTwo':'community-committee', 'rows': 2 } %}
-          <div class="col-md-6">
-            <p class="pull-right">{{broken_content[3]}}</p>
-          </div>
-          <div class="col-md-6">
-            <p class="pull-left">{{broken_content[4]}}</p>
-          </div>
+        <div class="col-md-6">
+          <p class="pull-left">Some text</p>
+        </div>
+      </div>
+      <div class="row bottom">
+        {% include "item-box.twig" with {'title': '', 'hrefOne':'supporters', 'hrefTwo':'community-committee', 'rows': 2 } %}
+        <div class="col-md-6">
+          <p class="pull-right">Some text</p>
+        </div>
+        <div class="col-md-6">
+          <p class="pull-left">Some text</p>
         </div>
       </div>
     </section>
