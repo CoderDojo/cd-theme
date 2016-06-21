@@ -2,26 +2,26 @@
 
 {% block content %}
   <div class="content-wrapper">
-    <img src="http://placehold.it/1280x320" class="top-banner"/>
+    <img src="http://placehold.it/1280x320" />
     <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
       <section class="article-content">
         <div class="article-body">
           <h1>{{post.title}}</h1>
-          {{broken_content[0]}}
+          {{post.content}}
           <br />
           {% include 'cta.twig' with {'buttontext': 'Call to Action', 'target': 'http://www.google.com' } %}
           <br /><br />
         </div>
         <div class="article-mid">
           <h1>What's involved</h1>
-          {% include 'paragraph.twig' with {'align': 'left', 'title':'Build your team', 'img':'http://placehold.it/150x150', 'desc': 'Any successful Dojo needs a team of volunteer mentors. Just how many depends on the size of your Dojo. We recommended 1 mentor to 8 young people. You can share our volunteer page with those interested in volunteering to give them details on what they’re getting into!'} %}
-          {% include 'paragraph.twig' with {'align': 'right', 'title':'Find your venue', 'img':'http://placehold.it/150x150', 'desc': 'Location is vitally important for running a successful Dojo. Consider the size of your Dojo and also the needs of your sessions. Internet and power access are must haves. We recommend attendees bring their own laptops, but choosing a venue with its own hardware can be beneficial. In the long term, looking for sponsorship to provide hardware and tools can be a goal. Remember, Dojo’s cannot be hosted in private residences such as homes! Community spaces such as Schools and libraries libraries offer awesome spaces for hosting your Dojo.'} %}
-          {% include 'paragraph.twig' with {'align': 'left', 'title':'Plan your dojo', 'img':'http://placehold.it/150x150', 'desc': 'Lay down a date for your first Dojo. Make sure this gives you time to prepare. Once that is in place meet with your team and plan what content you’ll be covering and how to promote your Dojo. We recommend setting up an email address and twitter account specifically for your Dojo. Make contact with local schools and look for the most effective way to reach your audience. We have a ton of learning resources available and you can always create your own to expand on that. Sharing knowledge helps improve not just your local Dojo but every Dojo worldwide! Once you’ve put together a plan, your team is prepped and you have a group eager to become coding ninjas then you’re ready to begin!'} %}
-          {% include 'paragraph.twig' with {'align': 'right', 'title':'Going deeper', 'img':'http://placehold.it/150x150', 'desc': 'Kata is our online wiki. It has a host of detailed information that compliments everything on this page. Click here to check out an in depth Dojo guide [http://kata.coderdojo.com/wiki/Dojo_Guide]! Beyond that you can find a whole host of info on running a Dojo, best practices, reading material and much much more.' } %}
+          {% include 'paragraph.twig' with {'align': 'left', 'title':'Start a Dojo', 'img':'http://placehold.it/150x150', 'desc': 'Yr chillwave farm-to-table, PBR&amp;B migas hella dreamcatcher. ArAsan mumblecore deep v polaroid, kombucha fanny pack everyday carry venmo selvage messenger bag kitsch ausAn. '} %}
+          {% include 'paragraph.twig' with {'align': 'right', 'title':'Funding', 'img':'http://placehold.it/150x150', 'desc': 'Yr chillwave farm-to-table, PBR&amp;B migas hella dreamcatcher. ArAsan mumblecore deep v polaroid, kombucha fanny pack everyday carry venmo selvage messenger bag kitsch ausAn. '} %}
+          {% include 'paragraph.twig' with {'align': 'left', 'title':'Resources', 'img':'http://placehold.it/150x150', 'desc': 'Yr chillwave farm-to-table, PBR&amp;B migas hella dreamcatcher. ArAsan mumblecore deep v polaroid, kombucha fanny pack everyday carry venmo selvage messenger bag kitsch ausAn. '} %}
+          {% include 'paragraph.twig' with {'align': 'right', 'title':'Kata', 'img':'http://placehold.it/150x150', 'desc': 'Yr chillwave farm-to-table, PBR&amp;B migas hella dreamcatcher. ArAsan mumblecore deep v polaroid, kombucha fanny pack everyday carry venmo selvage messenger bag kitsch ausAn. '} %}
           {% include 'cta.twig' with {'buttontext': 'Call to Action', 'target': 'http://www.google.com' } %}
         </div>
         {% include "bio-heads-3.twig" %}
-        {% include "find-dojo.twig" %}
+        {% include "find-dojo.twig" %}11
       </section>
     </article>
   </div>
