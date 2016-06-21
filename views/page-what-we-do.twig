@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="content-wrapper">
-  <img src="http://placehold.it/1280x320" />
+  <img src="http://placehold.it/1280x320" class="top-banner" />
   <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
     <section class="article-content">
       <div class="article-wrapper">
@@ -13,18 +13,11 @@
       </div>
       {% include 'find-dojo.twig' %}
       <div class="article-wrapper">
-        <div class="article-body">
-          {{broken_content[1]}}
-          {% include 'cta.twig' with {'buttontext': 'Call to Action', 'class': 'margin-bottom'} %}
-          {% include 'growing-foundation.twig' with {"ninjas": "120k Ninjas", "mentors": "60k Mentors", "champions": "60K Champions", "countries": "100 Countries" } %}
-          </div>
-        </div>
-      </div>
-      <div class="article-wrapper">
         {% include "item-box.twig" with {'title': 'Featured Stories', 'rows': 3 } %}
         {% include "item-box.twig" with {'title': 'News and events', 'rows': 2 } %}
       </div>
       <div class="article-wrapper">
+        {% include "bio-heads-3.twig" with {'quoteOne': 'Volunteers are people from all walks of life, that have a common goal. This goal is the desire to make a difference in their community by giving their time to help others.', 'quoteTwo': 'These skills will be important no matter what career they go into in the future, so by mentoring you’ll be making a direct impact on their future employability.” Craig Steele – CoderDojo Scotland', 'quoteThree': 'My favourite thing about volunteering as a CoderDojo Mentor is seeing the satisfaction in kids’ eyes at the end of a Dojo.” Agnese Addone – CoderDojo Roma, Italy' } %}
         <h5 class="center">Get the latest Coder Dojo stories delivered to your inbox daily.</h5>
         {% include 'cta.twig' with {'buttontext': 'Subscribe'} %}
       </div>
