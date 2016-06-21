@@ -2,26 +2,26 @@
 
 {% block content %}
   <div class="content-wrapper">
-    <img src="http://placehold.it/1280x320" />
+    <img src="http://placehold.it/1280x320" class="top-banner"/>
     <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
       <section class="article-content">
         <div class="article-body">
           <h1>{{post.title}}</h1>
-          {{post.content}}
+          {{broken_content[0]}}
           <br />
           {% include 'cta.twig' with {'buttontext': 'Call to Action', 'target': 'http://www.google.com' } %}
           <br /><br />
         </div>
         <div class="article-mid">
-          <h1>What's involved</h1>
-          {% include 'paragraph.twig' with {'align': 'left', 'title':'Whats required?', 'img':'http://placehold.it/150x150', 'desc': 'Yr chillwave farm-to-table, PBR&amp;B migas hella dreamcatcher. ArAsan mumblecore deep v polaroid, kombucha fanny pack everyday carry venmo selvage messenger bag kitsch ausAn. '} %}
-          {% include 'paragraph.twig' with {'align': 'right', 'title':'Subject responsibility', 'img':'http://placehold.it/150x150', 'desc': 'Yr chillwave farm-to-table, PBR&amp;B migas hella dreamcatcher. ArAsan mumblecore deep v polaroid, kombucha fanny pack everyday carry venmo selvage messenger bag kitsch ausAn. '} %}
-          {% include 'paragraph.twig' with {'align': 'left', 'title':'Child protection', 'img':'http://placehold.it/150x150', 'desc': 'Yr chillwave farm-to-table, PBR&amp;B migas hella dreamcatcher. ArAsan mumblecore deep v polaroid, kombucha fanny pack everyday carry venmo selvage messenger bag kitsch ausAn. '} %}
-          {% include 'paragraph.twig' with {'align': 'right', 'title':'I want to mentor', 'img':'http://placehold.it/150x150', 'desc':'Yr chillwave farm-to-table, PBR&amp;B migas hella dreamcatcher. ArAsan mumblecore deep v polaroid, kombucha fanny pack everyday carry venmo selvage messenger bag kitsch ausAn. '} %}
-          {% include 'paragraph.twig' with {'align': 'left', 'title':'Easy to Join', 'img':'http://placehold.it/150x150', 'desc': 'Yr chillwave farm-to-table, PBR&amp;B migas hella dreamcatcher. ArAsan mumblecore deep v polaroid, kombucha fanny pack everyday carry venmo selvage messenger bag kitsch ausAn. '} %}
+          <h1>What's involved?</h1>
+          {% include 'paragraph.twig' with {'align': 'left', 'title':'How can I help??', 'img':'glyphicon glyphicon-question-sign', 'desc': 'We’d love if you could attend your Dojo’s meetings and help out for a couple of hours, whether that’s weekly, biweekly or monthly. '} %}
+          {% include 'paragraph.twig' with {'align': 'right', 'title':'If you are an experienced coder', 'imgTwo':'glyphicon glyphicon-floppy-disk', 'desc': 'Help out at a Dojo and share your knowledge with local young people who are eager to learn! '} %}
+          {% include 'paragraph.twig' with {'align': 'left', 'title':'No technical expertise?', 'img':'http://placehold.it/150x150', 'desc': 'No problem! We need awesome people to help with registration, updating the website, producing fliers etc. Any help is appreciated! '} %}
+          {% include 'paragraph.twig' with {'align': 'right', 'title':'Ready-made resources!', 'img':'http://placehold.it/150x150', 'desc':'We have loads of resources to get you started as a volunteer, and you can always create your own to expand on that. Share your knowledge with other volunteers and Dojos! '} %}
+          {% include 'paragraph.twig' with {'align': 'left', 'title':'Inclusive and free: always', 'img':'http://placehold.it/150x150', 'desc': 'Help young people learn technical skills in a fun, safe environment. Everyone is treated equally, regardless of gender, age, ethnicity, religion or creed. '} %}
           {% include 'cta.twig' with {'buttontext': 'Call to Action', 'target': 'http://www.google.com' } %}
         </div>
-        {% include "bio-heads-3.twig" %}
+        {% include "bio-heads-3.twig" with {'quoteOne': 'Volunteers are people from all walks of life, that have a common goal. This goal is the desire to make a difference in their community by giving their time to help others.', 'quoteTwo': 'These skills will be important no matter what career they go into in the future, so by mentoring you’ll be making a direct impact on their future employability.” Craig Steele – CoderDojo Scotland', 'quoteThree': 'My favourite thing about volunteering as a CoderDojo Mentor is seeing the satisfaction in kids’ eyes at the end of a Dojo.” Agnese Addone – CoderDojo Roma, Italy' } %}
         {% include "find-dojo.twig" %}
       </section>
     </article>
