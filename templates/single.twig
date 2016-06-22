@@ -1,42 +1,41 @@
 {% extends "base.twig" %}
-
 {% block content %}
-	<div class="article-wrapper">
-		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
-			<section class="article-content">
-				{% if post.company_name %}
-					{% include "company-header.twig" with { 'post':post } %}
-                {% elseif post.people_name %}
-					{% include "people.twig" with { 'post':post } %}
-				{% endif %}
-
-			 	{% include "share-widget.twig" with {'post':post} %}
-				 <header class="article-header">
-				 	{{post.title}}
-				 </header>
-
-				 <section class="article-subhead">
-				 	{{post.post_date|date('j F Y')}} · by {{post.author.name}}
-				 </section>
-
-				<div class="article-body">
-					{{post.content}}
+  <div class="content-wrapper">
+    <img src="{{post.header}}" class="top-banner" />
+    <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+      <section class="article-content">
+        <div class="article-body">
+          <h1>{{post.title}}</h1>
+					{{post.post_date|date('j F Y')}} · by {{post.author.name}}
+          <br />
+        </div>
+        <div class="article-mid">
+          {{post.content}}
+					{% if post.meta('video') and post.meta('video-poster') %}
+					<video style="position:relative; width:100%;" controls poster="{{post.meta('video-poster').guid}}">
+					  <source src="{{post.meta('video').guid|replace({'.mp4':'.ogg'})}}" type="video/ogg">
+					  <source src="{{post.meta('video').guid|replace({'.ogg':'.mp4'})}}" type="video/mp4">
+					  Your browser does not support HTML5 video.
+					</video>
+					{% else %}
+					<hr />
+					{% endif %}
+        </div>
+				<div class="article-mid">
+					{% if post.comment_status != 'closed' %}
+						<div class="respond">
+							<h3 class="text-center">Comments</h3>
+							<!-- {{ fn('comment_form') }} -->
+						</div>
+						<div class="responses">
+							{% for cmt in post.get_comments() %}
+								{% include "comment.twig" with {comment:cmt} %}
+							{% endfor %}
+						</div>
+					{% endif %}
 				</div>
-
-
-				{% if post.meta('video') and post.meta('video-poster') %}
-				<video style="position:relative; width:100%;" controls poster="{{post.meta('video-poster').guid}}">
-				  <source src="{{post.meta('video').guid|replace({'.mp4':'.ogg'})}}" type="video/ogg">
-				  <source src="{{post.meta('video').guid|replace({'.ogg':'.mp4'})}}" type="video/mp4">
-				  Your browser does not support HTML5 video.
-				</video>
-				{% else %}
-				<hr />
-				{% endif %}
-
-				{% include "article-signature.twig" with {'post':post} %}
-
-			</section>
-		</article>
-	</div><!-- /content-wrapper -->
+      </section>
+    </article>
+		{% include 'cta.twig' with {'buttontext': 'Call to Action', 'target': 'http://www.google.com', 'class': 'foo' } %}
+  </div>
 {% endblock %}
