@@ -1,0 +1,20 @@
+{% extends "base.twig" %}
+
+{% block content %}
+  <div class="content-wrapper">
+    <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+      <section class="article-content">
+        <div class="article-body">
+          <h1>{{post.title}}</h1>
+          {{broken_content[0]}}
+        </div>
+        {% include "item-box.twig" with {'title': '', 'hrefOne':'movement', 'hrefTwo':'foundation', 'rows': 2 } %}
+        {% include "grid.twig" %}
+        <div class="article-mid">
+          {{broken_content[1]}}
+          {% include 'cta.twig' with {'buttontext': 'Call to Action', 'target': 'http://www.google.com' } %}
+        </div>
+      </section>
+    </article>
+  </div>
+{% endblock %}
