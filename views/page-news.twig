@@ -12,19 +12,19 @@
             <h1>Other news</h1>
             <div class="row older-news">
               <div class="col-md-3">
-                <img src="{{posts[3].thumbnail.src}}">
+                <a href="{{posts[3].link}}"><img src="{{posts[3].thumbnail.src}}"></a>
                 <p>{{posts[3].article_desc}}</p> <a href="{{posts[3].link}}">Read.</a>
               </div>
               <div class="col-md-3">
-                <img src="{{posts[4].thumbnail.src}}">
+                <a href="{{posts[4].link}}"><img src="{{posts[4].thumbnail.src}}"></a>
                 <p>{{posts[4].article_desc}}</p> <a href="{{posts[4].link}}">Read.</a>
               </div>
               <div class="col-md-3">
-                <img src="{{posts[5].thumbnail.src}}">
+                <a href="{{posts[5].link}}"><img src="{{posts[5].thumbnail.src}}"></a>
                 <p>{{posts[5].article_desc}}</p> <a href="{{posts[5].link}}">Read.</a>
               </div>
               <div class="col-md-3">
-                <img src="{{posts[6].thumbnail.src}}">
+                <a href="{{posts[6].link}}"><img src="{{posts[6].thumbnail.src}}"></a>
                 <p>{{posts[6].article_desc}}</p> <a href="{{posts[6].link}}">Read.</a>
               </div>
             </div>
@@ -38,7 +38,7 @@
                 {% for post in posts %}
                 <li class="article-pagination">
                   {% if post.link %}
-                  <img src="{{post.thumbnail.src}}"/>
+                  <a href="{{post.link}}"><img src="{{post.thumbnail.src}}"/></a>
                   <a href="{{post.link}}" class="{{post.class}}">{{post.title}}</a>
                   <hr>
                   {% else %}
