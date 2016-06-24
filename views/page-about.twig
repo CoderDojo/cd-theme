@@ -13,7 +13,7 @@
       </div>
       <div class="about-blocks">
         <div class="row top">
-          {% include "item-box.twig" with {'title': '', 'hrefOne':'movement', 'hrefTwo':'foundation', 'rows': 2 , 'imageOne': '/cd-wordpress/wp-content/themes/cd-theme/static/img/movement.png', 'imageTwo': '/cd-wordpress/wp-content/themes/cd-theme/static/img/foundation.png'} %}
+          {% include "item-box.twig" with {'title': '', 'hrefOne':'movement', 'hrefTwo':'foundation', 'rows': 2 , 'imageOne': site.theme.link ~ '/static/img/movement.png', 'imageTwo': site.theme.link ~ '/static/img/foundation.png'} %}
           <div class="col-md-6">
             <p class="pull-right">{{broken_content[1]}}</p>
           </div>
@@ -22,7 +22,7 @@
           </div>
         </div>
         <div class="row bottom">
-         {% include "item-box.twig" with {'title': '', 'hrefThree':'supporters', 'hrefFour':'community-committee', 'rows': 2, 'imageOne': '/cd-wordpress/wp-content/themes/cd-theme/static/img/supporters.png', 'imageTwo': '/cd-wordpress/wp-content/themes/cd-theme/static/img/community-committee.png'} %}
+         {% include "item-box.twig" with {'title': '', 'hrefThree':'supporters', 'hrefFour':'community-committee', 'rows': 2, 'imageOne': site.theme.link ~ '/static/img/supporters.png', 'imageTwo': site.theme.link ~ '/static/img/community-committee.png'} %}
           <div class="col-md-6">
             <p class="pull-right">{{broken_content[3]}}</p>
           </div>
