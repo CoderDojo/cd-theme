@@ -2,6 +2,7 @@
 
 {% block content %}
 <div class="content-wrapper">
+  <img src="/cd-wordpress/wp-content/uploads/2016/06/header.png" class="top-banner" />
   <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
     <section class="article-content">
       <div class="article-wrapper">
@@ -12,7 +13,7 @@
       </div>
       <div class="about-blocks">
         <div class="row top">
-          {% include "item-box.twig" with {'title': '', 'hrefOne':'movement', 'hrefTwo':'foundation', 'rows': 2 } %}
+          {% include "item-box.twig" with {'title': '', 'hrefOne':'movement', 'hrefTwo':'foundation', 'rows': 2 , 'imageOne': '/cd-wordpress/wp-content/themes/cd-theme/static/img/movement.png', 'imageTwo': '/cd-wordpress/wp-content/themes/cd-theme/static/img/foundation.png'} %}
           <div class="col-md-6">
             <p class="pull-right">{{broken_content[1]}}</p>
           </div>
@@ -21,7 +22,7 @@
           </div>
         </div>
         <div class="row bottom">
-          {% include "item-box.twig" with {'title': '', 'hrefOne':'supporters', 'hrefTwo':'community-committee', 'rows': 2 } %}
+         {% include "item-box.twig" with {'title': '', 'hrefThree':'supporters', 'hrefFour':'community-committee', 'rows': 2, 'imageOne': '/cd-wordpress/wp-content/themes/cd-theme/static/img/supporters.png', 'imageTwo': '/cd-wordpress/wp-content/themes/cd-theme/static/img/community-committee.png'} %}
           <div class="col-md-6">
             <p class="pull-right">{{broken_content[3]}}</p>
           </div>
