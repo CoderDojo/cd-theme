@@ -1,5 +1,6 @@
 vendor
 wp-content
+static/css/style.min.css
 
 # OS generated files #
 ######################
