@@ -14,20 +14,20 @@
       <div class="about-blocks">
         <div class="row top">
           {% include "item-box.twig" with {'title': '', 'hrefOne':'movement', 'hrefTwo':'foundation', 'rows': 2 , 'imageOne': site.theme.link ~ '/static/img/movement.png', 'imageTwo': site.theme.link ~ '/static/img/foundation.png'} %}
-          <div class="col-md-6">
-            <p class="pull-right">{{broken_content[1]}}</p>
+          <div class="col-md-6  double-par" >
+            {{broken_content[1]}}
           </div>
-          <div class="col-md-6">
-            <p class="pull-left">{{broken_content[2]}}</p>
+          <div class="col-md-6 double-par-2">
+            {{broken_content[2]}}
           </div>
         </div>
         <div class="row bottom">
          {% include "item-box.twig" with {'title': '', 'hrefThree':'supporters', 'hrefFour':'community-committee', 'rows': 2, 'imageOne': site.theme.link ~ '/static/img/supporters.png', 'imageTwo': site.theme.link ~ '/static/img/community-committee.png'} %}
-          <div class="col-md-6">
-            <p class="pull-right">{{broken_content[3]}}</p>
+          <div class="col-md-6 double-par">
+            {{broken_content[3]}}
           </div>
-          <div class="col-md-6">
-            <p class="pull-left">{{broken_content[4]}}</p>
+          <div class="col-md-6 double-par-2">
+            {{broken_content[4]}}
           </div>
         </div>
       </div>
