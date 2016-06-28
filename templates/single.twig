@@ -1,7 +1,6 @@
 {% extends "base.twig" %}
 {% block content %}
-  <div class="content-wrapper">
-    <img src="{{post.header}}" class="top-banner" />
+  <div class="content-wrapper news">
     <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
       <section class="article-content">
         <div class="article-body">
@@ -9,7 +8,7 @@
 					{{post.post_date|date('j F Y')}} · by {{post.author.name}}
           <br />
         </div>
-        <div class="article-mid">
+        <div class="article-mid news-content">
           {{post.content}}
 					{% if post.meta('video') and post.meta('video-poster') %}
 					<video style="position:relative; width:100%;" controls poster="{{post.meta('video-poster').guid}}">
