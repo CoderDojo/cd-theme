@@ -2,8 +2,10 @@
 
 {% block content %}
   <div class="content-wrapper">
-    {% include "carousel.twig" with
-    {'imageOne': 'https://placehold.it/1280x500', 'imageTwo': 'https://placehold.it/1280x500', 'imageThree': 'https://placehold.it/1280x500' } %}
+    <div class="news-carousel">
+      {% include "carousel.twig" with
+      {'imageOne': 'https://placehold.it/1280x500', 'imageTwo': 'https://placehold.it/1280x500', 'imageThree': 'https://placehold.it/1280x500' } %}
+    </div>
     <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
       <section class="article-content">
         <div class="article-wrapper">

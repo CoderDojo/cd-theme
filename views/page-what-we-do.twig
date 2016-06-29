@@ -15,9 +15,10 @@
           'quoteThree': 'My favourite thing about volunteering as a CoderDojo Mentor is seeing the satisfaction in kids’ eyes at the end of a Dojo.” Agnese Addone – CoderDojo Roma, Italy', 'imageThree': site.theme.link ~ '/static/img/testimonials/champion.jpg'  }
         %}
       {% include 'map.twig' %}
-      <div class="article-wrapper">
-        {% include "item-box.twig" with {'title': 'Featured Stories', 'rows': 3, 'imageOne': 'http://placehold.it/150x75', 'imageTwo': 'http://placehold.it/150x75', 'imageThree': 'http://placehold.it/150x75' } %}
-      </div>
+      <div class="article-wrapper home-latest-news">
+        <h1 class="text-center">Latest News</h1>
+        {% include "carousel.twig" with
+        {'imageOne': 'https://placehold.it/1280x500', 'imageTwo': 'https://placehold.it/1280x500', 'imageThree': 'https://placehold.it/1280x500' } %}
       <div class="article-wrapper">
         <h5 class="center">Get the latest Coder Dojo stories delivered to your inbox daily.</h5>
         {% include 'cta.twig' with {'buttontext': 'Subscribe'} %}
