@@ -145,7 +145,7 @@ body {
 
 .cta .footer-button {
   color: #fff;
-  margin-top: 15px;
+  margin-top: 10px;
   xpadding: 0.5em 0.7em;
   border-radius: 0.3em;
   font-size: 12px;
@@ -182,6 +182,9 @@ body {
 
 .top-banner {
   width:100%;
+  @media(max-width: 600px){
+    height:200px;
+  }
 }
 
 .home-splash {
@@ -201,6 +204,10 @@ body {
   width: 75%;
   text-align:center;
   color: @cd-white;
+  @media (max-width: 600px){
+    top: 18%;
+    font-size: 20px;
+  }
 }
 
 .cd-logo {
@@ -215,4 +222,8 @@ body {
   @media (max-width: 600px){
     display:none;
   }
+}
+
+.narrow {
+  padding-left: 6.5%;
 }
