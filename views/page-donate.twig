@@ -1,29 +1,31 @@
 {% extends "base.twig" %}
 
 {% block content %}
+<script src="https://checkout.stripe.com/checkout.js"></script>
+<script type="text/javascript" src="{{site.theme.link}}/static/js/stripe.js"></script>
 	<div class="content-wrapper">
-		<img src="{{site.theme.link}}/static/img/headers/header.png" class="top-banner"/>
+		<img src="{{site.theme.link}}/static/img/headers/donate.jpg" class="top-banner"/>
     <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
     	<section class="article-content">
       	<div class="article-wrapper">
 					<div class="article-body">
 						{{broken_content[0]}}
 						<div class='col-md-3'>
-							<img class="image-crop" src="https://placehold.it/100x100"/>
+							<button class="donateButton btn" data-amount="1000" data-name="CoderDojo Foundation" data-description="Donation (€10)">€10</button>
 						</div>
 						<div class='col-md-3'>
-							<img class="image-crop" src="https://placehold.it/100x100"/>
+							<button class="donateButton btn" data-amount="2000" data-name="CoderDojo Foundation" data-description="Donation (€20)">€20</button>
 						</div>
 						<div class='col-md-3'>
-							<img class="image-crop" src="https://placehold.it/100x100"/>
+							<button class="donateButton btn" data-amount="5000" data-name="CoderDojo Foundation" data-description="Donation (€50)">€50</button>
 						</div>
 						<div class='col-md-3'>
-							<img class="image-crop" src="https://placehold.it/100x100"/>
+							<button class="donateButton btn" data-amount="10000" data-name="CoderDojo Foundation" data-description="Donation (€100)">€100</button>
 						</div>
-						{% include 'input-field.twig' with {'id': 'donate', 'placeholder': 'Pick your own amount', type: 'text', 'labelfor': 'donate', 'formclass': 'amount' } %}
-						{% include 'cta.twig' with {'buttontext': 'Submit', 'target': 'http://www.google.com' } %}
+						{% include 'input-field.twig' with {'id': 'donate', 'placeholder': 'Pick your own amount', type: 'number', 'labelfor': 'donate', 'class': 'input-donate-custom', 'max': '100000', 'min': '1', 'name': 'donation-amount' } %}
+						{% include 'cta.twig' with {'buttontext': 'Donate', 'class': 'donateButtonCustom btn', 'dataName': 'CoderDojo Foundation', 'dataDescription': 'Donation' } %}
 						{{broken_content[1]}}
-						{% include 'cta.twig' with {'buttontext': 'Call to Action', 'target': 'http://www.google.com' } %}
+						{% include 'cta.twig' with {'buttontext': 'Just giving', 'target': 'http://www.globalgiving.org/projects/coderdojo-start-a-dojo-support/' } %}
 						{{broken_content[2]}}
 						{% include 'cta.twig' with {'buttontext': 'Find A Dojo', 'target': 'https://zen.coderdojo.com/' } %}
 						{{broken_content[3]}}

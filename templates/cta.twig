@@ -9,7 +9,7 @@
 {% endif %}
 
 {% if class%}
-  <button type="submit" id="cta" class="{{class}}">{{ buttontext }}</button>
+  <button type="submit" id="cta" class="{{class}}" data-description="{{dataDescription}}" data-name="{{dataName}}">{{ buttontext }}</button>
 {% else %}
   <button type="submit" id="cta">{{ buttontext }}</button>
 {% endif %}
