@@ -17,9 +17,15 @@
           {% include 'paragraph.twig' with {'align': 'left', 'title':'What is CoderDojo?', 'glyphOne':'fa fa-info fa-5x', 'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra interdum tempor. Maecenas lacinia, quam lacinia euismod placerat, lacus turpis tincidunt turpis, sit amet rhoncus urna massa vel orci. Morbi facilisis, dui id fermentum malesuada, ligula nibh aliquam lacus, eget tempor purus mauris id ipsum. Curabitur ullamcorper sagittis ipsum, eu cursus nibh.' } %}
           {% include 'paragraph.twig' with {'align': 'right', 'title':'How parents can help', 'glyphTwo':'fa fa-child fa-5x', 'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra interdum tempor. Maecenas lacinia, quam lacinia euismod placerat, lacus turpis tincidunt turpis, sit amet rhoncus urna massa vel orci. Morbi facilisis, dui id fermentum malesuada, ligula nibh aliquam lacus, eget tempor purus mauris id ipsum. Curabitur ullamcorper sagittis ipsum, eu cursus nibh.' } %}
         </div>
-        {% include "bio-heads-3.twig" with {'quoteOne': 'Volunteers are people from all walks of life, that have a common goal. This goal is the desire to make a difference in their community by giving their time to help others.', 'imageOne':site.theme.link ~ '/static/img/testimonials/parent.jpg',
-        'quoteTwo': 'These skills will be important no matter what career they go into in the future, so by mentoring you’ll be making a direct impact on their future employability.” Craig Steele – CoderDojo Scotland', 'imageTwo': site.theme.link ~ '/static/img/testimonials/mentor.jpg',
-          'quoteThree': 'My favourite thing about volunteering as a CoderDojo Mentor is seeing the satisfaction in kids’ eyes at the end of a Dojo.” Agnese Addone – CoderDojo Roma, Italy', 'imageThree': site.theme.link ~ '/static/img/testimonials/champion.jpg'  }
+        {% include "bio-heads-3.twig" with {'quoteOne': 'Volunteers are people from all walks of life, that have a common goal. This goal is the desire to make a difference in their community by giving their time to help others.',
+        'imageOne':site.theme.link ~ '/static/img/testimonials/parent.jpg',
+        'quoteeOne': '',
+        'quoteTwo': 'These skills will be important no matter what career they go into in the future, so by mentoring you’ll be making a direct impact on their future employability.',
+        'imageTwo': site.theme.link ~ '/static/img/testimonials/mentor.jpg',
+        'quoteeTwo': 'Craig Steele – CoderDojo Scotland',
+        'quoteThree': 'My favourite thing about volunteering as a CoderDojo Mentor is seeing the satisfaction in kids’ eyes at the end of a Dojo.',
+        'imageThree': site.theme.link ~ '/static/img/testimonials/champion.jpg',
+        'quoteeThree': 'Agnese Addone – CoderDojo Roma, Italy' }
         %}
         {% include "map.twig" %}
       </section>
