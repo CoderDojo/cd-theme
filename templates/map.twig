@@ -6,6 +6,7 @@
 		<div id="find-yours-form">
 			<div class="search-form form-inline">
 				<fieldset>
+					{% if purpose == 'find' %}
 					<label for="search">Find a Dojo near you</label>
 					<div class="search-row">
 						<div class="form-group search-city">
@@ -13,6 +14,10 @@
 						</div>
 						<input class="btn btn-default" type="submit" value="Search" />
 					</div>
+					{% else %}
+					<h2>Get your Dojo on the map</h2>
+					{% include 'cta.twig' with {'buttontext': 'Create a Dojo', 'target': 'https://zen.coderdojo.com' } %}
+					{% endif %}
 				</fieldset>
 			</div>
 		</div>
