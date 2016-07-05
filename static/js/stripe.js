@@ -23,7 +23,7 @@ $(document).ready(function(){
       amount: donorAmount,
       currency: donorCurrency,
     });
-    payment_amount = x;
+    payment_amount = donorAmount;
     e.preventDefault();
   });
 });
