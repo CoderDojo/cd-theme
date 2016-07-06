@@ -34,19 +34,8 @@ class StarterSite extends TimberSite {
 		$context['menu'] = new TimberMenu('main');
 		$context['site'] = $this;
 
-		global $paged;
-    if (!isset($paged) || !$paged){
-        $paged = 1;
-    }
-
-    $args = array(
-        'posts_per_page' => 10,
-        'paged' => $paged
-    );
-
-    query_posts($args);
-    $context['posts'] = Timber::get_posts();
-    $context['pagination'] = Timber::get_pagination();
+		$context['posts'] = Timber::get_posts();
+		$context['pagination'] = Timber::get_pagination();
 
 		$context['grid'] = [ ['src'=>'http://placehold.it/350x150', 'alt'=>'Alt desc',
 		                      'link'=>'http://coderdojo.org','target'=>'_blank'],
@@ -111,6 +100,7 @@ class StarterSite extends TimberSite {
 		$context['team'] = "Meet the Team";
 		$context['board'] = "Meet the Board";
 
+		$context['categories'] = Timber::get_terms('category');
 		return $context;
 	}
 
