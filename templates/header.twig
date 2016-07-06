@@ -23,7 +23,7 @@
                 {% include 'cta.twig' with {'buttontext': 'DONATE', 'align': 'left', 'class': 'header-button', 'target':'donate'} %}
               </li>
               <li>
-                <form class="navbar-form navbar-left" role="search">
+                <form class="navbar-form navbar-left" role="search" action="{{site.home}}">
                   <div class="form-group">
                     <span class="search-placeholder" onclick="document.querySelector('input#navbar-search').classList.add('show');this.style.display='none'; document.getElementById('navbar-search').focus();">Search</span>
                     <input id="navbar-search" type="text" class="form-control" placeholder="Search" name="s">
