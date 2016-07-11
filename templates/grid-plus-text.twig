@@ -5,14 +5,18 @@
       <div class="content-wrapper">
         <div style="text-align:center;">
           {% for item in teamimages %}
-          <div class="col-md-4"><a href="{{item.link}}" target="{{item.target}}"><img src="{{item.src}}" class="image-crop" alt="{{item.body}}" border="0"></a>
+          <div class="col-md-4">
+            <a data-target="#{{item.id}}" data-toggle="modal">
+              <img src="{{item.src}}" class="image-crop" alt="{{item.body}}" border="0">
+            </a>
             <div class="row">
               <span class="bottom-align-text">{{ item.name }} </span>
             </div>
-            <div class="row>"
+            <div class="row>">
               <span class="bottom-align-text">{{ item.role }} </span>
             </div>
           </div>
+          {% include 'modal.twig' with { 'id': item.id, 'name': item.name, 'jobDescription': item.jobDescription, 'twitter': item.twitter, 'linkedin': item.linkedin } %}
           {% endfor %}
         </div>
       </div>
@@ -22,7 +26,10 @@
       <h3><br/><br/>{{board}}</h3>
       <div class="content-wrapper">
         {% for item in boardimages %}
-        <div class="col-md-4"><a href="{{item.link}}" target="{{item.target}}"><img src="{{item.src}}" class="image-crop" alt="{{item.body}}" border="0"></a>
+        <div class="col-md-4">
+          <a data-target="#{{item.id}}" data-toggle="modal">
+            <img src="{{item.src}}" class="image-crop" alt="{{item.body}}" border="0">
+          </a>
           <div class="row">
             <span class="bottom-align-text">{{ item.name }} </span>
           </div>
@@ -30,6 +37,7 @@
             <span class="bottom-align-text">{{ item.role }} </span>
           </div>
         </div>
+        {% include 'modal.twig' with { 'id': item.id, 'name': item.name, 'jobDescription': item.jobDescription, 'twitter': item.twitter, 'linkedin': item.linkedin } %}
         {% endfor %}
       </div>
     </div>
