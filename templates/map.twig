@@ -82,7 +82,7 @@ function initialize() {
   DojoList();
   var mapOptions = {
     center: new google.maps.LatLng(25, 0),
-    zoom: 9,
+    zoom: 2,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     streetViewControl: false,
     scrollwheel: false
@@ -95,6 +95,7 @@ function initialize() {
     navigator.geolocation.getCurrentPosition(function(position) {
       initialLocation = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
 			map.setCenter(initialLocation);
+      map.setZoom(9);
     }, function() {
       handleNoGeolocation(browserSupportFlag);
     });
@@ -108,10 +109,8 @@ function initialize() {
 
   function handleNoGeolocation(errorFlag) {
     if (errorFlag == true) {
-      alert("Geolocation service failed.");
       initialLocation = newyork;
     } else {
-      alert("Your browser doesn't support geolocation.");
       initialLocation = ireland;
     }
     map.setCenter(initialLocation);
