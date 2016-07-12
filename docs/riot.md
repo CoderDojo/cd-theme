@@ -74,8 +74,11 @@ Page                  slug name
 ----                  ---------
 About                 about
 Attend a Dojo         attend-a-dojo
-Badges                badges
-Start a Dojo          start-a-dojo
+Community             community
+-Badges               badges
+-Community Committee  community-committee
+-Forum                forum
+Create a Dojo         create-a-dojo
 Volunteer             volunteer
 What we do            what-we-do
 Donate                donate
@@ -84,9 +87,9 @@ Register              register
 Resources             resources
 Foundation            foundation
 Supporters            supporters
-Community Committee   community-committee
 Movement              movement
 News                  news
+Regional Bodies       regional-bodies
 ```
 
 > The menu does not support more than 7 pages.
@@ -107,4 +110,4 @@ With the *Video-poster* item you should accept images and this will host the Vid
 
 If neither of this fields are field in a horizontal rule is shown instead to show.
 
-*article_desc* should be a required field and set to maximum thirty characters. It is used on the news page alongside the thumbnail of articles.
+*post_banner* A required image for posts. This image needs to be large and high quality. It will be injected into a carousel on page-news.
