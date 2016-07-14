@@ -1,8 +1,8 @@
 
 
-/*
- * Styles specifically for the header
- */
+// /*
+//  * Styles specifically for the header
+//  */
 
 html {
     background: @cd-background;
@@ -20,7 +20,7 @@ body {
 }
 
 .navbar-form input#navbar-search {
-  width: 400px;
+  width: 100%;
   display: none;
 }
 
@@ -29,7 +29,6 @@ body {
 }
 
 .navbar-form .form-group {
-  padding-left: 20px;
   font-size: 16px;
   font-weight: 400;
 }
@@ -41,55 +40,83 @@ body {
    background-color: @cd-green;
  }
 
-.search-placeholder:before {
-  content: " ";
-  background-image: url('../img/misc/search-glass.png');
-  display:inline-block;
-  width:24px;
-  height:24px;
-  vertical-align: middle;
-  margin-right: 4px;
-  margin-top: -4px;
+.search-placeholder {
+  cursor: pointer;
+
+  &:before {
+    content: " ";
+    background-image: url('../img/misc/search-glass.png');
+    display:inline-block;
+    width:24px;
+    height:24px;
+    vertical-align: middle;
+    margin-right: 4px;
+    margin-top: -4px;
+  }
+
+  &:not(:lang(el)),
+  &:not(:lang(tr)) {
+    text-transform: uppercase;
+    line-height: 34px;
+    display:inline;
+  }
 }
 
-.search-placeholder:not(:lang(el)),
-.search-placeholder:not(:lang(tr)) {
-  text-transform: uppercase;
-  line-height: 34px;
-  display:inline;
-}
-
-.header {
-    margin-top: 93px;
-}
-
-.header .navbar-wrapper {
-  padding-top: 13px;
+.header-menu {
+  padding-top: 12px;
 }
 
 .header .navbar-default {
     border: none;
-    background: none;
+    background: @cd-background;
     margin: 0;
     width: 100%;
 }
 
-.header .top-nav {
-    background: @cd-background;
-    height: 75px;
-}
-
-.header .menu .navbar-nav {
-    width: 100%;
+.header .menu.navbar-nav {
     text-transform: uppercase;
     background: @cd-white;
+    margin-top: 12px;
 }
 
-.header .menu .navbar-nav li {
-    width: 14%;
-    width: calc(100% / 7);
-    text-align: center;
-    font-weight: 400;
+#nav-left-item:after {
+  position: absolute;
+  top: 14px;
+  left: 111px;
+  content: '';
+  width:1px;
+  background: #000;
+  height: 24px;
+}
+
+.header .menu.navbar-nav li {
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .header .navbar-header, .header .navbar-nav {
+    margin-top: 12px;
+  }
+
+  .header .menu.navbar-nav {
+    width: 100%;
+  }
+
+  .header .menu.navbar-nav li {
+      width: 14%;
+      width: calc(100% / 7);
+      text-align: center;
+  }
+
+  .donate-button {
+    padding-top: 4px;
+    padding-left: 35px;
+  }
+
+  .navbar-form .form-group {
+    padding-left: 20px;
+    width: 400px;
+  }
 }
 
 .center {
@@ -102,13 +129,6 @@ body {
 }
 
 @media (min-width: 1280px) {
-    .header .menu .navbar-nav li {
-  /*
-        padding: 0 2.3em;
-        width: auto;
-   */
-    }
-
     .header .navbar-default {
         width: 1280px;
         margin: 0 auto;
@@ -125,30 +145,23 @@ body {
 }
 
 @media (min-width: 0) and (max-width: 768px) {
-    .top-nav .navbar-collapse {
-        width: 100%;
-        overflow: hidden;
-        background: @cd-alt-white;
-        text-align: center;
-    }
 
-    .top-nav .navbar-form {
-        border: none;
-    }
+  .login-register.navbar-nav li {
+    display: inline-block;
+  }
 
-    .top-nav .navbar-collapse li {
-        display: inline-block;
-    }
+  .search-button, .donate-button {
+    padding: 0 15px;
+  }
+
+  #nav-left-item:after {
+    top: 10px;
+  }
 }
 
-/*
- * Styles specifically for the Header
- */
-
-.donate-button {
-  padding-top: 4px;
-  padding-left: 35px;
-}
+// /*
+//  * Styles specifically for the Header
+//  */
 
 .cta .footer-button {
   color: #fff;
@@ -176,22 +189,12 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-#nav-left-item:after {
-  position: absolute;
-  top: 7px;
-  left: 104px;
-  content:url('../img/misc/splitter.png');
-}
-
 .navbar-default .navbar-nav li a {
   color: #000 !important;
 }
 
 .top-banner {
   width:100%;
-  @media(max-width: 600px){
-    height:200px;
-  }
 }
 
 .home-splash {

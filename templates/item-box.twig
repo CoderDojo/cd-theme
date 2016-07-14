@@ -4,8 +4,18 @@
     <div class="content-item-box">
       <div class="row">
         {% if rows == '2' %}
-          <div class="col-md-6 box-item"><a href={{hrefOne}} target=""><img src="{{imageOne}}" alt="" border="0"></a></div>
-          <div class="col-md-6 box-item"><a href={{hrefTwo}} target=""><img src="{{imageTwo}}" alt="" border="0"></a></div>
+          <div class="col-md-6 box-item">
+            <a href={{hrefOne}} target=""><img src="{{imageOne}}" alt="" border="0"></a>
+            <div class="double-par">
+              {{textOne}}
+            </div>
+          </div>
+          <div class="col-md-6 box-item">
+            <a href={{hrefTwo}} target=""><img src="{{imageTwo}}" alt="" border="0"></a>
+            <div class="double-par">
+              {{textTwo}}
+            </div>
+          </div>
         {% endif %}
         {% if rows == '3' %}
           <div class="col-md-4 box-item"><a href={{hrefOne}} target=""><img src="{{imageOne}}" alt="" border="0"></a></div>

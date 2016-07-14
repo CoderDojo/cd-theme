@@ -1,31 +1,6 @@
 {# Paragraph with image - left/right #}
 
-{% if align == 'left' %}
-  <div class="paragraph">
-    <div class="row">
-      <div class="col-xs-4 col-md-3">
-        <div class="image-container">
-          <i class="{{glyphOne}}"></i>
-        </div>
-      </div>
-      <div class="col-xs-8 col-sm-6 col-md-8 left">
-        <div id="title">{{title}}</div>
-        <div id="desc">{{desc}}</div>
-      </div>
-    </div>
-  </div>
-  {% else %}
-  <div class="paragraph">
-    <div class="row">
-      <div class="col-xs-8 col-sm-6 col-md-8 right">
-        <div id="title">{{title}}</div>
-        <div id="desc">{{desc}}</div>
-      </div>
-      <div class="col-xs-4 col-md-3">
-        <div class="image-container">
-          <i class="{{glyphTwo}}"></i>
-        </div>
-      </div>
-    </div>
-  </div>
-{% endif %}
+<div class="paragraph {{align}}">
+  <div id="title"><i class="icon {{align}} {{glyph}}"></i>{{title}}</div>
+  <div id="desc">{{desc}}</div>
+</div>

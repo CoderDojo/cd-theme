@@ -1,9 +1,7 @@
 {% extends "base.twig" %}
 
 {% block content %}
-
-	{% for post in posts %}
-		{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
-	{% endfor %}
-
+<div class="col-md-12">
+	{% include "article-list.twig" with {"wordCount": 100} %}
+</div>
 {% endblock %}

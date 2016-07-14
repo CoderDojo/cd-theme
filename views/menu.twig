@@ -1,18 +1,16 @@
-<div id="navbar" class="navbar-collapse collapse">
-  <ul class="nav navbar-nav">
-    {% for item in menu %}
-      <li class="{{item.classes | join(' ')}} dropdown">
-        <a href="{{item.get_link}}" class="dropdown-toggle" {% if item.get_children %} data-toggle="dropdown" {% endif %} aria-haspopup="true" aria-expanded="false">{{item.title}}{% if item.get_children %} <span class="caret"></span> {% endif %}</a>
-        {% if item.get_children %}
-          <ul class="dropdown-menu">
-            {% for child in item.get_children %}
-              <li><a href="{{child.get_link}}">{{child.title}}</a><li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-  <ul class="nav navbar-nav navbar-right">
-  </ul>
-</div><!--/.nav-collapse -->
+<ul class="menu nav navbar-nav">
+  {% for item in menu %}
+    <li class="{{item.classes | join(' ')}} dropdown">
+      <a href="{{item.get_link}}" class="dropdown-toggle" {% if item.get_children %} data-toggle="dropdown" {% endif %} aria-haspopup="true" aria-expanded="false">{{item.title}}{% if item.get_children %} <span class="caret"></span> {% endif %}</a>
+      {% if item.get_children %}
+        <ul class="dropdown-menu">
+          {% for child in item.get_children %}
+            <li><a href="{{child.get_link}}">{{child.title}}</a><li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+<ul class="nav navbar-nav navbar-right">
+</ul>

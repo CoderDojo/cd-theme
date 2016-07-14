@@ -1,0 +1,17 @@
+<div class="pages">
+  {% for post in posts %}
+  <article class="row article-pagination">
+    {% if post.thumbnail.src %}
+    <div class="col-md-4 col-sm-4 col-sm-push-8 post-image" style="background-image:url({{post.thumbnail.src('medium')}})">
+    </div>
+    <div class="col-md-8 col-sm-8 col-sm-pull-4">
+    {% else %}
+    <div class="col-md-12 col-sm-12">
+    {% endif %}
+      <a href="{{post.link}}"><h3>{{post.title}}</h3></a>
+      <p class="meta">{{post.post_date|date('j F Y')}} · by {{post.author.name}}</p>
+      <p class="post-preview">{{post.get_preview(wordCount)}}</p>
+    </div>
+  </article>
+  {% endfor %}
+</div>

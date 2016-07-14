@@ -5,17 +5,15 @@
       <div class="content-wrapper">
         <div style="text-align:center;">
           {% for item in teamimages %}
-          <div class="col-md-4">
-            <a data-target="#{{item.id}}" data-toggle="modal">
-              <img src="{{item.src}}" class="image-crop" alt="{{item.body}}" border="0">
-            </a>
+          <a class="headshot-modal-link col-md-4 col-sm-4 col-xs-6" data-target="#{{item.id}}" data-toggle="modal">
+            <img src="{{item.src}}" class="image-crop" alt="{{item.body}}" border="0">
             <div class="row">
               <span class="bottom-align-text">{{ item.name }} </span>
             </div>
             <div class="row>">
               <span class="bottom-align-text">{{ item.role }} </span>
             </div>
-          </div>
+          </a>
           {% include 'modal.twig' with { 'id': item.id, 'name': item.name, 'jobDescription': item.jobDescription, 'twitter': item.twitter, 'linkedin': item.linkedin } %}
           {% endfor %}
         </div>
@@ -26,17 +24,17 @@
       <h3><br/><br/>{{board}}</h3>
       <div class="content-wrapper">
         {% for item in boardimages %}
-        <div class="col-md-4">
-          <a data-target="#{{item.id}}" data-toggle="modal">
-            <img src="{{item.src}}" class="image-crop" alt="{{item.body}}" border="0">
-          </a>
-          <div class="row">
-            <span class="bottom-align-text">{{ item.name }} </span>
+        <a class="headshot-modal-link" data-target="#{{item.id}}" data-toggle="modal">
+          <div class="col-md-4 col-sm-4 col-xs-6">
+              <img src="{{item.src}}" class="image-crop" alt="{{item.body}}" border="0">
+            <div class="row">
+              <span class="bottom-align-text">{{ item.name }} </span>
+            </div>
+            <div class="row">
+              <span class="bottom-align-text">{{ item.role }} </span>
+            </div>
           </div>
-          <div class="row">
-            <span class="bottom-align-text">{{ item.role }} </span>
-          </div>
-        </div>
+        </a>
         {% include 'modal.twig' with { 'id': item.id, 'name': item.name, 'jobDescription': item.jobDescription, 'twitter': item.twitter, 'linkedin': item.linkedin } %}
         {% endfor %}
       </div>

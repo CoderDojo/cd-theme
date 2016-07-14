@@ -3,62 +3,108 @@
  */
 
 .paragraph  {
-  width: 80%;
-  margin-left: 15%;
-  padding-bottom: 25px;
-}
+  position: relative;
+  padding: 0 20% 25px 20%;
 
-.paragraph .row {
-  height: 100%;
-  padding-bottom: 20px;
-}
+  .row {
+    height: 100%;
+    padding-bottom: 20px;
+  }
 
-.paragraph #title {
-  font-size: 28px;
-  padding-bottom: 10px;
-  font-weight: 400;
-}
+  #title {
+    font-size: 28px;
+    padding-bottom: 10px;
+    font-weight: 400;
+  }
 
-.paragraph .left {
-  text-align: left;
-}
-
-.paragraph #desc{
+  #desc{
     font-size: 16px;
     color: @cd-black;
     line-height: 2.0;
     padding-bottom: 20px;
+  }
+
+  .image-container {
+    position:absolute;
+    left: 60px;
+  }
+
+  .image-crop {
+      width: 120px;
+      height: 120px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 50%;
+      border: solid rgba(128, 128, 128, 0.1) 1px;
+  }
+
+  img {
+      display: inline;
+      margin: 0 auto;
+      height: 100%;
+      width: auto;
+  }
+
+  &.left {
+    text-align: left;
+    padding-left: 200px;
+    margin-right: -100px;
+  }
+
+  &.right {
+    text-align: right;
+    padding-right: 200px;
+    margin-left: -100px;
+  }
 }
 
-.paragraph .left #desc {
-  margin-right: 22%;
+.icon {
+  position: absolute;
+  top: 16px;
+  font-size: 4em !important;
+  vertical-align: bottom;
+  width: auto;
+  text-align: center;
+
+  &.left {
+    left: 0;
+  }
+
+  &.right {
+    right: 0;
+  }
 }
 
-.paragraph .right #desc {
-  margin-left: 22%;
+.paragraph.left {
+  text-align: left;
+  padding-left: 200px;
+  margin-right: -100px;
 }
 
-.paragraph .right {
+.paragraph.right {
   text-align: right;
+  padding-right: 200px;
+  margin-left: -100px;
 }
 
-.paragraph .image-container {
-  position:absolute;
-  left: 60px;
-}
+@media (min-width: 0) and (max-width: 768px) {
+  .icon {
+    font-size: 2em !important;
+    width: 72px;
+  }
 
-.paragraph .image-crop {
-    width: 120px;
-    height: 120px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%;
-    border: solid rgba(128, 128, 128, 0.1) 1px;
-}
+  .paragraph {
+    padding: 0 5% 25px 5%;
 
-.paragraph img {
-    display: inline;
-    margin: 0 auto;
-    height: 100%;
-    width: auto;
+    &.left {
+      padding-left: 72px;
+      margin-right: 0;
+    }
+
+    &.right {
+      padding-right: 72px;
+      margin-left: 0;
+      text-align: left;
+    }
+  }
 }

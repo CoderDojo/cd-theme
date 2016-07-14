@@ -2,8 +2,7 @@
   {% block header %}
   <div class="wrapper">
     <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="top-nav">
-        <div class="navbar-wrapper">
+        <!-- <div class="navbar-wrapper"> -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
@@ -17,34 +16,32 @@
               </svg>
             </a>
           </div>
+
           <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="donate-button">
-                {% include 'cta.twig' with {'buttontext': 'DONATE', 'align': 'left', 'class': 'header-button', 'target':'donate'} %}
-              </li>
-              <li>
-                <form class="navbar-form navbar-left" role="search" action="{{site.home}}">
-                  <div class="form-group">
-                    <span class="search-placeholder" onclick="document.querySelector('input#navbar-search').classList.add('show');this.style.display='none'; document.getElementById('navbar-search').focus();">Search</span>
-                    <input id="navbar-search" type="text" class="form-control" placeholder="Search" name="s">
-                  </div>
-                </form>
-              </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a href="https://zen.coderdojo.com/register" id="nav-left-item">REGISTER</a>
-              </li>
-              <li>
-                <a href="https://zen.coderdojo.com/login">LOGIN</a>
-              </li>
-            </ul>
+              <ul class="nav navbar-nav">
+                <li class="donate-button">
+                  {% include 'cta.twig' with {'buttontext': 'DONATE', 'align': 'left', 'class': 'header-button', 'target':'donate'} %}
+                </li>
+                <li class="search-button">
+                  <form class="navbar-form navbar-left" role="search" action="{{site.home}}">
+                    <div class="form-group">
+                      <span class="search-placeholder" onclick="document.querySelector('input#navbar-search').classList.add('show');this.style.display='none'; document.getElementById('navbar-search').focus();">Search</span>
+                      <input id="navbar-search" type="text" class="form-control" placeholder="Search" name="s">
+                    </div>
+                  </form>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right login-register">
+                <li>
+                  <a href="https://zen.coderdojo.com/register" id="nav-left-item">REGISTER</a>
+                </li>
+                <li>
+                  <a href="https://zen.coderdojo.com/login">LOGIN</a>
+                </li>
+              </ul>
+              {% include "menu.twig" with {'menu': menu.get_items} %}
           </div><!--/.nav-collapse -->
-        </div>
-      </div>
-      <div class="menu">
-        {% include "menu.twig" with {'menu': menu.get_items} %}
-      </div>
+        <!-- </div> -->
     </nav>
   </div>
   {% endblock %}

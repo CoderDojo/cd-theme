@@ -12,22 +12,10 @@
       </div>
       <div class="about-blocks">
         <div class="row top">
-          {% include "item-box.twig" with {'title': '', 'hrefOne':'movement', 'hrefTwo':'foundation', 'rows': 2 , 'imageOne': site.theme.link ~ '/static/img/headers/movement.jpg', 'imageTwo': site.theme.link ~ '/static/img/headers/foundation.jpg'} %}
-          <div class="col-md-6  double-par" >
-            {{broken_content[1]}}
-          </div>
-          <div class="col-md-6 double-par-2">
-            {{broken_content[2]}}
-          </div>
+          {% include "item-box.twig" with {'title': '', 'hrefOne':'movement', 'hrefTwo':'foundation', 'rows': 2 , 'imageOne': site.theme.link ~ '/static/img/headers/movement.jpg', 'imageTwo': site.theme.link ~ '/static/img/headers/foundation.jpg', 'textOne': broken_content[1], 'textTwo': broken_content[2]} %}
         </div>
         <div class="row bottom">
-         {% include "item-box.twig" with {'title': '', 'hrefOne':'supporters', 'hrefTwo':'community', 'rows': 2, 'imageOne': site.theme.link ~ '/static/img/headers/supporters.jpg', 'imageTwo': site.theme.link ~ '/static/img/headers/community.jpg'} %}
-          <div class="col-md-6 double-par">
-            {{broken_content[3]}}
-          </div>
-          <div class="col-md-6 double-par-2">
-            {{broken_content[4]}}
-          </div>
+         {% include "item-box.twig" with {'title': '', 'hrefOne':'supporters', 'hrefTwo':'community', 'rows': 2, 'imageOne': site.theme.link ~ '/static/img/headers/supporters.jpg', 'imageTwo': site.theme.link ~ '/static/img/headers/community.jpg', 'textOne': broken_content[3], 'textTwo': broken_content[4]} %}
         </div>
       </div>
     </section>

@@ -3,51 +3,35 @@
 {% block content %}
   <div class="content-wrapper">
     <div class="news-carousel">
-      {% include "carousel.twig" with
-      {'imageOne': 'https://placehold.it/1280x500', 'imageTwo': 'https://placehold.it/1280x500', 'imageThree': 'https://placehold.it/1280x500' } %}
+      <!-- {% include "carousel.twig" %} -->
     </div>
-    <ul class="cat-list pull-left">
-      <h3>Categories</h3>
-      {% for cat in categories %}
-          <li><a href="{{cat.link}}">{{cat.name}}</a></li>
-      {% endfor %}
-    </ul>
-    <form class="pull-right news-search" role="search" action={{site.home}}>
-      <div class="form-group">
-        <h3>Search</h3>
-        <input id="navbar-search" type="text" class="form-control" placeholder="Search" name="s">
-      </div>
-    </form>
-    <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
-      <section class="article-content">
-        <div class="article-wrapper">
-          <div class="article-body">
-            <div class="tool-pagination">
-              <ul class="pages">
-                <h1>All news</h1>
-                {% for post in posts %}
-                <li class="article-pagination">
-                  {% if post.link %}
-                  <a href="{{post.link}}"><img src="{{post.thumbnail.src}}"/></a>
-                  <a href="{{post.link}}" class="{{post.class}}">{{post.title}}</a>
-                  <hr>
-                  {% else %}
-                  <img src="{{post.thumbnail.src}}"/>
-                  <span class="{{post.class}}">{{post.title}}</span>
-                  {% endif %}
-                </li>
-                {% endfor %}
-              </ul>
-              {% if pagination.prev %}
-              <a href="{{pagination.prev.link}}" class="prev {{pagination.prev.link|length ? '' : 'invisible'}}"><button class="btn btn-default">Previous</button></a>
-              {% endif %}
-              {% if pagination.next %}
-              <a href="{{pagination.next.link}}" class="next {{pagination.next.link|length ? '' : 'invisible'}}"><button class="btn btn-default">Next</button></a>
-              {% endif %}
-            </div>
-          </div>
+    <article class="col-md-9">
+      <div class="tool-pagination">
+        <h1>All news</h1>
+        {% include "article-list.twig" with {"wordCount": 50} %}
+        <div class="pagination-buttons">
+          {% if pagination.prev %}
+          <a href="{{pagination.prev.link}}" class="prev {{pagination.prev.link|length ? '' : 'invisible'}} pull-left"><button class="btn btn-default">Previous</button></a>
+          {% endif %}
+          {% if pagination.next %}
+          <a href="{{pagination.next.link}}" class="next {{pagination.next.link|length ? '' : 'invisible'}} pull-right"><button class="btn btn-default">Next</button></a>
+          {% endif %}
         </div>
-      </section>
+      </div>
     </article>
+    <div class="col-md-3">
+      <form class="news-search" role="search" action={{site.home}}>
+        <div class="form-group">
+          <h3>Search</h3>
+          <input id="navbar-search" type="text" class="form-control" placeholder="Search" name="s">
+        </div>
+      </form>
+      <ul class="cat-list">
+        <h3>Categories</h3>
+        {% for cat in categories %}
+            <li><a href="{{cat.link}}">{{cat.name}}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
   </div><!-- /content-wrapper -->
 {% endblock %}
