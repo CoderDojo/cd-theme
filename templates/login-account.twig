@@ -1,0 +1,38 @@
+<ul id="registerLogin" style="display:none;" class="nav navbar-nav navbar-right login-register">
+  <li>
+    <a href="https://zen.coderdojo.com/register" class="nav-left-item">REGISTER</a>
+  </li>
+  <li>
+    <a href="https://zen.coderdojo.com/login">LOGIN</a>
+  </li>
+</ul>
+<ul id="loggedIn" style="display:none;" class="nav navbar-nav navbar-right login-register">
+  <li><a id="username" class="nav-left-item"></a></li>
+  <li>
+    <a id="accountLink">MY ACCOUNT</a>
+  </li>
+</ul>
+<script type="text/javascript">
+  (function () {
+    var registerLogin = document.getElementById('registerLogin');
+    var loggedIn = document.getElementById('loggedIn');
+    var username = document.getElementById('username');
+    var accountLink = document.getElementById('accountLink');
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+      if (this.readyState === 4 && this.status === 200) {
+        var user = JSON.parse(this.responseText).user;
+        if (user) {
+          loggedIn.style.display = 'inline-block';
+          username.innerHTML = user.name;
+          accountLink.href = 'https://zen.coderdojo.com/profile/' + user.id
+        } else {
+          registerLogin.style.display = 'inline-block';
+        }
+      }
+    }
+    xhr.open('GET', 'https://zen.coderdojo.com/api/2.0/users/instance', true);
+    xhr.withCredentials = true;
+    xhr.send();
+  })();
+</script>

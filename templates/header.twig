@@ -31,14 +31,7 @@
                   </form>
                 </li>
               </ul>
-              <ul class="nav navbar-nav navbar-right login-register">
-                <li>
-                  <a href="https://zen.coderdojo.com/register" id="nav-left-item">REGISTER</a>
-                </li>
-                <li>
-                  <a href="https://zen.coderdojo.com/login">LOGIN</a>
-                </li>
-              </ul>
+              {% include "login-account.twig" %}
               {% include "menu.twig" with {'menu': menu.get_items} %}
           </div><!--/.nav-collapse -->
         <!-- </div> -->

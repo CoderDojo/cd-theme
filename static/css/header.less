@@ -79,10 +79,10 @@ body {
     margin-top: 12px;
 }
 
-#nav-left-item:after {
+.nav-left-item:after {
   position: absolute;
   top: 14px;
-  left: 111px;
+  right: 0;
   content: '';
   width:1px;
   background: #000;
@@ -115,7 +115,6 @@ body {
 
   .navbar-form .form-group {
     padding-left: 20px;
-    width: 400px;
   }
 }
 
@@ -154,7 +153,7 @@ body {
     padding: 0 15px;
   }
 
-  #nav-left-item:after {
+  .nav-left-item:after {
     top: 10px;
   }
 }
@@ -207,30 +206,32 @@ body {
   font-weight: bold;
   position: absolute;
   top: 50%;
-  bottom: 0%;
+  bottom: 0;
   left: 0;
   right: 0;
-  margin: auto;;
-  width: 75%;
+  margin: 0 20%;
   text-align:center;
   color: @cd-white;
+  @media (max-width: 768px){
+    margin: 0 10%;
+  }
   @media (max-width: 600px){
-    top: 18%;
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
 .cd-logo {
   position: absolute;
-  top: -20%;
+  top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  margin: auto;
-  width: 250px;
+  margin: -7% auto 0 auto;
+  max-width: 350px;
   text-align: left;
-  @media (max-width: 600px){
-    display:none;
+  @media (max-width: 768px){
+    max-width: 250px;
+    height: 35%;
   }
 }
 
