@@ -88,7 +88,8 @@ function initialize() {
   var mapOptions = {
     center: centerLocation,
     zoom: 2,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    scrollwheel: false
   };
   map = new google.maps.Map(document.getElementById("map-box"), mapOptions);
   DojoList();
