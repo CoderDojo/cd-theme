@@ -1,52 +1,16 @@
 <table class="table committee-comp">
   <tr>
-    <td>Name</td>
-    <td>Name</td>
-    <td>Name</td>
+    <th>Name</th>
+    <th>Dojo</th>
+    <th>Region</th>
+    <th>joined</th>
   </tr>
+  {% for item in community %}
   <tr>
-    <td>Name</td>
-    <td>Name</td>
-    <td>Name</td>
+    <td>{{ item.name }}</td>
+    <td>{{ item.dojo }}</td>
+    <td>{{ item.region }}</td>
+    <td>{{ item.joined }}</td>
   </tr>
-  <tr>
-    <td>Name</td>
-    <td>Name</td>
-    <td>Name</td>
-  </tr>
-  <tr>
-    <td>Name</td>
-    <td>Name</td>
-    <td>Name</td>
-  </tr>
-  <tr>
-    <td>Name</td>
-    <td>Name</td>
-    <td>Name</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Name</td>
-    <td>Name</td>
-  </tr>
-  <tr>
-    <td>Name</td>
-    <td>Name</td>
-    <td>Name</td>
-  </tr>
-  <tr>
-    <td>Name</td>
-    <td>Name</td>
-    <td>Name</td>
-  </tr>
-  <tr>
-    <td>Name</td>
-    <td>Name</td>
-    <td>Name</td>
-  </tr>
-  <tr>
-    <td>Name</td>
-    <td>Name</td>
-    <td>Name</td>
-  </tr>
+  {% endfor %}
 </table>
