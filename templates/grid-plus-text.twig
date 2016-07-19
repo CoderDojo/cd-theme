@@ -64,9 +64,10 @@
 
 {% else %}
 <div class="funderImages" align="center">
+  <h3><br/><br/>{{Funders}}</h3>
   <div class="content-wrapper">
     {% for item in funderImages %}
-    <div class="col-md-4">
+    <div class="col-md-5ths col-xs-6">
       <a href="{{item.link}}" data-target="#{{item.id}}">
         <img src="{{item.src}}" class="image-crop" alt="{{item.body}}" border="0">
       </a>
@@ -83,6 +84,7 @@
 </div>
 
 <div class="partnerImages" align="center">
+  <h3><br/><br/>{{Partners}}</h3>
   <div class="content-wrapper">
     {% for item in partnerImages %}
     <div class="col-md-5ths col-xs-6">
@@ -100,5 +102,46 @@
   </div>
 </div>
 </div>
+
+<div class="allianceImages" align="center">
+  <h3><br/><br/>{{Alliance}}</h3>
+  <div class="content-wrapper">
+    {% for item in allianceImages %}
+    <div class="col-md-5ths col-xs-6">
+      <a href="{{item.link}}" data-target="#{{item.id}}">
+        <img src="{{item.src}}" class="image-crop" alt="{{item.body}}" border="0">
+      </a>
+      <div class="row">
+        <span class="bottom-align-text">{{ item.name }} </span>
+      </div>
+      <div class="row">
+        <span class="bottom-align-text">{{ item.role }} </span>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+</div>
+
+<div class="supporterImages" align="center">
+  <h3><br/><br/>{{Supporters}}</h3>
+  <div class="content-wrapper">
+    {% for item in supporterImages %}
+    <div class="col-md-5ths col-xs-6">
+      <a href="{{item.link}}" data-target="#{{item.id}}">
+        <img src="{{item.src}}" class="image-crop" alt="{{item.body}}" border="0">
+      </a>
+      <div class="row">
+        <span class="bottom-align-text">{{ item.name }} </span>
+      </div>
+      <div class="row">
+        <span class="bottom-align-text">{{ item.role }} </span>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+</div>
+
 {% endif %}
 {% endblock %}
