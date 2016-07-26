@@ -1,3 +1,4 @@
+{% if purpose == 'foundation' %}
 <div class="modal fade" id="{{id}}" tabindex="-1" role="dialog" aria-labelledby="modal">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -29,3 +30,36 @@
     </div>
   </div>
 </div>
+{% else %}
+<div class="modal fade" id="{{id}}" tabindex="-1" role="dialog" aria-labelledby="modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="myModalLabel">{{name}}</h2>
+      </div>
+      <div class="modal-body">
+        <img src="{{item.src}}" alt="{{item.body}}" border="0"><br>
+        <br>{{jobDescription}}
+      </div>
+      <div class="nav navbar-nav navbar-left social narrow">
+        <a href={{linkedin}}>
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-linkedin fa-stack-1x"></i>
+          </span>
+        </a>
+        <a href={{twitter}}>
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-twitter fa-stack-1x"></i>
+          </span>
+        </a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}

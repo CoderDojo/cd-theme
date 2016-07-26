@@ -15,7 +15,7 @@
               <span class="bottom-align-text">{{ item.role }} </span>
             </div>
           </a>
-          {% include 'modal.twig' with { 'id': item.id, 'name': item.name, 'jobDescription': item.jobDescription, 'twitter': item.twitter, 'linkedin': item.linkedin } %}
+          {% include 'modal.twig' with { 'id': item.id, 'name': item.name, 'jobDescription': item.jobDescription, 'twitter': item.twitter, 'linkedin': item.linkedin} %}
           {% endfor %}
         </div>
       </div>
@@ -42,6 +42,27 @@
     </div>
   </div>
 
+{% elseif purpose == 'resources' %}
+<<div class="resourcesImages" align="center">
+  <div class="content-wrapper">
+    {% for item in resourcesImages %}
+    <div class="col-md-4 col-sm-4 col-xs-6">
+      <a href="{{item.link}}" data-target="#{{item.id}}">
+        <img src="{{item.src}}" alt="{{item.body}}" border="0">
+      </a>
+      <div class="row">
+        <span class="bottom-align-text">{{ item.name }} </span>
+      </div>
+      <div class="row">
+        <span class="bottom-align-text">{{ item.role }} </span>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+</div>
+
+
 {% elseif purpose == 'regional' %}
   <div class="regionalImages" align="center">
     <div class="content-wrapper">
@@ -67,9 +88,9 @@
   <h3><br/><br/>{{Funders}}</h3>
   <div class="content-wrapper">
     {% for item in funderImages %}
-    <div class="col-md-5ths col-xs-6">
-      <a href="{{item.link}}" data-target="#{{item.id}}">
-        <img src="{{item.src}}" class="image-crop" alt="{{item.body}}" border="0">
+    <div class="col-xs-6 col-md-4">
+      <a href="headshot-modal-link" data-target="#{{item.id}}" data-toggle="modal">
+        <img src="{{item.src}}" alt="{{item.body}}" border="0">
       </a>
       <div class="row">
         <span class="bottom-align-text">{{ item.name }} </span>
@@ -78,6 +99,7 @@
         <span class="bottom-align-text">{{ item.role }} </span>
       </div>
     </div>
+    {% include 'modal.twig' with { 'id': item.id, 'name': item.name, 'jobDescription': item.jobDescription, 'twitter': item.twitter, 'linkedin': item.linkedin } %}
     {% endfor %}
   </div>
 </div>
@@ -88,7 +110,7 @@
   <div class="content-wrapper">
     {% for item in partnerImages %}
     <div class="col-md-5ths col-xs-6">
-      <a href="{{item.link}}" data-target="#{{item.id}}">
+      <a href="headshot-modal-link" data-target="#{{item.id}}" data-toggle="modal">
         <img src="{{item.src}}" class="image-crop" alt="{{item.body}}" border="0">
       </a>
       <div class="row">
@@ -98,6 +120,7 @@
         <span class="bottom-align-text">{{ item.role }} </span>
       </div>
     </div>
+    {% include 'modal.twig' with { 'id': item.id, 'name': item.name, 'jobDescription': item.jobDescription, 'twitter': item.twitter, 'linkedin': item.linkedin } %}
     {% endfor %}
   </div>
 </div>
@@ -118,6 +141,7 @@
         <span class="bottom-align-text">{{ item.role }} </span>
       </div>
     </div>
+    {% include 'modal.twig' with { 'id': item.id, 'name': item.name, 'jobDescription': item.jobDescription, 'twitter': item.twitter, 'linkedin': item.linkedin } %}
     {% endfor %}
   </div>
 </div>
@@ -128,7 +152,7 @@
   <div class="content-wrapper">
     {% for item in supporterImages %}
     <div class="col-md-5ths col-xs-6">
-      <a href="{{item.link}}" data-target="#{{item.id}}">
+      <a href="headshot-modal-link" data-target="#{{item.id}}" data-toggle="modal">
         <img src="{{item.src}}" class="image-crop" alt="{{item.body}}" border="0">
       </a>
       <div class="row">
@@ -138,6 +162,7 @@
         <span class="bottom-align-text">{{ item.role }} </span>
       </div>
     </div>
+    {% include 'modal.twig' with { 'id': item.id, 'name': item.name, 'jobDescription': item.jobDescription, 'twitter': item.twitter, 'linkedin': item.linkedin } %}
     {% endfor %}
   </div>
 </div>
