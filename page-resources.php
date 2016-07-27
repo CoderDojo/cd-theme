@@ -22,8 +22,13 @@ $context['resourcesImages'] = [   ['src'=>'../wp-content/themes/cd-theme/static/
 
                         [ 'src'=>'../wp-content/themes/cd-theme/static/img/resources/arduino.png', 'id'=>'8','name'=>'Arduino'],
 
-                        ['src'=>'../wp-content/themes/cd-theme/static/img/resources/js.png','id'=>'9','name'=>'JavaScript'],
+                        ['src'=>'../wp-content/themes/cd-theme/static/img/resources/mobile.png','id'=>'9','name'=>'Mobile'],
 
+                        ['src'=>'../wp-content/themes/cd-theme/static/img/resources/champion.png', 'id'=>'10', 'name'=>'Resources For Champions'],
+
+                        [ 'src'=>'../wp-content/themes/cd-theme/static/img/resources/mentors.png', 'id'=>'11','name'=>'Resources For Mentors'],
+
+                        ['src'=>'../wp-content/themes/cd-theme/static/img/resources/parent.png','id'=>'12','name'=>'Resources For Parents'],
                       ];
 
 $context['Resources'] = "Resources";
