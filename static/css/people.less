@@ -77,6 +77,28 @@
   width: 50%;
   margin-top: 15px;
 }
+.headshot-modal-link-regional{
+  height: 250px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s ease-out;
+
+  img {
+    transition: box-shadow 0.2s ease-out;
+  }
+
+  &:hover {
+    text-decoration: none;
+
+    img {
+      box-shadow: 0 0 0 10px @cd-green;
+    }
+  }
+}
+
+.bio-heads span {
+  color: @cd-green
+}
 
 .headshot-modal-link {
   height: 250px;
@@ -92,7 +114,7 @@
     text-decoration: none;
 
     img {
-      box-shadow: 0 0 0 10px #23527c;
+      box-shadow: 0 0 0 10px @cd-purple;
     }
   }
 }
