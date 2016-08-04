@@ -9,7 +9,7 @@
         <h2 class="modal-title" id="myModalLabel">{{name}}</h2>
       </div>
       <div class="modal-body">
-        <img src="{{item.src}}" class="image-crop text-center" alt="{{item.body}}" border="0"><br>
+        <img src="{{item.src}}" class="<% if crop %>image-crop<% endif %> text-center" alt="{{item.body}}" border="0"><br>
         {{jobDescription}}
       </div>
       <div class="nav navbar-nav navbar-left social narrow">
