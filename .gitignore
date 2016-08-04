@@ -1,6 +1,8 @@
 vendor
 wp-content
 static/css/style.min.css
+cd-theme/
+cd-theme.zip
 
 # OS generated files #
 ######################
