@@ -1,4 +1,5 @@
 {% extends "base.twig" %}
+
 {% block content %}
     <div class="content-wrapper">
     <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
@@ -8,7 +9,7 @@
                         {{broken_content[0]}}
                         {% include 'grid-plus-text.twig'  with {"purpose": "regional"}  %}
                     </div>
-        </div>
+                  </div>
                 <div class="article-wrapper">
                     <div class="article-body">
                       {{broken_content[1]}}
@@ -16,5 +17,5 @@
                 </div>
         </section>
     </article>
-    </div><!-- /content-wrapper -->
+</div> <!-- /content-wrapper -->
 {% endblock %}
