@@ -60,7 +60,6 @@
     {% endfor %}
   </div>
 </div>
-</div>
 
 
 {% elseif purpose == 'regional' %}
@@ -81,7 +80,6 @@
       {% endfor %}
     </div>
   </div>
-</div>
 
 {% else %}
 <div class="funderImages" align="center">
@@ -102,7 +100,6 @@
     {% include 'modal.twig' with { 'id': item.id, 'name': item.name, 'jobDescription': item.jobDescription, 'twitter': item.twitter, 'linkedin': item.linkedin } %}
     {% endfor %}
   </div>
-</div>
 </div>
 
 <div class="partnerImages" align="center">
@@ -145,7 +142,6 @@
     {% endfor %}
   </div>
 </div>
-</div>
 
 <div class="supporterImages" align="center">
   <h3><br/><br/>{{Supporters}}</h3>
@@ -165,7 +161,6 @@
     {% include 'modal.twig' with { 'id': item.id, 'name': item.name, 'jobDescription': item.jobDescription, 'twitter': item.twitter, 'linkedin': item.linkedin } %}
     {% endfor %}
   </div>
-</div>
 </div>
 
 {% endif %}
