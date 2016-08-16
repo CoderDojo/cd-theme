@@ -1,41 +1,41 @@
 <header class="header">
-  <div class="cd-menu cd-menu__desktopNav">
-    <div class="cd-menu__firstRow">
+  <div class="cd-menu cd-menu__desktop-nav">
+    <div class="cd-menu__first-row">
       <a href="/">
         <img src="{{ site.theme.link }}/static/img/coderdojo/coderdojo-logo-light-bg.svg" width="120" height="44" />
       </a>
-      <a href="/donate/" class="cd-menu__donateButton">Donate</a>
+      <a href="/donate/" class="cd-menu__donate-button">Donate</a>
       <form class="cd-menu__search" role="search" action="{{site.home}}">
-        <input class="cd-menu__searchInput" type="text" placeholder="Search..." name="s" />
-        <button class="cd-menu__searchButton" type="submit"><span class="fa fa-search fa-2x"></span></button>
+        <input class="cd-menu__search-input" type="text" placeholder="Search..." name="s" />
+        <button class="cd-menu__search-button" type="submit"><span class="fa fa-search fa-2x"></span></button>
       </form>
-      <div class="cd-menu__flexSpacer"></div>
+      <div class="cd-menu__flex-spacer"></div>
       <div class="cd-menu__account">
         <a href="https://zen.coderdojo.com/register">Register</a>
         <a href="https://zen.coderdojo.com/login">Login</a>
       </div>
       <div class="cd-menu__profile">
-        <img class="cd-menu__profilePic" src="http://placekitten.com/32/32" />
-        <span class="cd-menu__profileName">My Account</span>
-        <i class="cd-menu__subMenuIcon fa fa-chevron-down"></i>
-        <ul class="cd-menu__profileMenu">
-          <li><a class="cd-menu__profileLink">My Profile</a></li>
+        <img class="cd-menu__profile-pic" src="http://placekitten.com/32/32" />
+        <span class="cd-menu__profile-name">My Account</span>
+        <i class="cd-menu__sub-menu-icon fa fa-chevron-down"></i>
+        <ul class="cd-menu__profile-menu">
+          <li><a class="cd-menu__profile-link">My Profile</a></li>
           <li><a href="https://zen.coderdojo.com/dashboard/my-dojos">My Dojos</a></li>
           <li><a href="https://zen.coderdojo.com/dashboard/dojos/events/user-events">My Events</a></li>
-          <li><a class="cd-menu__cdfAdminLink" href="https://zen.coderdojo.com/dashboard/manage-dojos">Manage Dojos</a></li>
-          <li><a class="cd-menu__cdfAdminLink" href="http://badgekit.coderdojo.com/">Badgekit</a></li>
-          <li><a class="cd-menu__cdfAdminLink" href="https://zen.coderdojo.com/dashboard/stats">Stats</a></li>
-          <li><a class="cd-menu__refererLink" href="https://zen.coderdojo.com/logout">Logout</a></li>
+          <li><a class="cd-menu__cdf-admin-link" href="https://zen.coderdojo.com/dashboard/manage-dojos">Manage Dojos</a></li>
+          <li><a class="cd-menu__cdf-admin-link" href="http://badgekit.coderdojo.com/">Badgekit</a></li>
+          <li><a class="cd-menu__cdf-admin-link" href="https://zen.coderdojo.com/dashboard/stats">Stats</a></li>
+          <li><a class="cd-menu__referer-link" href="https://zen.coderdojo.com/logout">Logout</a></li>
         </ul>
       </div>
     </div>
-    <ul class="cd-menu__secondRow">
+    <ul class="cd-menu__second-row">
       {% for item in menu.get_items %}
       {% if item.get_children %}
       <li class="cd-menu__dropdown">
         <span>
           {{item.title}}
-          <i class="cd-menu__dropdownIcon fa fa-chevron-down"></i>
+          <i class="cd-menu__dropdown-icon fa fa-chevron-down"></i>
           <ul>
             {% for child in item.get_children %}
             <li><a href="{{child.get_link}}">{{child.title}}</a></li>
@@ -49,56 +49,56 @@
       {% endfor %}
     </ul>
   </div>
-  <div class="cd-menu__mobileNavBar">
+  <div class="cd-menu__mobile-nav-bar">
     <button type="button" class="cd-menu__hamburger" aria-expanded="false" aria-controls="navbar">
       <span class="sr-only">Toggle navigation</span>
-      <span class="cd-menu__hamburgerBar"></span>
-      <span class="cd-menu__hamburgerBar"></span>
-      <span class="cd-menu__hamburgerBar"></span>
+      <span class="cd-menu__hamburger-bar"></span>
+      <span class="cd-menu__hamburger-bar"></span>
+      <span class="cd-menu__hamburger-bar"></span>
     </button>
     <a href="/">
       <img src="{{ site.theme.link }}/static/img/coderdojo/coderdojo-logo-light-bg.svg" width="120" height="44" style="padding-left: 5px;" />
     </a>
   </div>
   <div class="cd-menu__scrim"></div>
-  <nav id="cd-menu__slidingMenuPrimary" class="cd-menu__slidingMenu" data-toggle="closed">
-    <div class="cd-menu__closeRow">
-      <span class="cd-menu__closeButton">&times;</span>
+  <nav id="cd-menu__sliding-menu-primary" class="cd-menu__sliding-menu" data-toggle="closed">
+    <div class="cd-menu__close-row">
+      <span class="cd-menu__close-button">&times;</span>
     </div>
     <div class="cd-menu__content">
-      <div class="cd-menu__contentBlock cd-menu__search">
-        <input class="cd-menu__searchInput" type="text" placeholder="Search...">
-        <button class="cd-menu__searchButton" type="button"><span class="fa fa-search fa-2x"></span></button>
+      <div class="cd-menu__content-block cd-menu__search">
+        <input class="cd-menu__search-input" type="text" placeholder="Search...">
+        <button class="cd-menu__search-button" type="button"><span class="fa fa-search fa-2x"></span></button>
       </div>
-      <div class="cd-menu__contentBlock cd-menu__account">
+      <div class="cd-menu__content-block cd-menu__account">
         <a href="https://zen.coderdojo.com/register">Register</a>
         <a href="https://zen.coderdojo.com/login">Login</a>
       </div>
-      <ul class="cd-menu__contentBlock">
+      <ul class="cd-menu__content-block">
         <li class="cd-menu__profile">
           <span>
-            <img class="cd-menu__profilePic" src="http://placekitten.com/32/32" />
-            <span class="cd-menu__profileName">My Account</span>
-            <i class="cd-menu__subMenuIcon fa fa-chevron-right"></i>
+            <img class="cd-menu__profile-pic" src="http://placekitten.com/32/32" />
+            <span class="cd-menu__profile-name">My Account</span>
+            <i class="cd-menu__sub-menu-icon fa fa-chevron-right"></i>
           </span>
-          <div class="cd-menu__slidingMenu cd-menu__slidingMenuSecondary" data-toggle="closed">
-            <div class="cd-menu__closeRow" style="background:white;">
-              <span class="cd-menu__backButton fa fa-chevron-left fa-lg"></span>
-              <span class="cd-menu__closeButton">&times;</span>
+          <div class="cd-menu__sliding-menu cd-menu__sliding-menu-secondary" data-toggle="closed">
+            <div class="cd-menu__close-row" style="background:white;">
+              <span class="cd-menu__back-button fa fa-chevron-left fa-lg"></span>
+              <span class="cd-menu__close-button">&times;</span>
             </div>
             <div class="cd-menu__content">
-              <div class="cd-menu__contentBlock cd-menu__profileHeader">
-                <img class="cd-menu__profilePic" src="http://placekitten.com/128/128" />
-                <span class="cd-menu__profileName"></span>
+              <div class="cd-menu__content-block cd-menu__profile-header">
+                <img class="cd-menu__profile-pic" src="http://placekitten.com/128/128" />
+                <span class="cd-menu__profile-name"></span>
               </div>
-              <ul class="cd-menu__contentBlock cd-menu__profileMenu">
-                <li><a class="cd-menu__profileLink">My Profile</a></li>
+              <ul class="cd-menu__content-block cd-menu__profile-menu">
+                <li><a class="cd-menu__profile-link">My Profile</a></li>
                 <li><a href="https://zen.coderdojo.com/dashboard/my-dojos">My Dojos</a></li>
                 <li><a href="https://zen.coderdojo.com/dashboard/dojos/events/user-events">My Events</a></li>
-                <li><a class="cd-menu__cdfAdminLink" href="https://zen.coderdojo.com/dashboard/manage-dojos">Manage Dojos</a></li>
-                <li><a class="cd-menu__cdfAdminLink" href="http://badgekit.coderdojo.com/">Badgekit</a></li>
-                <li><a class="cd-menu__cdfAdminLink" href="https://zen.coderdojo.com/dashboard/stats">Stats</a></li>
-                <li><a class="cd-menu__refererLink" href="https://zen.coderdojo.com/logout">Logout</a></li>
+                <li><a class="cd-menu__cdf-admin-link" href="https://zen.coderdojo.com/dashboard/manage-dojos">Manage Dojos</a></li>
+                <li><a class="cd-menu__cdf-admin-link" href="http://badgekit.coderdojo.com/">Badgekit</a></li>
+                <li><a class="cd-menu__cdf-admin-link" href="https://zen.coderdojo.com/dashboard/stats">Stats</a></li>
+                <li><a class="cd-menu__referer-link" href="https://zen.coderdojo.com/logout">Logout</a></li>
               </ul>
             </div>
           </div>
@@ -109,18 +109,18 @@
             <li>
               <span>
                 {{item.title}}
-                <i class="cd-menu__subMenuIcon fa fa-chevron-right"></i>
+                <i class="cd-menu__sub-menu-icon fa fa-chevron-right"></i>
               </span>
-              <div class="cd-menu__slidingMenu cd-menu__slidingMenuSecondary" data-toggle="closed">
-                <div class="cd-menu__closeRow">
-                  <span class="cd-menu__backButton fa fa-chevron-left fa-lg"></span>
-                  <span class="cd-menu__closeButton">&times;</span>
+              <div class="cd-menu__sliding-menu cd-menu__sliding-menu-secondary" data-toggle="closed">
+                <div class="cd-menu__close-row">
+                  <span class="cd-menu__back-button fa fa-chevron-left fa-lg"></span>
+                  <span class="cd-menu__close-button">&times;</span>
                 </div>
                 <div class="cd-menu__content">
-                  <div class="cd-menu__contentBlock cd-menu__header">
+                  <div class="cd-menu__content-block cd-menu__header">
                     <span>{{item.title}}</span>
                   </div>
-                  <ul class="cd-menu__contentBlock">
+                  <ul class="cd-menu__content-block">
                     {% for child in item.get_children %}
                       <li><a href="{{child.get_link}}">{{child.title}}</a></li>
                     {% endfor %}
@@ -137,6 +137,6 @@
     </div>
   </nav>
   <script type="text/javascript">
-    window.cdMenu();
+    window.cdMenu({zenBase:'http://localhost:8000'});
   </script>
 </header>
