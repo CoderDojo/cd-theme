@@ -2,6 +2,7 @@
 
 {% block content %}
 	<div class="content-wrapper">
+		<img src="{{site.theme.link}}/static/img/headers/reporting-header.png" class="top-banner"/>
     <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
     	<section class="article-content">
       	<div class="article-wrapper">
@@ -9,14 +10,17 @@
 						{{broken_content[0]}}
   				</div>
         </div>
-				{% include 'grid-plus-text.twig' with {"purpose": "resources"} %}
+        <div class="article-wrapper">
+        	<div class="article-body">
+          	{{broken_content[1]}}
+          </div>
+				</div>
 				<div class="article-wrapper">
-					<div class="article-body">
-						{% include 'cta.twig' with {'buttontext': 'View All Resources', 'target': 'https://kata.coderdojo.com' } %}
-						{{broken_content[1]}}
+       		<div class="article-body">
+        		{{broken_content[2]}}
+						{{broken_content[3]}}
 					</div>
 				</div>
-				{% include 'cta.twig' with {'buttontext': 'Share your work!', 'target': 'http://kata.coderdojo.com/wiki/Become_a_Kata_Editor' } %}
     	</section>
   	</article>
 	</div><!-- /content-wrapper -->
