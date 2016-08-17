@@ -1,5 +1,4 @@
 {% extends "base.twig" %}
-
 {% block content %}
   <div class="content-wrapper">
     <img src="{{site.theme.link}}/static/img/headers/attend.jpg" class="top-banner" />
@@ -12,21 +11,6 @@
           {% include 'cta.twig' with {'buttontext': 'Find A Dojo', 'target': 'https://zen.coderdojo.com/' } %}
           <br /><br />
         </div>
-        <div class="article-mid actions-with-icons">
-          <h1>FAQs</h1>
-          {% include 'paragraph.twig' with {'align': 'left', 'title':'What is my child going to learn?', 'glyph':'fa fa-info', 'desc': 'CoderDojo is non-curriculum based so every Dojo covers different content. Often young people will start with Scratch, an MIT visual programming tool or by building their own website with HTML and CSS. In some Dojos your child might be designing a video-game prototype, using html to build a website, or learning something else entirely. If there’s something in particular that your child wants to learn, just let the Mentor know and they’ll do their best to make it happen.' } %}
-          {% include 'paragraph.twig' with {'align': 'right', 'title':'How do you register for a Dojo?', 'glyph':'fa fa-child', 'desc': 'As Dojos are autonomous entities, registration systems and policies can vary . If you want your child to attend a Dojo, the best idea is to find the one you’re interested in attending and contact them directly to get the registration requirements.
-The CoderDojo Foundation won’t be able to register your child for a Dojo. Locate your nearest Dojo by searching the Dojo database. All the relevant contact details can be found there.' } %}
-          {% include 'paragraph.twig' with {'align': 'left', 'title':'What does my child need to bring?', 'glyph':'fa  fa-laptop', 'desc': 'As you might expect, it’s hard to learn how code without a computer so definitely have your child bring along a laptop if you have one.
-There may be software requirements, but those will depend on your local Dojo’s agenda so reach out ahead of time to find out.
-Beyond the basic tools, your child should plan to bring along a positive attitude, curiosity and a willingness to double-click outside their comfort zone.' } %}
-{% include 'paragraph.twig' with {'align': 'right', 'title':'There’s no Dojo near me. Is my child out of luck?', 'glyph':'fa fa-map-marker', 'desc': 'Not necessarily! Every Dojo that exists was started by somebody who shared our vision for expanding young people’s technological horizons. You’re more than capable of starting your own Dojo, and we have some pointers here on the website to help you along. You don’t have to be a tech wizard to make it happen. If you take the plunge, there will be lots of people in your area that will be glad you did.
-' } %}
-{% include 'paragraph.twig' with {'align': 'left', 'title':'How can parents help?', 'glyph':'fa  fa-users', 'desc': 'Many Dojos require parents to join their child for the duration of the Dojo session. With parents on-hand to address any behavioural issues with their children or help out with the running of the Dojo, this frees up volunteer Mentors to keep their focus on assisting young attendees with their technical development.
-There are numerous ways non-technical parents can get involved. For example, by managing registrations, check-in, promoting the event via social media or spreading the word via other forms of local outreach.
-We encourage parents to get involved and work with their children. Even if they aren’t able to offer technical instruction, they can still offer words of encouragement and create a more positive learning environment.
-' } %}
-        </div>
         {% include "bio-heads-3.twig" with {'quoteOne': '"I love CoderDojo because it’s a place you can come and learn to code, make new friends and be creative. The mentors are really helpful if you are stuck on something."',
         'imageOne':site.theme.link ~ '/static/img/testimonials/dhruv_bhamidpati.png',
         'quoteeOne': ' Dhruv Bhamidipati - CoderDojo Docklands, Ireland',
@@ -37,6 +21,15 @@ We encourage parents to get involved and work with their children. Even if they 
         'imageThree': site.theme.link ~ '/static/img/testimonials/niamh_scullion.png',
         'quoteeThree': 'Niamh Scullion - CoderDojo DCU, Ireland' }
         %}
+        <div class="article-mid actions-with-icons">
+          <h1>FAQs</h1>
+          {% include 'paragraph.twig' with {'align': 'left', 'title':'What is my child going to learn?', 'glyph':'fa fa-info', 'desc': 'CoderDojo is not curriculum based, so every Dojo covers different topics. Often young people will start with Scratch, a visual programming tool, or by building their own website.' } %}
+          {% include 'paragraph.twig' with {'align': 'right', 'title':'How do you register for a Dojo?', 'glyph':'fa fa-child', 'desc': 'Each Dojo makes its own rules around registration and attendance. Search our global map and contact the Dojo directly if there are no events listed on their Dojo page.' } %}
+          {% include 'paragraph.twig' with {'align': 'left', 'title':'What does my child need to bring?', 'glyph':'fa  fa-laptop', 'desc': 'In most Dojos you will need to bring a laptop. If you don’t have one check with the Dojo as some Dojos have spare laptops to lend. Don’t forget curiosity and a positive attitude too!' } %}
+{% include 'paragraph.twig' with {'align': 'right', 'title':'There’s no Dojo near me. Is my child out of luck?', 'glyph':'fa fa-map-marker', 'desc': 'No! Every Dojo around was started by somebody with a passion for the idea. You’re totally capable, no matter your tech skills, of starting your own Dojo. Let us help you get started!' } %}
+{% include 'paragraph.twig' with {'align': 'left', 'title':'Can parents help?', 'glyph':'fa  fa-users', 'desc': 'Yes, you can absolutely help! If you have technical skills you can mentor at the Dojo. If not, you can help out with registrations, check-in, and promoting the Dojo both online and offline.' } %}
+        </div>
+
         {% include 'map.twig' with {'purpose': 'find' } %}
       </section>
     </article>

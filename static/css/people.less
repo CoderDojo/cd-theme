@@ -62,7 +62,6 @@
 }
 
 .bio-heads {
-  padding-bottom: 25px;
   margin-top: 35px;
 }
 
@@ -97,8 +96,54 @@
   }
 }
 
+.headshot-modal-link-quotees {
+    height: 330px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.2s ease-out;
+
+  img {
+      transition: box-shadow 0.2s ease-out;
+    }
+
+    img {
+      box-shadow: 0 0 0 10px @cd-green;
+    }
+  }
 .bio-heads span {
   color: @cd-green
+}
+
+@media (min-width: 768px) {
+  .headshot-modal-link-quotees {
+    height: auto;
+
+    p, span {
+      width: 90%;
+    }
+  }
+}
+
+@media (min-width: 541px) {
+  .headshot-modal-link-quotees {
+    height: auto;
+    padding-top: 50px;
+
+    p, span {
+      width: 90%;
+    }
+  }
+}
+
+@media (min-width: 320px) {
+  .headshot-modal-link-quotees {
+    height: auto;
+    padding-top: 50px;
+
+    p, span {
+      width: 90%;
+    }
+  }
 }
 
 .headshot-modal-link {

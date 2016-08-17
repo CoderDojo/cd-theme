@@ -22,7 +22,7 @@ $context['resourcesImages'] = [   ['src'=>'../wp-content/themes/cd-theme/static/
 
                         [ 'src'=>'../wp-content/themes/cd-theme/static/img/resources/arduino.png', 'id'=>'8','name'=>'Arduino', 'link'=>'http://kata.coderdojo.com/wiki/Arduino'],
 
-                        ['src'=>'../wp-content/themes/cd-theme/static/img/resources/mobile.png','id'=>'9','name'=>'Mobile', 'link'=>'http://www.coderdojo.jp/'],
+                        ['src'=>'../wp-content/themes/cd-theme/static/img/resources/mobile.png','id'=>'9','name'=>'Mobile', 'link'=>'http://kata.coderdojo.com/wiki/Mobile_Apps_Path'],
 
                         ['src'=>'../wp-content/themes/cd-theme/static/img/resources/champion.png', 'id'=>'10', 'name'=>'Resources For Champions', 'link'=>'http://kata.coderdojo.com/wiki/Organising_a_Dojo'],
 

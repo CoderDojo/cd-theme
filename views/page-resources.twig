@@ -12,10 +12,11 @@
 				{% include 'grid-plus-text.twig' with {"purpose": "resources"} %}
 				<div class="article-wrapper">
 					<div class="article-body">
+						{% include 'cta.twig' with {'buttontext': 'View All Resources', 'target': 'https://kata.coderdojo.com' } %}
 						{{broken_content[1]}}
 					</div>
 				</div>
-				{% include 'cta.twig' with {'buttontext': 'View All Resources', 'target': 'https://kata.coderdojo.com' } %}
+				{% include 'cta.twig' with {'buttontext': 'Contribute Your Resources', 'target': 'http://kata.coderdojo.com/wiki/Become_a_Kata_Editor' } %}
     	</section>
   	</article>
 	</div><!-- /content-wrapper -->
