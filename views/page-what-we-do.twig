@@ -12,14 +12,8 @@
         {{broken_content[0]}}
       </div>
       <div class="article-wrapper">
-        {% include "bio-heads-3.twig" with {
-        'imageOne':site.theme.link ~ '/static/img/users/ninja.jpg',
-          'quoteeOne': 'How Do I Attend? >>',
-        'imageTwo': site.theme.link ~ '/static/img/users/volunteer.jpg',
-        'quoteeTwo': 'How Do I Volunteer? >>',
-        'imageThree': site.theme.link ~ '/static/img/users/champion.jpg',
-        'quoteeThree': 'How Do I Start A Dojo? >>' }
-        %}
+        {% include 'grid-plus-text.twig'  with {"purpose": "howto"}  %}
+<br/>
         {% include 'map.twig' with {'purpose': 'find' } %}
       <!-- <div class="article-wrapper">
         <h5 class="center">Get the latest Coder Dojo stories delivered to your inbox daily.</h5>
