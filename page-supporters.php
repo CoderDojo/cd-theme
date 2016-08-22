@@ -6,7 +6,7 @@ $post = new TimberPost();
 $context['post'] = $post;
 $context['broken_content'] = explode("<!--more-->", $post->content);
 
-$context['funderImages'] = [ ['src'=>'../wp-content/themes/cd-theme/static/img/supporters/salesforce-foundation.png' , 'name'=>'Salesforce Foundation',
+$context['funderImages'] = [ ['src'=>'../wp-content/themes/cd-theme/static/img/supporters/salesforce-foundation.png', 'name'=>'Salesforce Foundation',
                               'jobDescription'=>'Our partnership with Salesforce centres around their pioneering 1:1:1 model,
                                we will be using their software to manage communications with global Dojos, scaling CoderDojo through engaging their volunteers,
                                and using the grant to develop greater resources for the community.',

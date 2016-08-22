@@ -9,18 +9,16 @@
   </div>
   <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
     <section class="article-content"> <h1 class="article-h1 center">What Is CoderDojo?</h1> <div class="article-body">
-        {{broken_content[0]}} <h1 class="article-h1 center"> AND ITS FREE! </h1>
+        {{broken_content[0]}}
       </div>
       <div class="article-wrapper">
-        {% include "bio-heads-3.twig" with {'quoteOne': 'My child wishes to attend a Dojo. How do I attend?',
+        {% include "bio-heads-3.twig" with {
         'imageOne':site.theme.link ~ '/static/img/users/ninja.jpg',
-          'quoteeOne': 'How To Attend A Dojo >>',
-        'quoteTwo': 'I wish to mentor at a Dojo. How do I volunteer?',
+          'quoteeOne': 'How Do I Attend? >>',
         'imageTwo': site.theme.link ~ '/static/img/users/volunteer.jpg',
-        'quoteeTwo': 'Volunteer At A Dojo >>',
-        'quoteThree': 'I wish to start my own Dojo. How do I start?.',
+        'quoteeTwo': 'How Do I Volunteer? >>',
         'imageThree': site.theme.link ~ '/static/img/users/champion.jpg',
-        'quoteeThree': 'Create A Dojo >>' }
+        'quoteeThree': 'How Do I Start A Dojo? >>' }
         %}
         {% include 'map.twig' with {'purpose': 'find' } %}
       <!-- <div class="article-wrapper">

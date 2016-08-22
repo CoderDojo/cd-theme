@@ -6,6 +6,7 @@
         <section class="article-content">
         <div class="article-wrapper">
                     <div class="article-body">
+                      {% include 'map.twig' with {'purpose': 'regional' } %}
                         {{broken_content[0]}}
                         {% include 'grid-plus-text.twig'  with {"purpose": "regional"}  %}
                     </div>

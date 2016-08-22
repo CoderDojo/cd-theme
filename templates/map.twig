@@ -14,6 +14,9 @@
 						</div>
 						<input class="btn btn-default" type="submit" value="Search" />
 					</div>
+					{% elseif purpose == 'regional' %}
+					<div>
+					</div>
 					{% else %}
 					<h2>Get your Dojo on the map</h2>
 					{% include 'cta.twig' with {'buttontext': 'Create a Dojo', 'target': 'https://zen.coderdojo.com' } %}
