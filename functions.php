@@ -21,7 +21,12 @@ class StarterSite extends TimberSite {
 		add_filter( 'get_twig', array( $this, 'add_to_twig' ) );
 		add_action( 'init', array( $this, 'register_post_types' ) );
 		add_action( 'init', array( $this, 'register_taxonomies' ) );
+		add_action( 'init', array( $this, 'register_my_menu' ) );
 		parent::__construct();
+	}
+
+	function register_my_menu() {
+		register_nav_menu('main-menu', __( 'Main Menu' ));
 	}
 
 	function bootstrap3_comment_form_fields( $fields ) {
@@ -62,7 +67,7 @@ class StarterSite extends TimberSite {
 	}
 
 	function add_to_context( $context ) {
-		$context['menu'] = new TimberMenu();
+		$context['menu'] = new TimberMenu('main-menu');
 		$context['site'] = $this;
 
 		$context['posts'] = Timber::get_posts();

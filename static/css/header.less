@@ -123,20 +123,17 @@ body {
     text-align: center;
 }
 
-.container {
-    width: 100%;
-    padding: 0;
-    background: #fff;
+// TODO: Don't do this
+.cd-menu__content-container.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 127px;
 }
 
 @media (min-width: 1280px) {
     .header .navbar-default {
         max-width: 1280px;
         margin: 0 auto;
-    }
-
-    .container {
-        max-width: 1280px;
     }
 }
 
@@ -157,6 +154,13 @@ body {
 
   .nav-left-item:after {
     top: 10px;
+  }
+
+  // TODO: Don't do this
+  .cd-menu__content-container.no-padding {
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 0;
   }
 }
 

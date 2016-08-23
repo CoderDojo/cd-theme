@@ -7,8 +7,8 @@
   {% endblock %}
 
   <body class="{{body_class}}" data-template="base.twig">
-    <div class="container">
-      {% include 'header.twig' %}
+    {% include 'header.twig' %}
+    <div class="cd-menu__content-container no-padding">
       <section id="content" role="main" class="content-wrapper">
         {% if title %}<h1>{{title}}</h1>{% endif %}
         <div class="wrapper {{sidebar_class}}">
@@ -22,13 +22,11 @@
         </aside>
         {% endif %}
       </section>
-      {% block footer %}
-      <footer id="footer">
-        {% include 'footer.twig' %}
-      </footer>
-      {{ function('wp_footer') }}
-      <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-      {% endblock %}
     </div>
+    {% block footer %}
+    {% include 'footer.twig' %}
+    {{ function('wp_footer') }}
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    {% endblock %}
   </body>
 </html>

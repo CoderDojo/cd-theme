@@ -1,28 +1,26 @@
 {# item-box.twig #}
 {% block content %}
   <div class="content-wrapper">
-    <div class="content-item-box">
-      <div class="row">
-        {% if rows == '2' %}
-          <div class="col-md-6 box-item">
-            <a href={{hrefOne}} target=""><img src="{{imageOne}}" alt="" border="0"></a>
-          </div>
-          <div class="col-md-6 box-item">
-            {{textOne}}
-          </div>
-        {% endif %}
-        {% if rows == '3' %}
-          <div class="col-md-4 box-item"><a href={{hrefOne}} target=""><img src="{{imageOne}}" alt="" border="0"></a></div>
-          <div class="col-md-4 box-item"><a href={{hrefTwo}} target=""><img src="{{imageTwo}}" alt="" border="0"></a></div>
-          <div class="col-md-4 box-item"><a href={{hrefThree}} target=""><img src="{{imageThree}}" alt="" border="0"></a></div>
-        {% endif %}
-        {% if rows == '4' %}
-          <div class="col-md-3 box-item"><a href={{hrefOne}} target=""><img src="{{imageOne}}" alt="" border="0"></a></div>
-          <div class="col-md-3 box-item"><a href={{hrefTwo}} target=""><img src="{{imageTwo}}" alt="" border="0"></a></div>
-          <div class="col-md-3 box-item"><a href={{hrefThree}} target=""><img src="{{imageThree}}" alt="" border="0"></a></div>
-          <div class="col-md-3 box-item"><a href={{hrefFour}} target=""><img src="{{imageFour}}" alt="" border="0"></a></div>
-        {% endif %}
-      </div>
+    <div class="row content-item-box">
+      {% if rows == '2' %}
+        <div class="col-md-6 box-item">
+          <a href={{hrefOne}} target=""><img src="{{imageOne}}" alt="" border="0"></a>
+        </div>
+        <div class="col-md-6 box-item">
+          {{textOne}}
+        </div>
+      {% endif %}
+      {% if rows == '3' %}
+        <div class="col-md-4 box-item"><a href={{hrefOne}} target=""><img src="{{imageOne}}" alt="" border="0"></a></div>
+        <div class="col-md-4 box-item"><a href={{hrefTwo}} target=""><img src="{{imageTwo}}" alt="" border="0"></a></div>
+        <div class="col-md-4 box-item"><a href={{hrefThree}} target=""><img src="{{imageThree}}" alt="" border="0"></a></div>
+      {% endif %}
+      {% if rows == '4' %}
+        <div class="col-md-3 box-item"><a href={{hrefOne}} target=""><img src="{{imageOne}}" alt="" border="0"></a></div>
+        <div class="col-md-3 box-item"><a href={{hrefTwo}} target=""><img src="{{imageTwo}}" alt="" border="0"></a></div>
+        <div class="col-md-3 box-item"><a href={{hrefThree}} target=""><img src="{{imageThree}}" alt="" border="0"></a></div>
+        <div class="col-md-3 box-item"><a href={{hrefFour}} target=""><img src="{{imageFour}}" alt="" border="0"></a></div>
+      {% endif %}
     </div>
   </div>
 {% endblock %}
