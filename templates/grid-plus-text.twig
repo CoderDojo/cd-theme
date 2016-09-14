@@ -102,7 +102,7 @@
   <div class="content-wrapper">
     {% for item in funderImages %}
     <div class="col-xs-6 col-xs-4">
-      <a href="headshot-modal-link" data-target="#{{item.id}}" data-toggle="modal">
+      <a class="headshot-modal-link" data-target="#{{item.id}}" data-toggle="modal">
         <img src="{{item.src}}" alt="{{item.body}}" border="0">
       </a>
       <div class="row">
@@ -122,7 +122,7 @@
   <div class="content-wrapper">
     {% for item in partnerImages %}
     <div class="col-md-5ths col-xs-6">
-      <a href="headshot-modal-link" data-target="#{{item.id}}" data-toggle="modal">
+      <a class="headshot-modal-link" data-target="#{{item.id}}" data-toggle="modal">
         <img src="{{item.src}}" class="image-crop" alt="{{item.body}}" border="0">
       </a>
       <div class="row">
@@ -143,7 +143,7 @@
   <div class="content-wrapper">
     {% for item in allianceImages %}
     <div class="col-md-5ths col-xs-6">
-      <a href="headshot-modal-link" data-target="#{{item.id}}" data-toggle="modal">
+      <a class="headshot-modal-link" data-target="#{{item.id}}" data-toggle="modal">
         <img src="{{item.src}}" class="image-crop" alt="{{item.body}}" border="0">
       </a>
       <div class="row">
