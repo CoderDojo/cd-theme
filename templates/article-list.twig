@@ -2,7 +2,7 @@
   {% for post in posts %}
   <article class="row article-pagination">
     {% if post.thumbnail.src %}
-    <a href="{{post.link}}" class="col-md-12 post-image" style="background-image:url({{post.thumbnail.src('large')}})">
+    <a href="{{post.link}}" class="col-md-12 col-xs-12 post-image" style="background-image:url({{post.thumbnail.src('large')}})">
     </a>
     {% endif %}
     <div class="row">
