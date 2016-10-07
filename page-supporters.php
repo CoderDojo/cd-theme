@@ -65,6 +65,10 @@ $context['partnerImages'] = [ ['src'=>'../wp-content/themes/cd-theme/static/img/
                                      'id'=>'13','linkedin'=>'https://www.linkedin.com/company/intercom',
                                      'twitter'=>'https://twitter.com/intercom'],
 
+                             ['src'=>'../wp-content/themes/cd-theme/static/img/supporters/edgescan.png', 'name'=>'EdgeScan', 'jobDescription'=>'EdgeScan have provided a security audit for the community platforms technical infrastructure.',
+                                     'id'=>'14','linkedin'=>'https://www.linkedin.com/company/edgescan-com',
+                                     'twitter'=>'https://twitter.com/edgescan'],
+
                             ];
 
 $context['allianceImages'] = [
