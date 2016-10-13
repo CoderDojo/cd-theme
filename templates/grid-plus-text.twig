@@ -97,25 +97,6 @@
     </div>
 
 
-  {% elseif purpose == 'futuremakersImages' %}
-      <div class="futuremakers" align="center">
-        <div class="content-wrapper">
-          {% for item in futuremakersImages %}
-          <div class="headshot-modal-link-regional col-md-4">
-            <a href="{{item.link}}" data-target="#{{item.id}}">
-              <img src="{{item.src}}" class="image-crop" alt="{{item.body}}" border="0">
-            </a>
-            <div class="row">
-              <span class="bottom-align-text">{{ item.name }} </span>
-            </div>
-            <div class="row">
-              <span class="bottom-align-text">{{ item.role }} </span>
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-
 {% else %}
 <div class="funderImages" align="center">
   <h3><br/><br/>{{Funders}}</h3>
