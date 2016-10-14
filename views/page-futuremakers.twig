@@ -3,134 +3,113 @@
 {% block content %}
 	<div class="content-wrapper">
 		<img src="{{site.theme.link}}/static/img/headers/lg-coderdojo-banner.png" class="top-banner"/>
-    <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
-    	<section class="article-content">
-      	<div class="article-wrapper">
-					<div class="article-body">
-						<br/>{{broken_content[0]}}
-  				</div>
-        </div>
-        <div class="article-wrapper">
-        	<div class="article-body">
-          </div>
-				</div>
+		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+			<section class="article-content">
 				<div class="article-wrapper">
 					<div class="article-body">
-						<div class="row">
-							<div class="col-md-6">
-							</div>
-							<div class="col-md-6">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6">
-							</div>
-							<div class="col-md-6">
-							</div>
-						</div>
+						{{broken_content[0]}}
 					</div>
 				</div>
 				<div class="article-wrapper">
 					<div class="article-body">
-            <div class="article-mid actions-with-icons">
-              <div class="about-blocks">
-                <div class="row top">
-                  {% include "item-box.twig" with {'title': '', 'hrefOne':'movement', 'rows': 2 , 'imageOne': site.theme.link ~ '/static/img/liberty-global/lg-icon-1.png', 'textOne': broken_content[1]} %}
-                </div>
-                <br/>
-                <div class="row top">
-                  {% include "item-box.twig" with {'title': '', 'hrefOne':'foundation', 'rows': 2 , 'imageOne': site.theme.link ~ '/static/img/liberty-global/lg-icon-2.png', 'textOne': broken_content[2]} %}
-                </div>
-                <br/>
-                <div class="row top">
-                 {% include "item-box.twig" with {'title': '', 'hrefOne':'supporters', 'rows': 2 , 'imageOne': site.theme.link ~ '/static/img/liberty-global/lg-icon-3.png', 'textOne': broken_content[3]} %}
-                </div>
-                <br/>
-                <div class="row top">
-                 {% include "item-box.twig" with {'title': '', 'hrefOne':'regional', 'rows': 2 , 'imageOne': site.theme.link ~ '/static/img/liberty-global/lg-icon-4.png', 'textOne': broken_content[4]} %}
-                </div>
-                <br/>
-            </div>
-					</div>
-				</div>
-      </div>
-				<div class="article-body futuremakers">
-      {{broken_content[5]}}
-		</div>
-			<div class="article-wrapper">
-				<div class="article-body futuremakers">
-					<div class="row amount">
-						<div class='col-md-6 col-xs-6'>
-									{% include 'cta.twig' with {'buttontext': 'Czech', 'target': 'https://coderdojo.com/wp-content/uploads/2016/10/CZECH-Application_Form_2016_Liberty_Global_Czech_interactive.pdf'} %}
-									<br/>
-					 	</div>
-						<div class='col-md-6 col-xs-6'>
-									{% include 'cta.twig' with {'buttontext': 'Dutch', 'target': 'https://coderdojo.com/wp-content/uploads/2016/10/DUTCH-Application_Form_2016_Liberty_Global_Dutch_interactive.pdf' } %}
-									<br/>
-						</div>
-						<div class='col-md-6 col-xs-6'>
-									{% include 'cta.twig' with {'buttontext': 'English', 'target': 'https://coderdojo.com/wp-content/uploads/2016/10/ENGLISH-Application_Form_2016_Liberty_Global_English_interactive.pdf' } %}
-									<br/>
-							</div>
-							<div class='col-md-6 col-xs-6'>
-										{% include 'cta.twig' with {'buttontext': 'French', 'target': 'https://coderdojo.com/wp-content/uploads/2016/10/FRENCH-Application_Form_2016_Liberty_Global_French_interactive.pdf' } %}
-										<br/>
+						<div class="article-mid actions-with-icons">
+							<div class="about-blocks">
+								<div class="row top">
+									{% include "item-box.twig" with {'title': '', 'hrefOne':'movement', 'rows': 2 , 'imageOne': site.theme.link ~ '/static/img/liberty-global/lg-icon-1.png', 'textOne': broken_content[1]} %}
 								</div>
-							<div class='col-md-6 col-xs-6'>
-								{% include 'cta.twig' with {'buttontext': 'German', 'target': 'https://coderdojo.com/wp-content/uploads/2016/10/GERMAN-Application_Form_2016_Unitymedia_German_interactive.pdf' } %}
-									<br/>
-						 	</div>
-							<div class='col-md-6 col-xs-6'>
-								{% include 'cta.twig' with {'buttontext': 'Hungarian', 'target': 'https://coderdojo.com/wp-content/uploads/2016/10/HUNGARIAN-Application_Form_2016_UPC_Hungary_interactive.pdf' } %}
 								<br/>
-						 	</div>
-							<div class='col-md-6 col-xs-6'>
-									{% include 'cta.twig' with {'buttontext': 'Italian', 'target': 'https://coderdojo.com/wp-content/uploads/2016/10/ITALIAN-Application_Form_2016_Liberty_Global_Italian_interactive.pdf' } %}
-									<br/>
-						 	</div>
-							<div class='col-md-6 col-xs-6'>
-									{% include 'cta.twig' with {'buttontext': 'Polish', 'target': 'https://coderdojo.com/wp-content/uploads/2016/10/POLISH-Application_Form_2016_UPC_Poland_interactive-2.pdf' } %}
-							 		<br/>
-						 	</div>
-							<div class='col-md-6 col-xs-6'>
-								{% include 'cta.twig' with {'buttontext': 'Romanian', 'target': 'https://coderdojo.com/wp-content/uploads/2016/10/ROMANIAN-Application_Form_2016_Liberty_Global_Romanian_interactive.pdf' } %}
+								<div class="row top">
+									{% include "item-box.twig" with {'title': '', 'hrefOne':'foundation', 'rows': 2 , 'imageOne': site.theme.link ~ '/static/img/liberty-global/lg-icon-2.png', 'textOne': broken_content[2]} %}
+								</div>
 								<br/>
-						 	</div>
-							<div class='col-md-6 col-xs-6'>
-								{% include 'cta.twig' with {'buttontext': 'Spanish', 'target': 'https://coderdojo.com/wp-content/uploads/2016/10/SPANISH-Application_Form_2016_Liberty_Global_Spanish_interactive.pdf' } %}
+								<div class="row top">
+									{% include "item-box.twig" with {'title': '', 'hrefOne':'supporters', 'rows': 2 , 'imageOne': site.theme.link ~ '/static/img/liberty-global/lg-icon-3.png', 'textOne': broken_content[3]} %}
+								</div>
 								<br/>
-						 	</div>
+								<div class="row top">
+									{% include "item-box.twig" with {'title': '', 'hrefOne':'regional', 'rows': 2 , 'imageOne': site.theme.link ~ '/static/img/liberty-global/lg-icon-4.png', 'textOne': broken_content[4]} %}
+								</div>
+								<br/>
+							</div>
 						</div>
 					</div>
 				</div>
-					<div class="article-body futuremakers">
-				{% include "bio-heads-3.twig" with {'quoteOne': '"I used my coding superpowers to develop Everyone, a low cost phone for developing countries that does not require a network."',
-				'imageOne':site.theme.link ~ '/static/img/liberty-global/testimonials/jasper.png',
-				'quoteeOne': ' Jasper, 12, Former Future Makers Awards Winner',
-				'quoteTwo': '"I used my coding superpowers to develop Eye Opener, a phone app and arduino that prevents people from falling asleep while driving."',
-				'imageTwo': site.theme.link ~ '/static/img/liberty-global/testimonials/aoife.png',
-				'quoteeTwo': 'Aoife, 17, A great example of a Future Maker',
-				'quoteThree': '"I used my coding superpowers to develop pi vision, an obstacle avoidance sensor glasses for the blind."',
-				'imageThree': site.theme.link ~ '/static/img/liberty-global/testimonials/timothy.png',
-				'quoteeThree': 'Timothy, 14, Former Future Awards Winner.'}
-				%}
-			</div>
-			<div class="article-body futuremakers">
-				{% include "bio-heads-2.twig" with {'quoteOne': '"I used my coding superpowers to develop the E-car charger locator, an app that helps people find charge points for electric cars."',
-				'imageOne':site.theme.link ~ '/static/img/liberty-global/testimonials/niamh.png',
-				'quoteeOne': ' Niamh, 14, A great example of a Future Maker',
-				'quoteTwo': '"I used my coding superpowers to develop a flood gauge, a flood warning system that alerts the community by email or tweet."',
-				'imageTwo': site.theme.link ~ '/static/img/liberty-global/testimonials/shane.png',
-				'quoteeTwo': 'Shane, 10, Former Future Makers Awards winner'}
-				%}
-			</div>
-			<div class="article-wrapper">
-				<div class="article-body">
-					{{broken_content[6]}}
+				<div class="article-body futuremakers">
+					{{broken_content[5]}}
 				</div>
-			</div>
+				<div class="article-wrapper">
+					<div class="article-body futuremakers">
+						<div class="row amount">
+							<div class='col-md-6 col-xs-6'>
+								{% include 'cta.twig' with {'buttontext': 'Čeština', 'target': 'https://coderdojo.com/wp-content/uploads/2016/10/CZECH-Application_Form_2016_Liberty_Global_Czech_interactive.pdf'} %}
+								<br/>
+							</div>
+							<div class='col-md-6 col-xs-6'>
+								{% include 'cta.twig' with {'buttontext': 'Nederlands', 'target': 'https://coderdojo.com/wp-content/uploads/2016/10/DUTCH-Application_Form_2016_Liberty_Global_Dutch_interactive.pdf' } %}
+								<br/>
+							</div>
+							<div class='col-md-6 col-xs-6'>
+								{% include 'cta.twig' with {'buttontext': 'English', 'target': 'https://coderdojo.com/wp-content/uploads/2016/10/ENGLISH-Application_Form_2016_Liberty_Global_English_interactive.pdf' } %}
+								<br/>
+							</div>
+							<div class='col-md-6 col-xs-6'>
+								{% include 'cta.twig' with {'buttontext': 'Français', 'target': 'https://coderdojo.com/wp-content/uploads/2016/10/FRENCH-Application_Form_2016_Liberty_Global_French_interactive.pdf' } %}
+								<br/>
+							</div>
+							<div class='col-md-6 col-xs-6'>
+								{% include 'cta.twig' with {'buttontext': 'Deutsch', 'target': 'https://coderdojo.com/wp-content/uploads/2016/10/GERMAN-Application_Form_2016_Unitymedia_German_interactive.pdf' } %}
+								<br/>
+							</div>
+							<div class='col-md-6 col-xs-6'>
+								{% include 'cta.twig' with {'buttontext': 'Magyar', 'target': 'https://coderdojo.com/wp-content/uploads/2016/10/HUNGARIAN-Application_Form_2016_UPC_Hungary_interactive.pdf' } %}
+								<br/>
+							</div>
+							<div class='col-md-6 col-xs-6'>
+								{% include 'cta.twig' with {'buttontext': 'Italiano', 'target': 'https://coderdojo.com/wp-content/uploads/2016/10/ITALIAN-Application_Form_2016_Liberty_Global_Italian_interactive.pdf' } %}
+								<br/>
+							</div>
+							<div class='col-md-6 col-xs-6'>
+								{% include 'cta.twig' with {'buttontext': 'Polski', 'target': 'https://coderdojo.com/wp-content/uploads/2016/10/POLISH-Application_Form_2016_UPC_Poland_interactive-2.pdf' } %}
+								<br/>
+							</div>
+							<div class='col-md-6 col-xs-6'>
+								{% include 'cta.twig' with {'buttontext': 'Română', 'target': 'https://coderdojo.com/wp-content/uploads/2016/10/ROMANIAN-Application_Form_2016_Liberty_Global_Romanian_interactive.pdf' } %}
+								<br/>
+							</div>
+							<div class='col-md-6 col-xs-6'>
+								{% include 'cta.twig' with {'buttontext': 'Español', 'target': 'https://coderdojo.com/wp-content/uploads/2016/10/SPANISH-Application_Form_2016_Liberty_Global_Spanish_interactive.pdf' } %}
+								<br/>
+							</div>
+						</div>
 					</div>
-    	</section>
-  	</article>
+				</div>
+				<div class="article-body futuremakers">
+					{% include "bio-heads-3.twig" with {'quoteOne': '"I used my coding superpowers to develop Everyone, a low cost phone for developing countries that does not require a network."',
+					'imageOne':site.theme.link ~ '/static/img/liberty-global/testimonials/jasper.png',
+					'quoteeOne': ' Jasper, 12, Former Future Makers Awards Winner',
+					'quoteTwo': '"I used my coding superpowers to develop Eye Opener, a phone app and arduino that prevents people from falling asleep while driving."',
+					'imageTwo': site.theme.link ~ '/static/img/liberty-global/testimonials/aoife.png',
+					'quoteeTwo': 'Aoife, 17, A great example of a Future Maker',
+					'quoteThree': '"I used my coding superpowers to develop pi vision, an obstacle avoidance sensor glasses for the blind."',
+					'imageThree': site.theme.link ~ '/static/img/liberty-global/testimonials/timothy.png',
+					'quoteeThree': 'Timothy, 14, Former Future Awards Winner.'}
+					%}
+				</div>
+				<div class="article-body futuremakers">
+					{% include "bio-heads-2.twig" with {'quoteOne': '"I used my coding superpowers to develop the E-car charger locator, an app that helps people find charge points for electric cars."',
+					'imageOne':site.theme.link ~ '/static/img/liberty-global/testimonials/niamh.png',
+					'quoteeOne': ' Niamh, 14, A great example of a Future Maker',
+					'quoteTwo': '"I used my coding superpowers to develop a flood gauge, a flood warning system that alerts the community by email or tweet."',
+					'imageTwo': site.theme.link ~ '/static/img/liberty-global/testimonials/shane.png',
+					'quoteeTwo': 'Shane, 10, Former Future Makers Awards winner'}
+					%}
+				</div>
+				<div class="article-wrapper">
+					<div class="article-body">
+						{{broken_content[6]}}
+					</div>
+				</div>
+			</section>
+		</article>
 	</div><!-- /content-wrapper -->
 {% endblock %}
