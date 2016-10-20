@@ -1,6 +1,6 @@
 
 ## !! Changes made to this Theme
-See docs/riot.md for specific instructions around customisations in this Theme
+See [docs/riot.md](/docs/riot.md) for specific instructions around customisations in this Theme
 
 # The Timber Starter Theme
 
