@@ -33,7 +33,7 @@ $context['partnerImages'] = [ ['src'=>'../wp-content/themes/cd-theme/static/img/
                                      'id'=>'5','linkedin'=>'https://www.linkedin.com/company/dogpatch-labs',
                                      'twitter'=>'https://twitter.com/dogpatchlabs'],
 
-                             ['src'=>'../wp-content/themes/cd-theme/static/img/supporters/chq.png', 'name'=>'CHQ Building', 'jobDescription'=>'Bank of Ireland are growth partners across the island of Ireland, they are committed to supporting and starting Dojos around the country through their branch network',
+                             ['src'=>'../wp-content/themes/cd-theme/static/img/supporters/chq.png', 'name'=>'CHQ Building', 'jobDescription'=>'CHQ hosts & retains the CoderDojo team in Dogapatch Labs.',
                                      'id'=>'6','linkedin'=>'https://www.linkedin.com/company/the-chq-building',
                                      'twitter'=>'https://twitter.com/chqdublin'],
 
@@ -41,9 +41,9 @@ $context['partnerImages'] = [ ['src'=>'../wp-content/themes/cd-theme/static/img/
                                      'id'=>'7','linkedin'=>'https://www.linkedin.com/company/deloitte',
                                      'twitter'=>'https://twitter.com/deloitteireland'],
 
-                             ['src'=>'../wp-content/themes/cd-theme/static/img/supporters/bank-of-ireland.png', 'name'=>'Web Summit', 'jobDescription'=>'Offer CoderDojo space at their annual tech conference in Dublin.',
-                                     'id'=>'8','linkedin'=>'https://www.linkedin.com/company/web-summit',
-                                     'twitter'=>'https://twitter.com/WebSummitHQ'],
+                             ['src'=>'../wp-content/themes/cd-theme/static/img/supporters/bank-of-ireland.png', 'name'=>'Bank of Ireland', 'jobDescription'=>'Bank of Ireland are growth partners across the island of Ireland, they are committed to supporting and starting Dojos around the country through their branch network',
+                                     'id'=>'8','linkedin'=>'https://www.linkedin.com/company/bank-of-ireland',
+                                     'twitter'=>'https://twitter.com/bankofireland'],
 
                              ['src'=>'../wp-content/themes/cd-theme/static/img/supporters/zendesk.png', 'name'=>'Zendesk', 'jobDescription'=>'Zendesk donated web-based customer service software to help us communicate with our global community.',
                                      'id'=>'9','linkedin'=>'https://www.linkedin.com/company/zendesk',
@@ -60,7 +60,6 @@ $context['partnerImages'] = [ ['src'=>'../wp-content/themes/cd-theme/static/img/
                              ['src'=>'../wp-content/themes/cd-theme/static/img/supporters/new-relic.png', 'name'=>'New Relic', 'jobDescription'=>'Provided services for monitoring website application performance',
                                      'id'=>'12','linkedin'=>'https://www.linkedin.com/company/new-relic-inc-/',
                                      'twitter'=>'https://twitter.com/newrelic'],
-
 
                              ['src'=>'../wp-content/themes/cd-theme/static/img/supporters/intercom.png', 'name'=>'Intercom', 'jobDescription'=>'Intercom has fundamentally changed how we interact with the community as it allows us to provide real time support to parents, mentors and Champions who are signed into Zen.',
                                      'id'=>'13','linkedin'=>'https://www.linkedin.com/company/intercom',
