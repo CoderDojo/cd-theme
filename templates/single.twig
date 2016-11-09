@@ -4,8 +4,7 @@
     <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
       <section class="article-content">
         <div class="col-md-12 post-image" style="background-image:url({{post.thumbnail.src('large')}})"></div>
-        <div class="col-md-1 col-sm-1 col-xs-1"></div>
-        <div class="col-md-10 col-sm-10 col-xs-10 article-body" style="background: #fff;">
+        <div class="col-sm-offset-1 col-md-offset-1 col-xs-12 col-sm-10 col-md-10 article-body">
           <h1>{{post.title}}</h1>
           <p class="article-meta">{{post.post_date|date('j F Y')}} · by {{post.author.name}}</p>
           <div class="article-mid news-content">
@@ -34,7 +33,6 @@
             </div>
           </div>
         </div>
-        <div class="col-md-1 col-sm-1 col-xs-1"></div>
     </section>
 </article>
 </div>
