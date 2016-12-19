@@ -3,5 +3,13 @@
 {% block content %}
 <div class="col-md-12">
 	{% include "article-list.twig" with {"wordCount": 100} %}
+	<div class="pagination-buttons">
+		{% if pagination.prev %}
+		<a href="{{pagination.prev.link}}" class="prev {{pagination.prev.link|length ? '' : 'invisible'}} pull-left"><button class="btn btn-default">Previous</button></a>
+		{% endif %}
+		{% if pagination.next %}
+		<a href="{{pagination.next.link}}" class="next {{pagination.next.link|length ? '' : 'invisible'}} pull-right"><button class="btn btn-default">Next</button></a>
+		{% endif %}
+	</div>
 </div>
 {% endblock %}
