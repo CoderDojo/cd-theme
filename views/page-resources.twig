@@ -9,7 +9,8 @@
 						{{broken_content[0]}}
   				</div>
         </div>
-				{% include 'grid-plus-text.twig' with {"purpose": "resources"} %}
+				<div class="container">
+					{% include "resources-grid.twig"%}
 				<div class="article-wrapper">
 					<div class="article-body">
 						{% include 'cta.twig' with {'buttontext': 'View All Resources', 'target': 'https://kata.coderdojo.com' } %}
