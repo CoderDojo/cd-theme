@@ -155,8 +155,7 @@ function DojoList(dojos) {
           fields$: ["name", "geo_point", "stage", "url_slug", "private"]
         }
       }),
-      dataType: "json",
-      contentType: "application/json"
+      dataType: "json"
     })
     .done(function(dojos) {
       var filteredDojos = [];
