@@ -69,11 +69,11 @@ $context['partnerImages'] = [ ['src'=>'../wp-content/themes/cd-theme/static/img/
                                      'id'=>'14','linkedin'=>'https://www.linkedin.com/company/edgescan-com',
                                      'twitter'=>'https://twitter.com/edgescan'],
 
-                             ['src'=>'../wp-content/themes/cd-theme/static/img/supporters/bullet.png', 'name'=>'Bullet', 'jobDescription'=>'Bullet provide payroll software to ensure this accounting for salaries and employee tax is managed in an accurate and efficient manner.',
+                             ['src'=>'../wp-content/themes/cd-theme/static/img/supporters/bullet.png', 'name'=>'Bullet', 'jobDescription'=>'Bullet provide payroll software to ensure that accounting for salaries and employee tax is managed in an accurate and efficient manner.',
                                      'id'=>'15','linkedin'=>'https://www.linkedin.com/company/bullet-hq',
                                      'twitter'=>'https://twitter.com/bullethq'],
 
-                             ['src'=>'../wp-content/themes/cd-theme/static/img/supporters/learnupon.png', 'name'=>'Learnupon', 'jobDescription'=>'LearnUpon provide a free  Learning Management system to CoderDojo to make it easy for our users to take and complete our E-Learning training.',
+                             ['src'=>'../wp-content/themes/cd-theme/static/img/supporters/learnupon.png', 'name'=>'Learnupon', 'jobDescription'=>'LearnUpon provide a free Learning Management System (LMS) to CoderDojo to make it easy for our community members to take and complete our e-learning training modules.',
                                      'id'=>'16','linkedin'=>'https://www.linkedin.com/company/learnupon',
                                              'twitter'=>'https://twitter.com/learnupon'],
 
