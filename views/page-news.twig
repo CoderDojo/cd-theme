@@ -5,20 +5,33 @@
     <div class="news-carousel">
       <!-- {% include "carousel.twig" %} -->
     </div>
-    <article class="col-md-9">
-      <div class="tool-pagination">
-        <h1>All News</h1>
-        {% include "article-list.twig" with {"wordCount": 50} %}
-        <div class="pagination-buttons">
-          {% if pagination.prev %}
-          <a href="{{pagination.prev.link}}" class="prev {{pagination.prev.link|length ? '' : 'invisible'}} pull-left"><button class="btn btn-default">Previous</button></a>
-          {% endif %}
-          {% if pagination.next %}
-          <a href="{{pagination.next.link}}" class="next {{pagination.next.link|length ? '' : 'invisible'}} pull-right"><button class="btn btn-default">Next</button></a>
-          {% endif %}
-        </div>
-      </div>
-    </article>
+    <h1>All News</h1>
+    <div class="col-md-9">
+    	{% include "article-list.twig" with {"wordCount": 50} %}
+    <div class="text-center">
+    	<ul class="pagination pagination-centered">
+    		{% if pagination.prev %}
+    			<li>
+    					<a class="btn" href="{{pagination.prev.link}}" class="prev {{pagination.prev.link|length ? '' : 'invisible'}}">Previous</a>
+    			</li>
+    		{% endif %}
+    		{% for page in pagination.pages %}
+    				<li>
+    						{% if page.link %}
+    								<li><a href="{{page.link}}" class="btn">{{page.title}}</a></li>
+    						{% else %}
+    								<li><span class="btn">{{page.title}}</span></li>
+    						{% endif %}
+    				</li>
+    		{% endfor %}
+    		{% if pagination.next %}
+    		<li>
+    		<a class="btn" href="{{pagination.next.link}}" class="next {{pagination.next.link|length ? '' : 'invisible'}}">Next</a>
+    		</li>
+    		{% endif %}
+    	</ul>
+    </div>
+    </div>
     <div class="col-md-3">
       <form class="news-search" role="search" action={{site.home}}>
         <div class="form-group">
