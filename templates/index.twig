@@ -1,30 +1,33 @@
 {% extends "base.twig" %}
-
 {% block content %}
 <div class="col-md-12">
-	{% include "article-list.twig" with {"wordCount": 100} %}
-<div class="text-center">
-	<ul class="pagination pagination-centered">
-		{% if pagination.prev %}
-			<li>
-					<a class="btn" href="{{pagination.prev.link}}" class="prev {{pagination.prev.link|length ? '' : 'invisible'}}">Previous</a>
-			</li>
-		{% endif %}
-		{% for page in pagination.pages %}
-				<li>
-						{% if page.link %}
-								<li><a href="{{page.link}}" class="btn">{{page.title}}</a></li>
-						{% else %}
-								<li><span class="btn">{{page.title}}</span></li>
-						{% endif %}
-				</li>
-		{% endfor %}
-		{% if pagination.next %}
-		<li>
-		<a class="btn" href="{{pagination.next.link}}" class="next {{pagination.next.link|length ? '' : 'invisible'}}">Next</a>
-		</li>
-		{% endif %}
-	</ul>
-</div>
+		{% include "article-list.twig" with {"wordCount": 100} %}
+		<div class="text-center">
+				<ul class="pagination pagination-centered">
+		 				{% if pagination.prev %}
+								<li>
+			 							<a class="btn" href="{{pagination.prev.link}}" class="prev {{pagination.prev.link|length ? '' : 'invisible'}}">Previous</a>
+								</li>
+								{% endif %}
+								{% for page in pagination.pages %}
+		 								<li>
+												{% if page.link %}
+		 												<li>
+			 													<a href="{{page.link}}">{{page.title}}</a>
+													  </li>
+												{% else %}
+														<li>
+															 <span>{{page.title}}</span>
+														</li>
+											  {% endif %}
+										</li>
+							  {% endfor %}
+								{% if pagination.next %}
+										<li>
+												<a href="{{pagination.next.link}}" class="next {{pagination.next.link|length ? '' : 'invisible'}}">Next</a>
+										</li>
+								{% endif %}
+					</ul>
+		</div>
 </div>
 {% endblock %}
