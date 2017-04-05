@@ -10,6 +10,46 @@
   <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
     <section class="article-content"> <h1 class="article-h1 center">What Is CoderDojo?</h1> <div class="article-body">
         {{broken_content[0]}}
+        <br/>
+        <h1> I want to...</h1>
+          <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="{{site.theme.link}}/static/img/home/ninja.png">
+                  <div class="caption">
+                    <h2>Book A Child</h2>
+                    <p> Join a dojo and explore tech in a creative and fun environment. </p>
+                        <p>
+                          <a href="#" class="btn btn-primary" role="button">Learn More</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                      <img src="{{site.theme.link}}/static/img/home/champion.png">
+                        <div class="caption">
+                          <h2>Create A New Dojo</h2>
+                          <p> Build your own Dojo, its easy, fun and rewarding. </p>
+                            <p>
+                              <a href="#" class="btn btn-primary" role="button">Learn More</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                          <img src="{{site.theme.link}}/static/img/home/volunteer.png">
+                          <div class="caption">
+                            <h2>Volunteer at a Dojo</h2>
+                            <p> Help make a difference and volunteer at your local Dojo!</p>
+                            <p>
+                              <a href="#" class="btn btn-primary" role="button" align="right">Learn More</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
       </div>
       <div class="article-wrapper">
         {% include 'grid-plus-text.twig'  with {"purpose": "howto"}  %}

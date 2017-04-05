@@ -20,8 +20,18 @@ $context['regionalImages'] = [ ['src'=>'../wp-content/themes/cd-theme/static/img
 															 ['src'=>'../wp-content/themes/cd-theme/static/img/regional-bodies/coderdojo-turkiye.png', 'alt'=>'Alt desc 2',
 												        'link'=>'http://coderdojoturkiye.com/', 'target'=>'_blank','name'=>'CoderDojo', 'role'=>'Turkiye'],
 
-															 ['src'=>'../wp-content/themes/cd-theme/static/img/regional-bodies/coderdojo-committee.png', 'alt'=>'Alt desc 2',
-														    'link'=>'cd-wordpress/community-committee/', 'target'=>'_blank','name'=>'CoderDojo','role'=>'Community Commmittee']
+                                ['src'=>'../wp-content/themes/cd-theme/static/img/regional-bodies/nsw.png', 'alt'=>'Alt desc 2',
+                                  'link'=>'http://coderdojonsw.org.au/foundation/', 'target'=>'_blank','name'=>'CoderDojo','role'=>'New South Wales'],
+
+
+                               ['src'=>'../wp-content/themes/cd-theme/static/img/regional-bodies/coderdojo.png', 'alt'=>'Alt desc 2',
+ 														    'link'=>'https://www.coderdojobelgium.be/', 'target'=>'_blank','name'=>'CoderDojo','role'=>'Belgium'],
+
+                                ['src'=>'../wp-content/themes/cd-theme/static/img/regional-bodies/bulgaria.png', 'alt'=>'Alt desc 2',
+                                 'link'=>'https://www.coderdojobulgaria.com/', 'target'=>'_blank','name'=>'CoderDojo','role'=>'Bulgaria'],
+
+                                ['src'=>'../wp-content/themes/cd-theme/static/img/regional-bodies/coderdojo.png', 'alt'=>'Alt desc 2',
+  														    'link'=>'https://twitter.com/coderdojocolomb', 'target'=>'_blank','name'=>'CoderDojo','role'=>'Colombia']
 													];
 
 Timber::render('page-regional-bodies.twig', $context);
