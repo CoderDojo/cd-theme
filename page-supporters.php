@@ -77,6 +77,10 @@ $context['partnerImages'] = [ ['src'=>'../wp-content/themes/cd-theme/static/img/
                                      'id'=>'16','linkedin'=>'https://www.linkedin.com/company/learnupon',
                                              'twitter'=>'https://twitter.com/learnupon'],
 
+                             ['src'=>'../wp-content/themes/cd-theme/static/img/supporters/pivotal.png', 'name'=>'Pivotal', 'jobDescription'=>'The Pivotal Dublin team provided pro-bono project managers, designers and developers to work on a project relating to the registration and events flow for our Community Platform.',
+                                      'id'=>'17','linkedin'=>'https://www.linkedin.com/company-beta/3048967/',
+                                      'twitter'=>'https://twitter.com/pivotal'],
+
                             ];
 
 $context['allianceImages'] = [
