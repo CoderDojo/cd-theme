@@ -6,30 +6,9 @@
     <section class="article-content">
       <div class="article-wrapper">
         <h1 class="article-h1 center">{{post.title}}</h1>
-        <div class="article-body">
-          {{broken_content[0]}}
-          <br/>
+        <div class="article-body"> 
         </div>
-      <div class="about-blocks">
-        <div class="row top">
-          {% include "item-box.twig" with {'title': '', 'hrefOne':'movement', 'rows': 2 , 'imageOne': site.theme.link ~ '/static/img/headers/movement.jpg', 'textOne': broken_content[1]} %}
-        </div>
-        <br/>
-        <div class="row top">
-          {% include "item-box.twig" with {'title': '', 'hrefOne':'foundation', 'rows': 2 , 'imageOne': site.theme.link ~ '/static/img/headers/foundation.jpg', 'textOne': broken_content[2]} %}
-        </div>
-        <br/>
-        <div class="row top">
-         {% include "item-box.twig" with {'title': '', 'hrefOne':'supporters', 'rows': 2 , 'imageOne': site.theme.link ~ '/static/img/headers/supporters.jpg', 'textOne': broken_content[3]} %}
-        </div>
-        <br/>
-        <div class="row top">
-         {% include "item-box.twig" with {'title': '', 'hrefOne':'regional', 'rows': 2 , 'imageOne': site.theme.link ~ '/static/img/headers/community.jpg', 'textOne': broken_content[4]} %}
-        </div>
-        <br/>
-        <div class="row top">
-           {% include "item-box.twig" with {'title': '', 'hrefOne':'reporting-governance', 'rows': 2 , 'imageOne': site.theme.link ~ '/static/img/headers/reporting.png', 'textOne': broken_content[5]} %}
-        </div>
+      {{post.content}}  
       </div>
     </section>
   </article>

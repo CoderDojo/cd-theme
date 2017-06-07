@@ -6,4 +6,4 @@ $post = new TimberPost();
 $context['post'] = $post;
 $context['broken_content'] = explode("<!--more-->", $post->content);
 
-Timber::render('page-foundation.twig', $context);
+Timber::render('page-about.twig', $context);
