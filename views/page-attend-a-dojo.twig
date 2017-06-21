@@ -9,26 +9,9 @@
           {{broken_content[0]}}
           <br />
           {% include 'cta.twig' with {'buttontext': 'Find A Dojo', 'target': 'https://zen.coderdojo.com/' } %}
-          <br /><br />
+          <br />
         </div>
-        {% include "bio-heads-3.twig" with {'quoteOne': '"Every session of the Dojo is exciting! To watch the kids learn with and from each other. My favorite part is when ninjas present their work from the session to all of the attendees and parents."',
-        'imageOne':site.theme.link ~ '/static/img/testimonials/garima.png',
-        'quoteeOne': ' Garima - CoderDojo Round Rock, Texas',
-        'quoteTwo': '"Learning to code is done in a relaxed friendly atmosphere. I really like being creative and coding gives me an opportunity to put my ideas into a digital world."',
-        'imageTwo': site.theme.link ~ '/static/img/testimonials/lauren_boyle.png',
-        'quoteeTwo': 'Lauren - CoderDojo Dun Laoghaire, Ireland',
-        'quoteThree': '"Computer skills will be important no matter what career our Ninjas go into in the future, so by mentoring them, I’m making a direct impact on their future employability."',
-        'imageThree': site.theme.link ~ '/static/img/testimonials/niamh_scullion.png',
-        'quoteeThree': 'Niamh Scullion - CoderDojo DCU, Ireland' }
-        %}
-        <div class="article-mid actions-with-icons">
-          <h1>FAQs</h1>
-          {% include 'paragraph.twig' with {'align': 'left', 'title':'What is my child going to learn?', 'glyph':'fa fa-info', 'desc': 'CoderDojo is not curriculum based, so every Dojo covers different topics. Often young people will start with Scratch, a visual programming tool, or by building their own website.' } %}
-          {% include 'paragraph.twig' with {'align': 'right', 'title':'How do you register for a Dojo?', 'glyph':'fa fa-child', 'desc': 'Each Dojo makes its own rules around registration and attendance. Search our global map and contact the Dojo directly if there are no events listed on their Dojo page.' } %}
-          {% include 'paragraph.twig' with {'align': 'left', 'title':'What does my child need to bring?', 'glyph':'fa  fa-laptop', 'desc': 'In most Dojos you will need to bring a laptop. If you don’t have one check with the Dojo as some Dojos have spare laptops to lend. Don’t forget curiosity and a positive attitude too!' } %}
-{% include 'paragraph.twig' with {'align': 'right', 'title':'There’s no Dojo near me. Is my child out of luck?', 'glyph':'fa fa-map-marker', 'desc': 'No! Every Dojo around was started by somebody with a passion for the idea. You’re totally capable, no matter your tech skills, of starting your own Dojo. Let us help you get started!' } %}
-{% include 'paragraph.twig' with {'align': 'left', 'title':'Can parents help?', 'glyph':'fa  fa-users', 'desc': 'Yes, you can absolutely help! If you have technical skills you can mentor at the Dojo. If not, you can help out with registrations, check-in, and promoting the Dojo both online and offline.' } %}
-        </div>
+        {{broken_content[1]}}
         {% include 'map.twig' with {'purpose': 'find' } %}
       </section>
     </article>
