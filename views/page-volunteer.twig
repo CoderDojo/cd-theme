@@ -15,11 +15,53 @@
         </div>
         <div class="article-mid actions-with-icons">
           <h1>What's involved</h1>
-          {% include 'paragraph.twig' with {'align': 'left', 'title':'How can I help??', 'glyph':'fa fa-users', 'desc': 'You can attend your Dojo’s meetings and help out for a couple of hours, whether that’s weekly, fortnightly or monthly. '} %}
-          {% include 'paragraph.twig' with {'align': 'right', 'title':'Experienced coder?', 'glyph':'fa fa-code', 'desc': 'Help out at a Dojo and share your knowledge with local young people who are eager to learn!'} %}
-          {% include 'paragraph.twig' with {'align': 'left', 'title':'No technical expertise?', 'glyph':'fa fa-close', 'desc': 'No problem! We need awesome people to help with registration, updating social media, producing fliers etc. Any help is appreciated! '} %}
-          {% include 'paragraph.twig' with {'align': 'right', 'title':'Ready-made resources!', 'glyph':'fa fa-book', 'desc':'We have loads of resources to get you started as a volunteer, and you can always create and share your own. Find out more on the resources page. '} %}
+          {% include 'paragraph.twig' with {'align': 'left', 'title':'How Can I Help?', 'glyph':'fa fa-users', 'desc': 'Mentors are the heart of the CoderDojo movement.  Dojos can run weekly, fortnightly or monthly. Typically Mentors are asked to commit to volunteering at least once a month at a Dojo. '} %}
+          {% include 'paragraph.twig' with {'align': 'right', 'title':'What skills do I Need?', 'glyph':'fa fa-code', 'desc': 'The most important skill of a mentor is the ability to guide the learning of the young people. You do not need to be a coder to fill this role. In fact Dojos can benefit from a mix of volunteers with different experiences. Dojos cover everything from software and web development to building hardware projects and sometimes even wearable technology. Languages and programs often covered include Scratch, HTML, App Inventor, Raspberry Pi, Python, Arduino and more.'} %}
+          {% include 'paragraph.twig' with {'align': 'left', 'title':'Why should I mentor?', 'glyph':'fa fa-close', 'desc': 'Mentoring at a Dojo is a hugely rewarding experience. It is an opportunity for you to share your skills and have a clear and tangible impact on the lives of young people in your community. In addition its an excellent opportunity for volunteers to develop new or refresh existing skills such as working in different teams, communicate with people of all ages and abilities, problem solving and brainstorming. '} %}
+          {% include 'paragraph.twig' with {'align': 'right', 'title':'Resources to help!', 'glyph':'fa fa-book', 'desc':'CoderDojo provides online training courses for Mentors and Champions to help you follow best practices in running your Dojo, and make life easier for you and other volunteers. We also provide lots of free educational handouts—called Sushi Cards—for you to print for the young people at your Dojo, allowing them to learn at their own pace and making it easier for you to mentor larger groups. Sushi Cards link into the CoderDojo Digital Badges system which helps you mark and track your attendees achievements in coding.'} %}
+          {{broken_content[1]}}
         </div>
+                <br/>
+                  <div class="row2" >
+                    <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                        <img src="{{site.theme.link}}/static/img/volunteer/github.png">
+                          <div class="caption">
+                            <h3>Open Source Contributor</h3>
+                              <p>Our community platform, which acts as the global database for CoderDojo, is entirely open sourced and viewable on GitHub. Developers or designers can get involved.</p>
+                                <p>
+                                  <a href="http://coderdojo.github.io/" class="btn btn-primary" role="button">Learn More</a>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                              <img src="{{site.theme.link}}/static/img/volunteer/crowdin.png">
+                                <div class="caption">
+                                  <h3>Translate our Content</h3>
+                                    <p>With Dojos active all around the world there is always a need for volunteers to translate tutorials and content. Help us continue to expand our content. </p>
+                                    <p>
+                                      <a href="https://crowdin.com/projects/coderdojo" class="btn btn-primary" role="button">Learn More</a>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                  <img src="{{site.theme.link}}/static/img/volunteer/github.png">
+                                  <div class="caption">
+                                    <h3>Content Contributor</h3>
+                                    <p>Anyone with skills that ninjas might want to learn at a Dojo, from coding to design to video editing can help out by creating learning content, and sharing it with the community. </p>
+                                    <p>
+                                      <a href="http://kata.coderdojo.com/wiki/Kata" class="btn btn-primary" role="button">Learn More</a>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
         {% include "bio-heads-2.twig" with {'quoteOne': 'Coding is very important in the 21st century because if you do not learn computer programming, how can you use computers at work when you are an adult?',
         'imageOne':site.theme.link ~ '/static/img/testimonials/niamh_scanlon.png',
         'quoteeOne': 'Niamh - CoderDojo DCU',

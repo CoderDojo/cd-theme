@@ -80,23 +80,6 @@
     </div>
   </div>
 
-  {% elseif purpose == 'howto' %}
-    <div class="howImages" align="center">
-      <div class="content-wrapper">
-        {% for item in howtoImages %}
-        <div class="headshot-modal-link-quotees col-md-4">
-          <a href="{{item.link}}" data-target="#{{item.id}}">
-            <img src="{{item.src}}" class="image-crop" alt="{{item.body}}" border="0">
-          </a>
-          <div class="row">
-            <span class="bottom-align-text"><a href="{{item.link}}">{{ item.name }}</a> </span>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-
-
 {% else %}
 <div class="funderImages" align="center">
   <h3><br/><br/>{{Funders}}</h3>
