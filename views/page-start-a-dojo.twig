@@ -14,14 +14,7 @@
             {% include 'video.twig' with {'videoOne': 'https://www.youtube.com/embed/c7ROVdcyk7s' } %}
             <br />
         </div>
-        <div class="article-mid actions-with-icons">
-          <h1>What's involved</h1>
-          {% include 'paragraph.twig' with {'align': 'left', 'title':'Find your team', 'glyph':'fa fa-users', 'desc': 'A Dojo needs a team of volunteers. Usually a mix of technical Mentors and non-technical Volunteers. We recommend a ratio of 1 Mentor to 8 young people, but it’s up to you! '} %}
-          {% include 'paragraph.twig' with {'align': 'right', 'title':'Find your venue', 'glyph':'fa fa-building', 'desc': 'Location is vital for running a successful Dojo. You need a venue with power sockets, internet access, tables and chairs. Try local community spaces, offices, and educational institutions. However, you cannot host Dojo’s in private residences. '} %}
-          {% include 'paragraph.twig' with {'align': 'left', 'title':'Plan your dojo', 'glyph':'fa fa-bank', 'desc': 'Meet with your team, pick a date and plan the first few sessions. There lots of learning resources [http://kata.coderdojo.com] available on this website you can create your own if you need something else.'} %}
-          {% include 'paragraph.twig' with {'align': 'right', 'title':'Promote your Dojo', 'glyph':'fa  fa-bullhorn', 'desc': 'Setup communications (e.g. email and Twitter) specifically for your Dojo. Consider inviting young people via local schools or youth groups. You can also set up ticketing on the CoderDojo website to know who to expect on the day and ensure they’ll fit in the venue! '} %}
-          {% include 'paragraph.twig' with {'align': 'left', 'title':'Start coding!', 'glyph':'fa fa-terminal', 'desc': 'Once you’ve registered and been verified, put together a plan, your team is prepped and you have a group eager to become CoderDojo Ninjas then you’re ready to begin the real fun! '} %}
-        </div>
+        {{broken_content[2]}}
         {% include 'map.twig' %}
     </article>
   </div>
