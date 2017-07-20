@@ -1,28 +1,22 @@
 .resources {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-    position: relative;
+    width: auto;
 
-    .wrap-resources {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+    @media (min-width: 768px) {
+        margin: 0 24px;
     }
 
     .icon-box {
         padding-top: 100px;
-        flex: auto;
-        width: 300px;
-    }
-
-    .resources .box {
-        padding: 0 15px 15px;
-        padding-top: 0px;
-        padding-right: 15px;
-        padding-bottom: 15px;
-        padding-left: 15px;
+        flex: 1;
+        min-width: 260px;
+        margin: 8px;
+        text-align: center;
+        position: relative;
+        @media (min-width: 768px) {
+            min-width: 300px;
+        }
     }
 
     .icon-resources {
@@ -56,10 +50,7 @@
     }
 
     .box {
-        padding-top: 100px;
-        padding-right: 15px;
-        padding-bottom: 15px;
-        padding-left: 15px;
+        padding: 15px;
         max-width: 100%;
         -moz-transition: all 0.3s;
         -webkit-transition: all 0.3s;
