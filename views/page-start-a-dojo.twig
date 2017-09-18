@@ -8,14 +8,15 @@
         <div class="article-body">
           <h1>{{post.title}}</h1>
           {{broken_content[0]}}
-          {% include 'cta.twig' with {'buttontext': 'Create A Dojo', 'target': 'https://zen.coderdojo.com/start-dojo' } %}
+          {% include 'cta.twig' with {'buttontext': 'Start A Dojo', 'target': 'https://zen.coderdojo.com/start-dojo' } %}
           <br />
           {{broken_content[1]}}
-            {% include 'video.twig' with {'videoOne': 'https://www.youtube.com/embed/c7ROVdcyk7s' } %}
-            <br />
+          <br />
         </div>
         {{broken_content[2]}}
-        {% include 'map.twig' %}
+        <h2>{% include 'cta.twig' with {'buttontext': 'Start a Dojo', 'target': 'https://zen.coderdojo.com/start-dojo' } %}</h2>
+        <br />
+        {% include 'video.twig' with {'videoOne': 'https://www.youtube.com/embed/c7ROVdcyk7s' } %}
     </article>
   </div>
 {% endblock %}
