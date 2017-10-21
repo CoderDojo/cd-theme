@@ -1,21 +1,21 @@
 {% extends "base.twig" %}
 
 {% block content %}
-	<div class="content-wrapper">
+  <div class="content-wrapper">
     <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
-    	<section class="article-content">
-						{{broken_content[0]}}
-				<div class="container">
-					{% include "resources-grid.twig"%}
-				<div class="article-wrapper">
-					<div class="article-body">
-						{% include 'cta.twig' with {'buttontext': 'View All Resources', 'target': 'https://kata.coderdojo.com' } %}
-						{{broken_content[1]}}
-					</div>
-				</div>
-				{% include 'cta.twig' with {'buttontext': 'Share your work!', 'target': 'http://kata.coderdojo.com/wiki/Become_a_Kata_Editor' } %}
-    	</section>
-  	</article>
-	</div>
+      <section class="article-content">
+        {{broken_content[0]}}
+        <div class="container">
+          {% include "resources-grid.twig"%}
+        <div class="article-wrapper">
+          <div class="article-body">
+            {% include 'cta.twig' with {'buttontext': 'View All Resources', 'target': 'https://kata.coderdojo.com' } %}
+            {{broken_content[1]}}
+          </div>
+        </div>
+        {% include 'cta.twig' with {'buttontext': 'Share your work!', 'target': 'http://kata.coderdojo.com/wiki/Become_a_Kata_Editor' } %}
+      </section>
+    </article>
+  </div>
 </div><!-- /content-wrapper -->
 {% endblock %}

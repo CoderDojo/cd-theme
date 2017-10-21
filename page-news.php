@@ -2,12 +2,12 @@
 
 global $paged;
 if (!isset($paged) || !$paged){
-    $paged = 1;
+  $paged = 1;
 }
 $context = Timber::get_context();
 $args = array(
-    'posts_per_page' => 10,
-    'paged' => $paged
+  'posts_per_page' => 10,
+  'paged' => $paged
 );
 
 query_posts($args);

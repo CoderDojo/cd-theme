@@ -1,28 +1,28 @@
 {% extends "base.twig" %}
 
 {% block content %}
-	<div class="content-wrapper">
-		<img src="{{site.theme.link}}/static/img/headers/movement-no-text.jpg" class="top-banner"/>
+  <div class="content-wrapper">
+    <img src="{{site.theme.link}}/static/img/headers/movement-no-text.jpg" class="top-banner"/>
     <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
-    	<section class="article-content">
-      	<div class="article-wrapper">
-					<div class="article-body">
-						{{broken_content[0]}}
-  				</div>
+      <section class="article-content">
+        <div class="article-wrapper">
+          <div class="article-body">
+            {{broken_content[0]}}
+          </div>
         </div>
         <img src="{{site.theme.link}}/static/img/headers/first-dojo.jpg" class="top-banner"/>
         <div class="article-wrapper">
-        	<div class="article-body">
-          	{{broken_content[1]}}
+          <div class="article-body">
+            {{broken_content[1]}}
           </div>
-				</div>
-				<div class="article-wrapper">
-       		<div class="article-body">
-        		{{broken_content[2]}}
-						<iframe width="1080" height="600" src="https://www.youtube.com/embed/vPLMmf7JWFM" frameborder="0" allowfullscreen></iframe>
-					</div>
-				</div>
-    	</section>
-  	</article>
-	</div><!-- /content-wrapper -->
+        </div>
+        <div class="article-wrapper">
+          <div class="article-body">
+            {{broken_content[2]}}
+            <iframe width="1080" height="600" src="https://www.youtube.com/embed/vPLMmf7JWFM" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+    </article>
+  </div><!-- /content-wrapper -->
 {% endblock %}
