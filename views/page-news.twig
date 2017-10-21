@@ -2,49 +2,49 @@
 
 {% block content %}
 <div class="content-wrapper">
-	<div class="news-carousel">
-		<!-- {% include "carousel.twig" %} -->
-	</div>
-	<h1>All News</h1>
-	<div class="col-md-9">
-		{% include "article-list.twig" with {"wordCount": 50} %}
-		<div class="text-center">
-			<ul class="pagination pagination-centered">
-				{% if pagination.prev %}
-					<li>
-						<a class="btn" href="{{pagination.prev.link}}" class="prev {{pagination.prev.link|length ? '' : 'invisible'}}">Previous</a>
-					</li>
-				{% endif %}
-				{% for page in pagination.pages %}
-					<li>
-						{% if page.link %}
-							<li><a href="{{page.link}}" class="btn">{{page.title}}</a></li>
-						{% else %}
-							<li><span class="btn">{{page.title}}</span></li>
-						{% endif %}
-					</li>
-				{% endfor %}
-				{% if pagination.next %}
-					<li>
-						<a class="btn" href="{{pagination.next.link}}" class="next {{pagination.next.link|length ? '' : 'invisible'}}">Next</a>
-					</li>
-				{% endif %}
-			</ul>
-		</div>
-	</div>
-	<div class="col-md-3">
-		<form class="news-search" role="search" action={{site.home}}>
-			<div class="form-group">
-				<h3>Search</h3>
-				<input id="navbar-search" type="text" class="form-control" placeholder="Search" name="s">
-			</div>
-		</form>
-		<ul class="cat-list">
-			<h3>Categories</h3>
-			{% for cat in categories %}
-				<li><a href="{{cat.link}}">{{cat.name}}</a></li>
-			{% endfor %}
-		</ul>
-	</div>
+  <div class="news-carousel">
+    <!-- {% include "carousel.twig" %} -->
+  </div>
+  <h1>All News</h1>
+  <div class="col-md-9">
+    {% include "article-list.twig" with {"wordCount": 50} %}
+    <div class="text-center">
+      <ul class="pagination pagination-centered">
+        {% if pagination.prev %}
+          <li>
+            <a class="btn" href="{{pagination.prev.link}}" class="prev {{pagination.prev.link|length ? '' : 'invisible'}}">Previous</a>
+          </li>
+        {% endif %}
+        {% for page in pagination.pages %}
+          <li>
+            {% if page.link %}
+              <li><a href="{{page.link}}" class="btn">{{page.title}}</a></li>
+            {% else %}
+              <li><span class="btn">{{page.title}}</span></li>
+            {% endif %}
+          </li>
+        {% endfor %}
+        {% if pagination.next %}
+          <li>
+            <a class="btn" href="{{pagination.next.link}}" class="next {{pagination.next.link|length ? '' : 'invisible'}}">Next</a>
+          </li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <form class="news-search" role="search" action={{site.home}}>
+      <div class="form-group">
+        <h3>Search</h3>
+        <input id="navbar-search" type="text" class="form-control" placeholder="Search" name="s">
+      </div>
+    </form>
+    <ul class="cat-list">
+      <h3>Categories</h3>
+      {% for cat in categories %}
+        <li><a href="{{cat.link}}">{{cat.name}}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
 </div><!-- /content-wrapper -->
 {% endblock %}

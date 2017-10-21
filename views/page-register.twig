@@ -1,11 +1,11 @@
 {% extends "base.twig" %}
 
 {% block content %}
-	<div class="content-wrapper">
+  <div class="content-wrapper">
     <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
-    	<section class="article-content">
-      	<div class="article-wrapper">
-					<div class="article-body register">
+      <section class="article-content">
+        <div class="article-wrapper">
+          <div class="article-body register">
             <div class="text-center">
               <img src="{{ site.theme.link }}/static/img/coderdojo-logo-light-bg.png" alt="">
               <h3 class="option">Sign in OR register</h3> <!--replace with broken_content-->
@@ -19,9 +19,9 @@
               <a href="user-details"><button class="btn btn-default alt submit" type="submit">Register</button></a>
               <a href="what-we-do"><button class="btn btn-default alt cancel" type="submit">Cancel</button></a>
             </div>
-  				</div>
+          </div>
         </div>
-    	</section>
-  	</article>
-	</div><!-- /content-wrapper -->
+      </section>
+    </article>
+  </div><!-- /content-wrapper -->
 {% endblock %}

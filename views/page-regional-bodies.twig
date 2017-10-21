@@ -1,21 +1,21 @@
 {% extends "base.twig" %}
 
 {% block content %}
-    <div class="content-wrapper">
-    <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
-        <section class="article-content">
-        <div class="article-wrapper">
-                    <div class="article-body">
-                      {% include 'map.twig' with {'purpose': 'regional' } %}
-                        {{broken_content[0]}}
-                    </div>
-                  </div>
-                <div class="article-wrapper">
-                    <div class="article-body">
-                      {{broken_content[1]}}
-                    </div>
-                </div>
-        </section>
-    </article>
+<div class="content-wrapper">
+  <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+    <section class="article-content">
+      <div class="article-wrapper">
+        <div class="article-body">
+          {% include 'map.twig' with {'purpose': 'regional' } %}
+          {{broken_content[0]}}
+        </div>
+      </div>
+      <div class="article-wrapper">
+        <div class="article-body">
+          {{broken_content[1]}}
+        </div>
+      </div>
+    </section>
+  </article>
 </div> <!-- /content-wrapper -->
 {% endblock %}

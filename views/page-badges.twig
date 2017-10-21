@@ -2,102 +2,102 @@
 
 {% block content %}
 
-	<div class="content-wrapper">
-		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
-			<section class="article-wrapper">
-				<div class="article-body">
-					{{broken_content[0]}}
-				</div>
-			</section>
-		</article>
-	</div><!-- /content-wrapper -->
-	{% include 'grid5.twig' with {
-        'gridtitle': 'Lanaguages',
-        'grid': [
-            {
-                'body': 'HTML and CSS Sushi Beginner Badge',
-                'src': site.theme.link ~ '/static/img/badges/html-beginner.png',
-								'description': 'HTML and CSS Sushi Beginner'
-            },
-            {
-                'body': 'HTML and CSS Sushi Intermediate Bage',
-                'src': site.theme.link ~ '/static/img/badges/html-intermediate.png',
-								'description': 'HTML and CSS Sushi Intermediate'
-            },
-            {
-                'body': 'HTML and CSS Sushi Advanced Badge',
-                'src': site.theme.link ~ '/static/img/badges/html-advanced.png',
-								'description': 'HTML and CSS Sushi Advanced'
-            },
-            {
-                'body': 'JavaScript Sushi Beginner Badge',
-                'src': site.theme.link ~ '/static/img/badges/javascript-beginner.png',
-								'description': 'JavaScript Sushi Beginner'
-            },
-            {
-                'body': 'JavaScript Sushi Intermediate Badge',
-                'src': site.theme.link ~ '/static/img/badges/javascript-intermediate.png',
-								'description': 'JavaScript Sushi Intermediate'
-            },
-						{
-                'body': 'JavaScript Sushi Advanced Badge',
-                'src': site.theme.link ~ '/static/img/badges/javascript-advanced.png',
-						 		'description': 'JavaScript Sushi Advanced'
-            }
-        ]
-    } %}
-	{% include 'grid5.twig' with {
-        'gridtitle': 'Volunteering',
-        'grid': [
-            {
-                'body': 'Champion Badge',
-                'src': site.theme.link ~ '/static/img/badges/champion.png',
-								'description': 'Champion Badge'
-            },
-            {
-                'body': 'Mentor Badge',
-                'src': site.theme.link ~ '/static/img/badges/mentor.png',
-								'description': 'Mentor Badge'
-            }
-        ]
-    } %}
-		{% include 'grid5.twig' with {
-					'gridtitle': 'Attendance',
-					'grid': [
-							{
-									'body': 'My First Dojo Badge',
-									'src': site.theme.link ~ '/static/img/badges/first-dojo.png',
-									'description': 'My 1st Dojo'
-							},
-							{
-									'body': 'My Fifth Dojo Badge',
-									'src': site.theme.link ~ '/static/img/badges/fifth-dojo.png',
-									'description': 'My 5th Dojo'
-							},
-							{
-									'body': 'My Tenth Dojo Badge',
-									'src': site.theme.link ~ '/static/img/badges/tenth-dojo.png',
-									'description': 'My 10th Dojo'
-							},
-							{
-									'body': 'My Twenty Fifth Dojo Badge',
-									'src': site.theme.link ~ '/static/img/badges/twenty-fifth-dojo.png',
-									'description': 'My 25th Dojo'
-							},
-							{
-									'body': 'Coolest Projects 2016 Badge',
-									'src': site.theme.link ~ '/static/img/badges/coolest-projects-2016.png',
-									'description': 'Coolest Projects 2016'
-							},
-							{
-									'body': 'Kilkenny Scratch Competition Badge',
-									'src': site.theme.link ~ '/static/img/badges/kilkenny-scratch.png',
-									'description': 'Kilkenny Scratch Competition'
-							}
-					]
-			} %}
+  <div class="content-wrapper">
+    <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+      <section class="article-wrapper">
+        <div class="article-body">
+          {{broken_content[0]}}
+        </div>
+      </section>
+    </article>
+  </div><!-- /content-wrapper -->
+  {% include 'grid5.twig' with {
+    'gridtitle': 'Lanaguages',
+    'grid': [
+      {
+        'body': 'HTML and CSS Sushi Beginner Badge',
+        'src': site.theme.link ~ '/static/img/badges/html-beginner.png',
+        'description': 'HTML and CSS Sushi Beginner'
+      },
+      {
+        'body': 'HTML and CSS Sushi Intermediate Bage',
+        'src': site.theme.link ~ '/static/img/badges/html-intermediate.png',
+        'description': 'HTML and CSS Sushi Intermediate'
+      },
+      {
+        'body': 'HTML and CSS Sushi Advanced Badge',
+        'src': site.theme.link ~ '/static/img/badges/html-advanced.png',
+        'description': 'HTML and CSS Sushi Advanced'
+      },
+      {
+        'body': 'JavaScript Sushi Beginner Badge',
+        'src': site.theme.link ~ '/static/img/badges/javascript-beginner.png',
+        'description': 'JavaScript Sushi Beginner'
+      },
+      {
+        'body': 'JavaScript Sushi Intermediate Badge',
+        'src': site.theme.link ~ '/static/img/badges/javascript-intermediate.png',
+        'description': 'JavaScript Sushi Intermediate'
+      },
+      {
+        'body': 'JavaScript Sushi Advanced Badge',
+        'src': site.theme.link ~ '/static/img/badges/javascript-advanced.png',
+        'description': 'JavaScript Sushi Advanced'
+      }
+    ]
+  } %}
+  {% include 'grid5.twig' with {
+    'gridtitle': 'Volunteering',
+    'grid': [
+      {
+        'body': 'Champion Badge',
+        'src': site.theme.link ~ '/static/img/badges/champion.png',
+        'description': 'Champion Badge'
+      },
+      {
+        'body': 'Mentor Badge',
+        'src': site.theme.link ~ '/static/img/badges/mentor.png',
+        'description': 'Mentor Badge'
+      }
+    ]
+  } %}
+  {% include 'grid5.twig' with {
+    'gridtitle': 'Attendance',
+    'grid': [
+      {
+        'body': 'My First Dojo Badge',
+        'src': site.theme.link ~ '/static/img/badges/first-dojo.png',
+        'description': 'My 1st Dojo'
+      },
+      {
+        'body': 'My Fifth Dojo Badge',
+        'src': site.theme.link ~ '/static/img/badges/fifth-dojo.png',
+        'description': 'My 5th Dojo'
+      },
+      {
+        'body': 'My Tenth Dojo Badge',
+        'src': site.theme.link ~ '/static/img/badges/tenth-dojo.png',
+        'description': 'My 10th Dojo'
+      },
+      {
+        'body': 'My Twenty Fifth Dojo Badge',
+        'src': site.theme.link ~ '/static/img/badges/twenty-fifth-dojo.png',
+        'description': 'My 25th Dojo'
+      },
+      {
+        'body': 'Coolest Projects 2016 Badge',
+        'src': site.theme.link ~ '/static/img/badges/coolest-projects-2016.png',
+        'description': 'Coolest Projects 2016'
+      },
+      {
+        'body': 'Kilkenny Scratch Competition Badge',
+        'src': site.theme.link ~ '/static/img/badges/kilkenny-scratch.png',
+        'description': 'Kilkenny Scratch Competition'
+      }
+    ]
+  } %}
 
-		<div class="article-body">
-			{{broken_content[1]}}
-		</div>
+  <div class="article-body">
+    {{broken_content[1]}}
+  </div>
 {% endblock %}

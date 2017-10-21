@@ -1,32 +1,32 @@
 <div class="map">
-	<div id="map-box" style="height: 350px;"></div>
+  <div id="map-box" style="height: 350px;"></div>
 </div>
 <div class="search-block">
-	<div id="find-yours-box" class="content-box">
-		<div id="find-yours-form">
-			<div class="search-form form-inline">
-				<fieldset>
-					{% if purpose == 'find' %}
-					<label for="search">Find a Dojo near you</label>
-					<div class="search-row">
-						<div class="form-group search-city">
-							<input type="search" id="location" class="form-control" placeholder="Enter your city e.g. Dublin" />
-						</div>
-						<input class="btn btn-default" type="submit" value="Search" />
-					</div>
-					{% elseif purpose == 'regional' %}
-					<div>
-					</div>
-					{% else %}
-					<h2>Get your Dojo on the map</h2>
-					{% include 'cta.twig' with {'buttontext': 'Create a Dojo', 'target': 'https://zen.coderdojo.com' } %}
-					{% endif %}
-				</fieldset>
-			</div>
-		</div>
-		<div id="closeness" class="hidden"></div>
-	</div>
-	<div id="found-yours-box" class="content-box hidden"></div>
+  <div id="find-yours-box" class="content-box">
+    <div id="find-yours-form">
+      <div class="search-form form-inline">
+        <fieldset>
+          {% if purpose == 'find' %}
+          <label for="search">Find a Dojo near you</label>
+          <div class="search-row">
+            <div class="form-group search-city">
+              <input type="search" id="location" class="form-control" placeholder="Enter your city e.g. Dublin" />
+            </div>
+            <input class="btn btn-default" type="submit" value="Search" />
+          </div>
+          {% elseif purpose == 'regional' %}
+          <div>
+          </div>
+          {% else %}
+          <h2>Get your Dojo on the map</h2>
+          {% include 'cta.twig' with {'buttontext': 'Create a Dojo', 'target': 'https://zen.coderdojo.com' } %}
+          {% endif %}
+        </fieldset>
+      </div>
+    </div>
+    <div id="closeness" class="hidden"></div>
+  </div>
+  <div id="found-yours-box" class="content-box hidden"></div>
 </div>
 
 <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyBstJfoA83_8cLCKgtgtAqSda1YoRudtB4 "></script>
@@ -81,7 +81,7 @@ function refreshMap() {
   });
 
   markerClusterer = new MarkerClusterer(map, markers, {
-		imagePath: '{{site.theme.link}}/static/img/maps/m'
+    imagePath: '{{site.theme.link}}/static/img/maps/m'
   });
   handleGeo();
 }
@@ -99,19 +99,19 @@ function initialize() {
 }
 
 function handleGeo() {
-	// Try W3C Geolocation (Preferred)
+  // Try W3C Geolocation (Preferred)
   if(navigator.geolocation) {
     browserSupportFlag = true;
     navigator.geolocation.getCurrentPosition(function(position) {
       usersLocation = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
-			map.setCenter(usersLocation);
+      map.setCenter(usersLocation);
       setZoom();
     }, function() {
       handleNoGeolocation(browserSupportFlag);
     });
   }
 
-	// Browser doesn't support Geolocation
+  // Browser doesn't support Geolocation
   else {
     browserSupportFlag = false;
     handleNoGeolocation(browserSupportFlag);
@@ -124,7 +124,7 @@ function handleGeo() {
 }
 
 function setZoom() {
-  //if (_.isEmpty($scope.search.dojo)) {
+  if (_.isEmpty($scope.search.dojo)) {
     var zoom = 14, set = false;
     map.setZoom(zoom);
     map.setCenter(usersLocation || centerLocation);
@@ -141,7 +141,7 @@ function setZoom() {
       zoom = 2;
     }
     map.setZoom(zoom);
-  //}
+  }
 }
 
 function DojoList(dojos) {

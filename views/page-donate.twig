@@ -3,36 +3,36 @@
 {% block content %}
 <script src="https://checkout.stripe.com/checkout.js"></script>
 <script type="text/javascript" src="{{site.theme.link}}/static/js/stripe.js"></script>
-	<div class="content-wrapper">
+  <div class="content-wrapper">
     <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
-    	<section class="article-content">
-      	<div class="article-wrapper">
-					<div class="article-body">
-						{{broken_content[0]}}
-						<div class="row amount">
-							<div class='col-md-3 col-xs-3'>
-								<button class="donateButton btn" data-amount="1000" data-name="CoderDojo Foundation" data-description="Donation (€10)">€10</button>
-							</div>
-							<div class='col-md-3 col-xs-3'>
-								<button class="donateButton btn" data-amount="2000" data-name="CoderDojo Foundation" data-description="Donation (€20)">€20</button>
-							</div>
-							<div class='col-md-3 col-xs-3'>
-								<button class="donateButton btn" data-amount="5000" data-name="CoderDojo Foundation" data-description="Donation (€50)">€50</button>
-							</div>
-							<div class='col-md-3 col-xs-3'>
-								<button class="donateButton btn" data-amount="10000" data-name="CoderDojo Foundation" data-description="Donation (€100)">€100</button>
-							</div>
-						</div>
-						{% include 'input-field.twig' with {'id': 'donate', 'placeholder': 'Pick your own amount', type: 'number', 'labelfor': 'donate', 'class': 'input-donate-custom', 'max': '100000', 'min': '1', 'name': 'donation-amount' } %}
-						{% include 'cta.twig' with {'buttontext': 'Donate', 'class': 'donateButtonCustom btn', 'dataName': 'CoderDojo Foundation', 'dataDescription': 'Donation' } %}
-						{{broken_content[1]}}
-						{% include 'cta.twig' with {'buttontext': 'Give Now', 'target': 'http://www.globalgiving.org/projects/coderdojo-start-a-dojo-support/' } %}
-						{{broken_content[2]}}
-						{{broken_content[3]}}
-						{% include 'cta.twig' with {'buttontext': 'Reporting and Governance', 'target': 'http://www.coderdojo.com/reporting-governance/' } %}
-  				</div>
+      <section class="article-content">
+        <div class="article-wrapper">
+          <div class="article-body">
+            {{broken_content[0]}}
+            <div class="row amount">
+              <div class='col-md-3 col-xs-3'>
+                <button class="donateButton btn" data-amount="1000" data-name="CoderDojo Foundation" data-description="Donation (€10)">€10</button>
+              </div>
+              <div class='col-md-3 col-xs-3'>
+                <button class="donateButton btn" data-amount="2000" data-name="CoderDojo Foundation" data-description="Donation (€20)">€20</button>
+              </div>
+              <div class='col-md-3 col-xs-3'>
+                <button class="donateButton btn" data-amount="5000" data-name="CoderDojo Foundation" data-description="Donation (€50)">€50</button>
+              </div>
+              <div class='col-md-3 col-xs-3'>
+                <button class="donateButton btn" data-amount="10000" data-name="CoderDojo Foundation" data-description="Donation (€100)">€100</button>
+              </div>
+            </div>
+            {% include 'input-field.twig' with {'id': 'donate', 'placeholder': 'Pick your own amount', type: 'number', 'labelfor': 'donate', 'class': 'input-donate-custom', 'max': '100000', 'min': '1', 'name': 'donation-amount' } %}
+            {% include 'cta.twig' with {'buttontext': 'Donate', 'class': 'donateButtonCustom btn', 'dataName': 'CoderDojo Foundation', 'dataDescription': 'Donation' } %}
+            {{broken_content[1]}}
+            {% include 'cta.twig' with {'buttontext': 'Give Now', 'target': 'http://www.globalgiving.org/projects/coderdojo-start-a-dojo-support/' } %}
+            {{broken_content[2]}}
+            {{broken_content[3]}}
+            {% include 'cta.twig' with {'buttontext': 'Reporting and Governance', 'target': 'http://www.coderdojo.com/reporting-governance/' } %}
+          </div>
         </div>
-    	</section>
-  	</article>
-	</div><!-- /content-wrapper -->
+      </section>
+    </article>
+  </div><!-- /content-wrapper -->
 {% endblock %}
