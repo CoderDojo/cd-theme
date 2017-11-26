@@ -6,14 +6,14 @@
 		<ul class="pagination pagination-centered">
 			{% if pagination.prev %}
 				<li>
-					<a class="btn" href="{{pagination.prev.link}}" class="prev {{pagination.prev.link|length ? '' : 'invisible'}}">Previous</a>
+					<a class="btn" href="{{pagination.prev.link | e('esc_url')}}" class="prev {{pagination.prev.link|length ? '' : 'invisible'}}">Previous</a>
 				</li>
 			{% endif %}
 			{% for page in pagination.pages %}
 				<li>
 					{% if page.link %}
 						<li>
-							<a href="{{page.link}}">{{page.title}}</a>
+							<a href="{{page.link | e('esc_url')}}">{{page.title}}</a>
 						</li>
 					{% else %}
 						<li>
@@ -24,7 +24,7 @@
 			{% endfor %}
 			{% if pagination.next %}
 				<li>
-					<a href="{{pagination.next.link}}" class="next {{pagination.next.link|length ? '' : 'invisible'}}">Next</a>
+					<a href="{{pagination.next.link | e('esc_url')}}" class="next {{pagination.next.link|length ? '' : 'invisible'}}">Next</a>
 				</li>
 			{% endif %}
 		</ul>
