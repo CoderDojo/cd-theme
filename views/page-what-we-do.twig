@@ -50,9 +50,70 @@
                         </div>
                       </div>
                     </div>
+                    <hr/>
+                    <h1>Community Tools & Events</h1>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="row">
+
+                          <article class="col-md-3"><img src="{{site.theme.link}}/static/img/home/slack.png">
+                            <div class="col-sm-12 col-md-12 content-slack">
+                              <h3> Community Slack </h3>
+                                <p class="post-preview">Chat to volunteers from all over the world, share your experiences, post questions and discuss all things CoderDojo.</p>
+                                <p class="meta">
+                                  <button type="button" class="btn btn-default">Learn More</button>
+                                </p>
+                          </div>
+                            <br/>
+                    </article>
+
+                    <article class="col-md-3"><img src="{{site.theme.link}}/static/img/home/forums.jpg">
+                      <div class="col-sm-12 col-md-12 content-forums">
+                          <h3> Forums </h3>
+                          <p class="post-preview">Access discussions on different topics and keep up to date on events, challenges & opportunities</p>
+                            <p class="meta"><button type="button" class="btn btn-success">Learn More</button></p>
+                        </div>
+                        <br/>
+                  </article>
+
+                  <article class="col-md-3"><img src="{{site.theme.link}}/static/img/home/coolest-projects.png">
+                    <div class="col-sm-12 col-md-12 content-coolestprojects">
+                        <h3> Coolest Projects</h3>
+                        <p class="post-preview">A leading showcase of projects by ninjas that inspires the next generation of digital creators & innovators!</p>
+                          <p class="meta"><button type="button" class="btn btn-warning">Learn More</button></p>
+                      </div>
+                      <br/>
+                </article>
+
+                <article class="col-md-3"><img src="{{site.theme.link}}/static/img/home/dojocon.jpg">
+                  <div class="col-sm-12 col-md-12 content-dojocon">
+                      <h3> DojoCon </h3>
+                      <p class="post-preview">DojoCon is the annual global CoderDojo conference for the community who make Dojos possible. </p>
+                        <p class="meta"><button type="button" class="btn btn-primary">Learn More</button></p>
+                    </div>
+                    <br/>
+              </article>
+
+                  </div>
+            </div>
+                </div>
+                    <hr/>
+                    <h1>Latest News</h1>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                      {% include "article.twig" with {"wordCount": 20} %}
+                    </div>
+                  </div>
+                  <div class="article-wrapper">
+                    <h5 class="center">Get the latest Coder Dojo stories delivered to your inbox daily.</h5>
+                    {% include 'cta.twig' with {'buttontext': 'Subscribe'} %}
+                    <hr/>
+                  </div>
+                  </div>
+                  </div>
       </div>
       <div class="article-wrapper">
-        {% include 'grid-plus-text.twig'  with {"purpose": "howto"}  %}
 <br/>
         {% include 'map.twig' with {'purpose': 'find' } %}
       <!-- <div class="article-wrapper">

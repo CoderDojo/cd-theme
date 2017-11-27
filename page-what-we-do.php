@@ -15,4 +15,12 @@ $context['howtoImages'] = [ ['src'=>'../wp-content/themes/cd-theme/static/img/us
 																 'link'=>'http://www.coderdojo.com/start-a-dojo/','name'=>'How Do I Start A Dojo?']
 													];
 
+                          $args = array(
+                              'posts_per_page' => 3,
+                              'paged' => $paged
+                          );
+
+                          query_posts($args);
+                          $context['posts'] = Timber::get_posts();
+
 Timber::render('page-what-we-do.twig', $context);

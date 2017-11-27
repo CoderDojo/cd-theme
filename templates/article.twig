@@ -1,6 +1,5 @@
-<div class="pages">
 {% for article in posts %}
-  <article class="row article-pagination">
+  <article class="article-pagination col-md-4">
     {% if article.thumbnail.src %}
     <a href="{{article.link}}" class="col-md-12 col-xs-12 post-image" style="background-image:url({{article.thumbnail.src('large')}})">
     </a>
@@ -11,9 +10,8 @@
         <a href="{{article.link}}"><h3>{{article.title}}</h3></a>
         <p class="meta">{{article.post_date|date('j F Y')}} · by {{article.author.name}}</p>
         <p class="post-preview">{{article.get_preview(wordCount)}}</p>
+        <div class="col-md-1 col-sm-1 col-xs-1"></div>
       </div>
-      <div class="col-md-1 col-sm-1 col-xs-1"></div>
-    </div>
-  </article>
-  {% endfor %}
-</div>
+      <div>
+</article>
+{% endfor %}
