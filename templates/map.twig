@@ -152,6 +152,7 @@ function DojoList(dojos) {
         query: {
           verified: 1,
           deleted: 0,
+	  stage: { ne$: 4 },
           fields$: ["name", "geo_point", "stage", "url_slug", "private"]
         }
       }),
