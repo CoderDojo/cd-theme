@@ -182,7 +182,11 @@ function searchAddress(address) {
 
 function codeAddress(address, country) {
   try {
-    ga('send', 'event', 'Dojos', 'Search', address);
+    gtag('event', 'dojo-search', {
+      event_category: 'Dojos',
+      event_action: 'Search',
+      event_label: address
+    });
   } catch (e) {}
   geocoder.geocode({
     'address': address,
