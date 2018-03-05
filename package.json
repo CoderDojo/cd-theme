@@ -1,0 +1,16 @@
+{
+  "name": "cd-theme",
+  "version": "1.0.0",
+  "description": "Theme for CoderDojo.com",
+  "repository": "git@github.com:CoderDojo/cd-theme.git",
+  "author": "CoderDojo Foundation <webteam@coderdojo.org>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "lessc --clean-css ./static/css/style.less ./static/css/style.min.css"
+  },
+  "devDependencies": {
+    "less": "^3.0.1",
+    "less-plugin-clean-css": "^1.5.1"
+  }
+}
