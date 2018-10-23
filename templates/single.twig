@@ -6,7 +6,7 @@
         <div class="col-md-12 post-image" style="background-image:url({{post.thumbnail.src('large')}})"></div>
         <div class="col-sm-offset-1 col-md-offset-1 col-xs-12 col-sm-10 col-md-10 article-body">
           <h1>{{post.title}}</h1>
-          <p class="article-meta">{{post.post_date|date('j F Y')}} · by {{post.author.name}}</p>
+          <p class="article-meta">{{post.post_date|date('j F Y')}} · by {{post.meta('guest_author') ? post.meta('guest_author') : post.author.name}}</p>
           <div class="article-mid news-content">
               {{post.content}}
               {% if post.meta('video') and post.meta('video-poster') %}
