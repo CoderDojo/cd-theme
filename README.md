@@ -1,3 +1,7 @@
+# Changing the css
+Using lessc, compile /static/css from the static files available
+`cd static/css && lessc style.less > style.min.css`
+Minify with your tool of choice
 
 ## !! Changes made to this Theme
 See [docs/riot.md](/docs/riot.md) for specific instructions around customisations in this Theme
