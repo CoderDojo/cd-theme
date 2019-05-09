@@ -1,8 +1,10 @@
-/*Apparently this file is needed or WordPress considers the theme "incomplete"*/
+/*
+ * This File is needed for meta data about the theme for wordpress
+ */
 
 /*
-Theme Name: CoderDojo
-Theme URI: http://github.com/adhorrig/cd-theme
+Theme Name: cd-theme
+Theme URI: http://github.com/cd-theme/cd-theme
 Author: CoderDojo Foundation
 Author URI: http://coderdojo.com
 Description: The new theme for http://coderdojo.com. The theme (or variation) will be used on the three CoderDojo sites - coderdojo.com/ zen.coderdojo.com/ kata.coderdojo.com.
@@ -10,5 +12,5 @@ Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: coderdojo, website, responsize, bootstrap, modern.
-Text Domain: coderdojo
+Text Domain: cd-theme
 */
